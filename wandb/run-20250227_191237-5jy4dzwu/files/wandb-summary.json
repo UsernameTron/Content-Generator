@@ -1,0 +1,1 @@
+{"training/loss": 1.1999999999999997, "evaluation/loss": 2.65, "time/steps_per_second": 0.69, "memory/rss_gb": 5.9, "system/memory_percent_used": 59.5, "mps/tokens_per_second": 195, "gradients/global_norm": 0.62, "expertise/cx_expertise_score": 0.88, "_timestamp": 1740705157.774417, "_runtime": 0.5958349704742432, "_step": 19, "_wandb": {"runtime": 0}}

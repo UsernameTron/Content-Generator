@@ -1,0 +1,139 @@
+{
+  "description": "Production configuration optimized for reliability and performance",
+  "created": "2023-09-15 12:00:00",
+  "modified": "2023-09-15 12:00:00",
+  "tags": ["production", "stable", "optimized"],
+  "config": {
+    "dashboard": {
+      "mode": "regular",
+      "refresh_interval": 30,
+      "auto_save": true,
+      "debug_mode": false
+    },
+    "performance": {
+      "thresholds": {
+        "critical": 0.7,
+        "warning": 0.8,
+        "target": 0.9
+      },
+      "metrics": {
+        "accuracy": true,
+        "precision": true,
+        "recall": true,
+        "f1_score": true,
+        "specificity": true,
+        "auc": true,
+        "confusion_matrix": true
+      },
+      "reporting": {
+        "generate_html": true,
+        "generate_json": true,
+        "generate_csv": true,
+        "include_visualizations": true,
+        "include_recommendations": true,
+        "detailed_category_analysis": true,
+        "detailed_domain_analysis": true
+      },
+      "alerts": {
+        "enabled": true,
+        "regression_threshold": 0.03,
+        "stagnation_threshold": 0.01,
+        "consecutive_failures_threshold": 1
+      }
+    },
+    "testing": {
+      "batch_size": 256,
+      "test_split": 0.2,
+      "cross_validation": {
+        "enabled": true,
+        "folds": 5,
+        "stratified": true
+      },
+      "categories": [
+        "medication_conflicts",
+        "treatment_contradictions",
+        "diagnostic_inconsistencies",
+        "temporal_contradictions",
+        "procedural_conflicts",
+        "patient_history_conflicts",
+        "lab_result_inconsistencies",
+        "imaging_contradictions"
+      ],
+      "domains": [
+        "cardiology",
+        "neurology",
+        "oncology",
+        "pediatrics",
+        "emergency_medicine",
+        "internal_medicine",
+        "surgery",
+        "psychiatry",
+        "obstetrics",
+        "gynecology",
+        "dermatology",
+        "orthopedics",
+        "urology",
+        "nephrology",
+        "endocrinology"
+      ],
+      "data_augmentation": {
+        "enabled": false,
+        "techniques": [],
+        "augmentation_factor": 0
+      }
+    },
+    "visualization": {
+      "theme": "professional",
+      "interactive": true,
+      "chart_types": ["line", "bar", "radar", "heatmap", "confusion_matrix", "scatter", "box"],
+      "color_palette": "tableau",
+      "show_trend_lines": true,
+      "show_confidence_intervals": true
+    },
+    "export": {
+      "formats": ["html", "json", "csv", "pdf", "xlsx"],
+      "auto_export": true,
+      "export_directory": "reports/production",
+      "filename_template": "production_report_{date}_{time}"
+    },
+    "logging": {
+      "level": "INFO",
+      "file_logging": true,
+      "console_logging": true,
+      "log_directory": "logs/production",
+      "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+      "log_performance_metrics": true,
+      "log_rotation": {
+        "enabled": true,
+        "max_size_mb": 10,
+        "backup_count": 5
+      }
+    },
+    "security": {
+      "anonymize_patient_data": true,
+      "encrypt_reports": true,
+      "access_control": true,
+      "audit_logging": true
+    },
+    "resources": {
+      "max_memory_usage_gb": 8,
+      "max_cpu_usage_percent": 80,
+      "enable_gpu": true,
+      "threads": 8
+    },
+    "notifications": {
+      "email": {
+        "enabled": true,
+        "recipients": ["healthcare-team@example.com"],
+        "send_on_critical": true,
+        "send_on_warning": true,
+        "send_daily_summary": true
+      },
+      "slack": {
+        "enabled": false,
+        "webhook_url": "",
+        "channel": "#healthcare-monitoring"
+      }
+    }
+  }
+}

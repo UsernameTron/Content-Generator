@@ -1,0 +1,96 @@
+[2025-02-28 17:00:00] Running scheduled tests...
+[2025-02-28 17:00:01] Running tests in testing mode with batch size 64
+[2025-02-28 17:00:02] Running comprehensive test suite...
+[2025-02-28 17:00:03] Testing contradiction category: medication_interaction
+[2025-02-28 17:00:04] Test result: accuracy: 0.78
+[2025-02-28 17:00:05] Testing contradiction category: dosage_conflict
+[2025-02-28 17:00:06] Test result: accuracy: 0.82
+[2025-02-28 17:00:07] Testing contradiction category: treatment_protocol
+[2025-02-28 17:00:08] Test result: accuracy: 0.75
+[2025-02-28 17:00:09] Running stress test with batch size 64...
+[2025-02-28 17:00:10] Stress test completed with accuracy: 0.79
+[2025-02-28 17:00:11] Running regression test...
+[2025-02-28 17:00:12] Regression test completed with accuracy: 0.81
+[2025-02-28 17:00:13] Tests completed successfully
+[2025-02-28 17:00:14] Next run scheduled for 2025-02-29 17:00:14
+[2025-02-28 17:00:15] Sleeping for 24 hours...
+
+[2025-02-27 17:00:00] Running scheduled tests...
+[2025-02-27 17:00:01] Running tests in testing mode with batch size 64
+[2025-02-27 17:00:02] Running comprehensive test suite...
+[2025-02-27 17:00:03] Testing contradiction category: medication_interaction
+[2025-02-27 17:00:04] Test result: accuracy: 0.76
+[2025-02-27 17:00:05] Testing contradiction category: dosage_conflict
+[2025-02-27 17:00:06] Test result: accuracy: 0.80
+[2025-02-27 17:00:07] Testing contradiction category: treatment_protocol
+[2025-02-27 17:00:08] Test result: accuracy: 0.73
+[2025-02-27 17:00:09] Running stress test with batch size 64...
+[2025-02-27 17:00:10] Stress test completed with accuracy: 0.77
+[2025-02-27 17:00:11] Running regression test...
+[2025-02-27 17:00:12] Regression test completed with accuracy: 0.79
+[2025-02-27 17:00:13] Tests completed successfully
+[2025-02-27 17:00:14] Next run scheduled for 2025-02-28 17:00:14
+[2025-02-27 17:00:15] Sleeping for 24 hours...
+
+[2025-02-26 17:00:00] Running scheduled tests...
+[2025-02-26 17:00:01] Running tests in testing mode with batch size 64
+[2025-02-26 17:00:02] Running comprehensive test suite...
+[2025-02-26 17:00:03] Testing contradiction category: medication_interaction
+[2025-02-26 17:00:04] Test result: accuracy: 0.74
+[2025-02-26 17:00:05] Testing contradiction category: dosage_conflict
+[2025-02-26 17:00:06] Test result: accuracy: 0.79
+[2025-02-26 17:00:07] Testing contradiction category: treatment_protocol
+[2025-02-26 17:00:08] Test result: accuracy: 0.71
+[2025-02-26 17:00:09] Running stress test with batch size 64...
+[2025-02-26 17:00:10] Stress test completed with accuracy: 0.75
+[2025-02-26 17:00:11] Running regression test...
+[2025-02-26 17:00:12] Regression test completed with accuracy: 0.77
+[2025-02-26 17:00:13] Tests completed successfully
+[2025-02-26 17:00:14] Next run scheduled for 2025-02-27 17:00:14
+[2025-02-26 17:00:15] Sleeping for 24 hours...
+
+[2025-02-25 17:00:00] Running scheduled tests...
+[2025-02-25 17:00:01] Running tests in testing mode with batch size 64
+[2025-02-25 17:00:02] Running comprehensive test suite...
+[2025-02-25 17:00:03] Testing contradiction category: medication_interaction
+[2025-02-25 17:00:04] Test result: accuracy: 0.72
+[2025-02-25 17:00:05] Testing contradiction category: dosage_conflict
+[2025-02-25 17:00:06] Test result: accuracy: 0.77
+[2025-02-25 17:00:07] Testing contradiction category: treatment_protocol
+[2025-02-25 17:00:08] Test result: accuracy: 0.70
+[2025-02-25 17:00:09] Running stress test with batch size 64...
+[2025-02-25 17:00:10] Stress test completed with accuracy: 0.73
+[2025-02-25 17:00:11] Running regression test...
+[2025-02-25 17:00:12] Regression test completed with accuracy: 0.75
+[2025-02-25 17:00:13] Tests completed successfully
+[2025-02-25 17:00:14] Next run scheduled for 2025-02-26 17:00:14
+[2025-02-25 17:00:15] Sleeping for 24 hours...
+
+[2025-02-24 17:00:00] Running scheduled tests...
+[2025-02-24 17:00:01] Running tests in testing mode with batch size 64
+[2025-02-24 17:00:02] Running comprehensive test suite...
+[2025-02-24 17:00:03] Testing contradiction category: medication_interaction
+[2025-02-24 17:00:04] Test result: accuracy: 0.70
+[2025-02-24 17:00:05] Testing contradiction category: dosage_conflict
+[2025-02-24 17:00:06] Test result: accuracy: 0.75
+[2025-02-24 17:00:07] Testing contradiction category: treatment_protocol
+[2025-02-24 17:00:08] Test result: accuracy: 0.68
+[2025-02-24 17:00:09] Running stress test with batch size 64...
+[2025-02-24 17:00:10] Stress test completed with accuracy: 0.71
+[2025-02-24 17:00:11] Running regression test...
+[2025-02-24 17:00:12] Regression test completed with accuracy: 0.73
+[2025-02-24 17:00:13] Tests completed successfully
+[2025-02-24 17:00:14] Next run scheduled for 2025-02-25 17:00:14
+[2025-02-24 17:00:15] Sleeping for 24 hours...
+[2025-02-28 18:09:32] Running scheduled tests...
+2025-02-28 18:09:33,895 - dashboard-config - WARNING - Configuration file dashboard_config.json not found. Using defaults.
+2025-02-28 18:09:33,908 - advanced_testing - ERROR - Error loading configuration: 'str' object has no attribute 'exists'
+╭─────────────────────────╮
+│ Running Scheduled Tests │
+╰─────────────────────────╯
+Error loading configuration: [Errno 2] No such file or directory: 
+'dashboard_config.json'
+[2025-02-28 18:09:32] Tests completed successfully
+[2025-02-28 18:09:32] Next run scheduled for 2025-03-01 18:09:34
+Sleeping for 24 hours...
+

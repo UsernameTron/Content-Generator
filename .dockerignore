@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+
+# Virtual environment
+venv/
+viz_env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build and package files
+*.egg-info/
+dist/
+build/
+
+# Logs and databases
+*.log
+logs/
+*.sqlite
+*.db
+
+# Environments
+.env
+.env.*
+
+# Large binary files
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+outputs/finetune/
+
+# Streamlit remnants
+streamlit_backup/
+
+# WandB files
+wandb/
+
+# Runtime files
+*.pid
+*.sock
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+.DS_Store

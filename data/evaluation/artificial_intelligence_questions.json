@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Compare and contrast supervised learning, unsupervised learning, and reinforcement learning in AI.",
+        "criteria": {
+            "supervised_def": "labeled data",
+            "unsupervised_def": "unlabeled data",
+            "reinforcement_def": "reward signals",
+            "examples": "example applications",
+            "tradeoffs": "strengths and limitations"
+        }
+    },
+    {
+        "question": "Explain the concept of transformer architecture and its impact on natural language processing.",
+        "criteria": {
+            "architecture": "attention mechanism",
+            "advantages": "parallelization",
+            "applications": "nlp applications",
+            "limitations": "limitations",
+            "evolution": "evolution since 2017"
+        }
+    },
+    {
+        "question": "What are the ethical considerations in developing and deploying AI systems?",
+        "criteria": {
+            "bias": "algorithmic bias",
+            "transparency": "transparency",
+            "privacy": "data privacy",
+            "accountability": "accountability",
+            "societal_impact": "societal implications"
+        }
+    },
+    {
+        "question": "Describe the concept of few-shot learning and its importance in modern AI systems.",
+        "criteria": {
+            "definition": "adaptation with few examples",
+            "methods": "meta-learning/transfer learning",
+            "advantages": "data efficiency",
+            "applications": "practical applications",
+            "limitations": "limitations"
+        }
+    },
+    {
+        "question": "How do large language models work, and what are their current limitations?",
+        "criteria": {
+            "architecture": "transformer-based",
+            "training": "pretraining and finetuning",
+            "capabilities": "emergent abilities",
+            "limitations": "hallucinations/reasoning",
+            "future": "future developments"
+        }
+    }
+]

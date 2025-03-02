@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervention Impact Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .metric-container {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .metric-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .metric-score {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .progress-container {
+            margin: 20px 0;
+            position: relative;
+            height: 40px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .current-progress {
+            position: absolute;
+            height: 100%;
+            background-color: #3498db;
+            border-radius: 5px 0 0 5px;
+            transition: width 1s ease-in-out;
+        }
+        .target-progress {
+            position: absolute;
+            height: 100%;
+            background-color: #2ecc71;
+            opacity: 0.7;
+            border-radius: 0 5px 5px 0;
+            transition: width 1s ease-in-out;
+        }
+        .progress-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            box-sizing: border-box;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .interventions {
+            margin-top: 20px;
+        }
+        .intervention {
+            background-color: white;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+        .intervention-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .intervention-impact {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Targeted Intervention Impact Visualization</h1>
+    
+    <div class="container">
+        <!-- Cross-referencing -->
+        <div class="metric-container">
+            <div class="metric-header">
+                <h2 class="metric-title">Cross-referencing Capabilities</h2>
+                <div class="metric-score">Current: 0.76</div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="current-progress" style="width: 76%;"></div>
+                <div class="target-progress" style="width: 14%; left: 76%;"></div>
+                <div class="progress-labels">
+                    <div>Current: 0.76</div>
+                    <div>Target: 0.90</div>
+                </div>
+            </div>
+            
+            <div class="interventions">
+                <div class="intervention">
+                    <div class="intervention-title">Specialized Contradiction Training</div>
+                    <div>Develop focused training datasets specifically targeting contradiction detection edge cases</div>
+                    <div class="intervention-impact">Impact: +0.04-0.06</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Advanced Source Correlation</div>
+                    <div>Implement improved algorithms for correlating information across multiple sources with temporal awareness</div>
+                    <div class="intervention-impact">Impact: +0.03-0.05</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Knowledge Integration Enhancement</div>
+                    <div>Expand knowledge integration techniques to better handle diverse medical terminology and concepts</div>
+                    <div class="intervention-impact">Impact: +0.03-0.04</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Counterfactual Reasoning -->
+        <div class="metric-container">
+            <div class="metric-header">
+                <h2 class="metric-title">Counterfactual Reasoning</h2>
+                <div class="metric-score">Current: 0.73</div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="current-progress" style="width: 73%;"></div>
+                <div class="target-progress" style="width: 14%; left: 73%;"></div>
+                <div class="progress-labels">
+                    <div>Current: 0.73</div>
+                    <div>Target: 0.87</div>
+                </div>
+            </div>
+            
+            <div class="interventions">
+                <div class="intervention">
+                    <div class="intervention-title">Complex Causal Relationship Training</div>
+                    <div>Develop training scenarios with multi-step causal chains in medical contexts</div>
+                    <div class="intervention-impact">Impact: +0.03-0.05</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Plausibility Assessment Refinement</div>
+                    <div>Improve the plausibility scoring mechanism (currently 0.71) through better constraint modeling</div>
+                    <div class="intervention-impact">Impact: +0.04-0.06</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Domain-specific Counterfactual Examples</div>
+                    <div>Create a comprehensive library of healthcare-specific counterfactual examples</div>
+                    <div class="intervention-impact">Impact: +0.03-0.04</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Healthcare Contradiction Detection -->
+        <div class="metric-container">
+            <div class="metric-header">
+                <h2 class="metric-title">Healthcare Contradiction Detection (Recall)</h2>
+                <div class="metric-score">Current: 0.79</div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="current-progress" style="width: 79%;"></div>
+                <div class="target-progress" style="width: 13%; left: 79%;"></div>
+                <div class="progress-labels">
+                    <div>Current: 0.79</div>
+                    <div>Target: 0.92</div>
+                </div>
+            </div>
+            
+            <div class="interventions">
+                <div class="intervention">
+                    <div class="intervention-title">Recall Enhancement</div>
+                    <div>Improve recall through training on edge cases and rare contradictions</div>
+                    <div class="intervention-impact">Impact: +0.04-0.06</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Healthcare Contradiction Dataset</div>
+                    <div>Implement the specialized healthcare contradiction dataset already created</div>
+                    <div class="intervention-impact">Impact: +0.05-0.07</div>
+                </div>
+                
+                <div class="intervention">
+                    <div class="intervention-title">Error Analysis Feedback Loop</div>
+                    <div>Establish automated error analysis and continuous improvement pipeline</div>
+                    <div class="intervention-impact">Impact: +0.02-0.03</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Overall System Performance -->
+        <div class="metric-container">
+            <div class="metric-header">
+                <h2 class="metric-title">Overall System Performance</h2>
+                <div class="metric-score">Current: 0.79</div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="current-progress" style="width: 79%;"></div>
+                <div class="target-progress" style="width: 15%; left: 79%;"></div>
+                <div class="progress-labels">
+                    <div>Current: 0.79</div>
+                    <div>Target: 0.94</div>
+                </div>
+            </div>
+            
+            <div class="interventions">
+                <div class="intervention">
+                    <div class="intervention-title">Combined Interventions</div>
+                    <div>Implementation of all recommended improvements across the three key areas</div>
+                    <div class="intervention-impact">Impact: +0.10-0.15</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Generated on 2025-02-28 | Healthcare Metrics Visualization System</p>
+    </div>
+</body>
+</html>

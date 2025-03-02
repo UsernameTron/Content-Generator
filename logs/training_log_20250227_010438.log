@@ -1,0 +1,21 @@
+2025-02-27 01:04:38,272 - __main__ - INFO - Initializing W&B
+2025-02-27 01:04:39,360 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:04:39,603 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 01:04:40,482 - __main__ - INFO - Configuring model for efficient training on Apple Silicon
+2025-02-27 01:04:40,482 - __main__ - INFO - Setting up LoRA configuration
+2025-02-27 01:04:40,482 - __main__ - INFO - Applying LoRA adapters to model
+2025-02-27 01:04:40,578 - __main__ - INFO - Preparing datasets
+2025-02-27 01:04:40,579 - __main__ - INFO - Loading 81 examples from data/training_data.jsonl
+2025-02-27 01:04:40,614 - __main__ - INFO - Successfully loaded 81 examples
+2025-02-27 01:04:40,615 - __main__ - INFO - Loading 20 examples from data/validation_data.jsonl
+2025-02-27 01:04:40,623 - __main__ - INFO - Successfully loaded 20 examples
+2025-02-27 01:04:40,623 - __main__ - INFO - Train dataset size: 81
+2025-02-27 01:04:40,623 - __main__ - INFO - Eval dataset size: 20
+2025-02-27 01:04:40,624 - __main__ - INFO - Setting up training arguments
+2025-02-27 01:04:40,624 - __main__ - INFO - Initializing trainer
+2025-02-27 01:04:40,629 - __main__ - INFO - Starting model fine-tuning
+2025-02-27 01:19:33,691 - __main__ - INFO - Training completed successfully
+2025-02-27 01:19:33,692 - __main__ - INFO - Saving model to outputs/finetune/final
+2025-02-27 01:19:33,911 - __main__ - INFO - Model saving complete.
+2025-02-27 01:19:33,911 - __main__ - INFO - Saving adapter config
+2025-02-27 01:19:39,538 - __main__ - INFO - Fine-tuning completed

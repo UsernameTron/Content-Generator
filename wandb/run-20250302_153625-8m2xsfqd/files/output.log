@@ -1,0 +1,9 @@
+2025-03-02 15:36:25,578 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 15:36:25,861 - src.utils.wandb_monitor - INFO - Logged generation example for LinkedIn to W&B
+2025-03-02 15:36:25,861 - src.models.content_generator - INFO - Successfully generated content for LinkedIn
+2025-03-02 15:36:25,861 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 15:36:25,862 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 15:36:25,862 - src.models.content_generator - INFO - Generating content for platform: Twitter with style: pete_connor
+2025-03-02 15:36:25,863 - src.models.content_generator - INFO - Successfully generated content for Twitter
+2025-03-02 15:36:25,865 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 15:36:25,868 - src.utils.health_monitor - INFO - Health check: System is healthy

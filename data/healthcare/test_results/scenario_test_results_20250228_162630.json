@@ -1,0 +1,35 @@
+{
+  "scenarios": {
+    "medication_contradiction": {
+      "status": "failed",
+      "pass_rate": 0.6666666666666666,
+      "total_cases": 3,
+      "passed_cases": 2,
+      "case_results": [
+        {
+          "id": "med_contra_001",
+          "status": "passed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "med_contra_002",
+          "status": "passed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "med_contra_003",
+          "status": "failed",
+          "expected": false,
+          "actual": true
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

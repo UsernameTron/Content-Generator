@@ -1,0 +1,54 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>AI Model Evaluation Results</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2, h3 { color: #2c3e50; }
+                .visualization { margin: 20px 0; }
+                .visualization img { max-width: 100%; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { text-align: left; padding: 8px; }
+                tr:nth-child(even) { background-color: #f2f2f2; }
+                th { background-color: #2c3e50; color: white; }
+                .improvement { color: green; }
+                .regression { color: red; }
+            </style>
+        </head>
+        <body>
+            <h1>AI Model Evaluation Results</h1>
+        <h2>Evaluation Details</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>Model Path</td><td>sample/healthcare/model</td></tr><tr><td>Adapter Path</td><td>sample/healthcare/adapter</td></tr><tr><td>Device</td><td>mps</td></tr><tr><td>Evaluation Timestamp</td><td>2025-02-28 02:18:49</td></tr></table><h2>Performance Visualizations</h2>
+        <div class="visualization">
+            <h3>Domain Knowledge Performance</h3>
+            <img src="domain_scores.png" alt="Domain Scores">
+        </div>
+        
+        <div class="visualization">
+            <h3>Capability Profile</h3>
+            <img src="radar_chart.png" alt="Capability Radar Chart">
+        </div>
+        
+        <div class="visualization">
+            <h3>Memory Usage During Evaluation</h3>
+            <img src="memory_usage.png" alt="Memory Usage">
+        </div>
+        <h2>Detailed Topic Performance</h2><h2>Healthcare Performance</h2>
+        <div class="visualization">
+            <h3>Healthcare Contradiction Detection Metrics</h3>
+            <img src="healthcare_contradiction_metrics.png" alt="Healthcare Contradiction Detection Metrics">
+        </div>
+        
+        <div class="visualization">
+            <h3>Healthcare Evidence Ranking Metrics</h3>
+            <img src="healthcare_evidence_ranking.png" alt="Healthcare Evidence Ranking Metrics">
+        </div>
+        
+        <div class="visualization">
+            <h3>Healthcare Combined Metrics</h3>
+            <img src="healthcare_combined_metrics.png" alt="Healthcare Combined Metrics">
+        </div>
+        <h2>Performance Summary</h2>
+        </body>
+        </html>
+        

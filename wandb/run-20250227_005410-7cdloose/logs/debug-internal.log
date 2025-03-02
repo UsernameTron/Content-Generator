@@ -1,0 +1,286 @@
+2025-02-27 00:54:10,616 INFO    StreamThr :16629 [internal.py:wandb_internal():86] W&B internal server running at pid: 16629, started at: 2025-02-27 00:54:10.615916
+2025-02-27 00:54:10,616 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status
+2025-02-27 00:54:10,618 INFO    WriterThread:16629 [datastore.py:open_for_write():87] open: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/run-7cdloose.wandb
+2025-02-27 00:54:10,618 DEBUG   SenderThread:16629 [sender.py:send():379] send: header
+2025-02-27 00:54:10,619 DEBUG   SenderThread:16629 [sender.py:send():379] send: run
+2025-02-27 00:54:10,975 INFO    SenderThread:16629 [dir_watcher.py:__init__():211] watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files
+2025-02-27 00:54:10,975 INFO    SenderThread:16629 [sender.py:_start_run_threads():1124] run started: 7cdloose with start time 1740639250.617155
+2025-02-27 00:54:10,977 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: check_version
+2025-02-27 00:54:10,977 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: check_version
+2025-02-27 00:54:11,111 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: run_start
+2025-02-27 00:54:11,117 DEBUG   HandlerThread:16629 [system_info.py:__init__():26] System info init
+2025-02-27 00:54:11,117 DEBUG   HandlerThread:16629 [system_info.py:__init__():41] System info init done
+2025-02-27 00:54:11,117 INFO    HandlerThread:16629 [system_monitor.py:start():194] Starting system monitor
+2025-02-27 00:54:11,117 INFO    SystemMonitor:16629 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-02-27 00:54:11,117 INFO    HandlerThread:16629 [system_monitor.py:probe():214] Collecting system info
+2025-02-27 00:54:11,118 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started cpu monitoring
+2025-02-27 00:54:11,118 DEBUG   HandlerThread:16629 [system_info.py:probe():150] Probing system
+2025-02-27 00:54:11,119 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started disk monitoring
+2025-02-27 00:54:11,119 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started gpuapple monitoring
+2025-02-27 00:54:11,122 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started memory monitoring
+2025-02-27 00:54:11,123 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started network monitoring
+2025-02-27 00:54:11,125 DEBUG   HandlerThread:16629 [gitlib.py:_init_repo():56] git repository is invalid
+2025-02-27 00:54:11,125 DEBUG   HandlerThread:16629 [system_info.py:probe():198] Probing system done
+2025-02-27 00:54:11,125 DEBUG   HandlerThread:16629 [system_monitor.py:probe():223] {'os': 'macOS-15.3.1-arm64-arm-64bit-Mach-O', 'python': '3.13.2', 'heartbeatAt': '2025-02-27T06:54:11.118883', 'startedAt': '2025-02-27T06:54:10.613446', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/run_overnight_training.py', 'codePathLocal': 'run_overnight_training.py', 'codePath': 'run_overnight_training.py', 'host': 'Mac.lan', 'username': 'cpconnor', 'executable': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/bin/python', 'cpu_count': 14, 'cpu_count_logical': 14, 'cpu_freq': {'current': 4, 'min': 1, 'max': 4}, 'cpu_freq_per_core': [{'current': 4, 'min': 1, 'max': 4}], 'disk': {'/': {'total': 460.4317207336426, 'used': 10.393470764160156}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 48.0}}
+2025-02-27 00:54:11,125 INFO    HandlerThread:16629 [system_monitor.py:probe():224] Finished collecting system info
+2025-02-27 00:54:11,125 INFO    HandlerThread:16629 [system_monitor.py:probe():227] Publishing system info
+2025-02-27 00:54:11,125 DEBUG   HandlerThread:16629 [system_info.py:_save_code():44] Saving code
+2025-02-27 00:54:11,126 DEBUG   HandlerThread:16629 [system_info.py:_save_code():65] Saving code done
+2025-02-27 00:54:11,126 INFO    HandlerThread:16629 [system_monitor.py:probe():229] Finished publishing system info
+2025-02-27 00:54:11,128 DEBUG   SenderThread:16629 [sender.py:send():379] send: files
+2025-02-27 00:54:11,128 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2025-02-27 00:54:11,128 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file code/run_overnight_training.py with policy now
+2025-02-27 00:54:11,180 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: python_packages
+2025-02-27 00:54:11,180 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: python_packages
+2025-02-27 00:54:11,181 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:11,181 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:11,181 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:11,181 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:11,691 INFO    wandb-upload_1:16629 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpncoy94auwandb/n3hzogt0-code/run_overnight_training.py
+2025-02-27 00:54:11,713 INFO    wandb-upload_0:16629 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpncoy94auwandb/9df1i5dx-wandb-metadata.json
+2025-02-27 00:54:11,981 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/requirements.txt
+2025-02-27 00:54:11,981 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/code/run_overnight_training.py
+2025-02-27 00:54:11,981 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/wandb-metadata.json
+2025-02-27 00:54:11,981 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/output.log
+2025-02-27 00:54:11,981 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/code
+2025-02-27 00:54:13,846 INFO    StreamThr :16629 [internal.py:wandb_internal():86] W&B internal server running at pid: 16629, started at: 2025-02-27 00:54:13.846355
+2025-02-27 00:54:13,847 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status
+2025-02-27 00:54:13,849 INFO    WriterThread:16629 [datastore.py:open_for_write():87] open: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/run-zj73jbeu.wandb
+2025-02-27 00:54:13,849 DEBUG   SenderThread:16629 [sender.py:send():379] send: header
+2025-02-27 00:54:13,850 DEBUG   SenderThread:16629 [sender.py:send():379] send: run
+2025-02-27 00:54:13,853 INFO    SenderThread:16629 [sender.py:_setup_resume():749] checking resume status for None/pete-connor-cx-ai-expert/zj73jbeu
+2025-02-27 00:54:13,989 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/output.log
+2025-02-27 00:54:14,289 INFO    SenderThread:16629 [dir_watcher.py:__init__():211] watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files
+2025-02-27 00:54:14,289 INFO    SenderThread:16629 [sender.py:_start_run_threads():1124] run started: zj73jbeu with start time 1740639253.846528
+2025-02-27 00:54:14,293 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: check_version
+2025-02-27 00:54:14,293 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: check_version
+2025-02-27 00:54:14,416 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: run_start
+2025-02-27 00:54:14,416 DEBUG   HandlerThread:16629 [system_info.py:__init__():26] System info init
+2025-02-27 00:54:14,417 DEBUG   HandlerThread:16629 [system_info.py:__init__():41] System info init done
+2025-02-27 00:54:14,417 INFO    HandlerThread:16629 [system_monitor.py:start():194] Starting system monitor
+2025-02-27 00:54:14,417 INFO    SystemMonitor:16629 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-02-27 00:54:14,417 INFO    HandlerThread:16629 [system_monitor.py:probe():214] Collecting system info
+2025-02-27 00:54:14,418 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started cpu monitoring
+2025-02-27 00:54:14,418 DEBUG   HandlerThread:16629 [system_info.py:probe():150] Probing system
+2025-02-27 00:54:14,418 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started disk monitoring
+2025-02-27 00:54:14,418 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started gpuapple monitoring
+2025-02-27 00:54:14,421 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started memory monitoring
+2025-02-27 00:54:14,422 INFO    SystemMonitor:16629 [interfaces.py:start():190] Started network monitoring
+2025-02-27 00:54:14,422 DEBUG   HandlerThread:16629 [gitlib.py:_init_repo():56] git repository is invalid
+2025-02-27 00:54:14,422 DEBUG   HandlerThread:16629 [system_info.py:probe():198] Probing system done
+2025-02-27 00:54:14,422 DEBUG   HandlerThread:16629 [system_monitor.py:probe():223] {'os': 'macOS-15.3.1-arm64-arm-64bit-Mach-O', 'python': '3.13.2', 'heartbeatAt': '2025-02-27T06:54:14.418181', 'startedAt': '2025-02-27T06:54:13.841935', 'docker': None, 'cuda': None, 'args': ('--config', 'finetune_config.json'), 'state': 'running', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py', 'codePathLocal': 'finetune_model.py', 'codePath': 'finetune_model.py', 'host': 'Mac.lan', 'username': 'cpconnor', 'executable': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/bin/python', 'cpu_count': 14, 'cpu_count_logical': 14, 'cpu_freq': {'current': 4, 'min': 1, 'max': 4}, 'cpu_freq_per_core': [{'current': 4, 'min': 1, 'max': 4}], 'disk': {'/': {'total': 460.4317207336426, 'used': 10.393470764160156}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 48.0}}
+2025-02-27 00:54:14,422 INFO    HandlerThread:16629 [system_monitor.py:probe():224] Finished collecting system info
+2025-02-27 00:54:14,422 INFO    HandlerThread:16629 [system_monitor.py:probe():227] Publishing system info
+2025-02-27 00:54:14,422 INFO    HandlerThread:16629 [system_monitor.py:probe():229] Finished publishing system info
+2025-02-27 00:54:14,423 DEBUG   SenderThread:16629 [sender.py:send():379] send: files
+2025-02-27 00:54:14,423 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2025-02-27 00:54:14,459 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: python_packages
+2025-02-27 00:54:14,460 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: python_packages
+2025-02-27 00:54:14,460 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:14,460 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,461 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:14,461 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: partial_history
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,461 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:14,462 DEBUG   SenderThread:16629 [sender.py:send():379] send: history
+2025-02-27 00:54:14,462 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: summary_record
+2025-02-27 00:54:14,462 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-02-27 00:54:14,476 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:14,476 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:14,874 INFO    wandb-upload_0:16629 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpwv91w4xtwandb/2pyjp3aj-wandb-metadata.json
+2025-02-27 00:54:15,294 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-metadata.json
+2025-02-27 00:54:15,295 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/requirements.txt
+2025-02-27 00:54:15,295 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:15,295 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-summary.json
+2025-02-27 00:54:16,384 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:17,296 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:17,315 DEBUG   SenderThread:16629 [sender.py:send():379] send: config
+2025-02-27 00:54:17,315 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:17,315 DEBUG   SenderThread:16629 [sender.py:send():379] send: metric
+2025-02-27 00:54:17,316 WARNING SenderThread:16629 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2025-02-27 00:54:17,316 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:17,316 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:17,316 DEBUG   SenderThread:16629 [sender.py:send():379] send: config
+2025-02-27 00:54:19,303 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:19,544 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:21,400 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:24,725 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:26,187 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:26,187 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:26,187 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:27,373 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:29,463 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:29,463 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:29,466 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:30,566 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:32,452 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:36,713 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:37,682 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:41,250 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:41,385 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:41,386 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:41,701 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: partial_history
+2025-02-27 00:54:41,889 DEBUG   SenderThread:16629 [sender.py:send():379] send: history
+2025-02-27 00:54:41,889 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: summary_record
+2025-02-27 00:54:41,892 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-02-27 00:54:42,340 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:42,391 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/wandb-summary.json
+2025-02-27 00:54:42,900 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:45,107 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:45,161 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:45,182 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:45,198 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/config.yaml
+2025-02-27 00:54:46,863 INFO    Thread-12 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005410-7cdloose/files/output.log
+2025-02-27 00:54:47,549 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:47,863 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/config.yaml
+2025-02-27 00:54:49,855 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:52,251 DEBUG   SenderThread:16629 [sender.py:send():379] send: alert
+2025-02-27 00:54:53,602 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:53,604 DEBUG   SenderThread:16629 [sender.py:send():379] send: alert
+2025-02-27 00:54:53,817 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:53,817 DEBUG   SenderThread:16629 [sender.py:send():379] send: exit
+2025-02-27 00:54:53,817 INFO    SenderThread:16629 [sender.py:send_exit():586] handling exit code: 0
+2025-02-27 00:54:53,818 INFO    SenderThread:16629 [sender.py:send_exit():588] handling runtime: 39
+2025-02-27 00:54:53,818 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-02-27 00:54:53,818 INFO    SenderThread:16629 [sender.py:send_exit():594] send defer
+2025-02-27 00:54:53,818 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,818 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 0
+2025-02-27 00:54:53,818 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:53,818 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-02-27 00:54:53,818 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 1
+2025-02-27 00:54:53,818 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,818 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 1
+2025-02-27 00:54:53,819 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:53,819 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-02-27 00:54:53,819 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 2
+2025-02-27 00:54:53,819 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,819 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 2
+2025-02-27 00:54:53,819 INFO    HandlerThread:16629 [system_monitor.py:finish():203] Stopping system monitor
+2025-02-27 00:54:53,819 DEBUG   SystemMonitor:16629 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-02-27 00:54:53,819 DEBUG   SystemMonitor:16629 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-02-27 00:54:53,819 DEBUG   SystemMonitor:16629 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-02-27 00:54:53,824 INFO    HandlerThread:16629 [interfaces.py:finish():202] Joined cpu monitor
+2025-02-27 00:54:53,824 INFO    HandlerThread:16629 [interfaces.py:finish():202] Joined disk monitor
+2025-02-27 00:54:53,835 INFO    HandlerThread:16629 [interfaces.py:finish():202] Joined gpuapple monitor
+2025-02-27 00:54:53,836 INFO    HandlerThread:16629 [interfaces.py:finish():202] Joined memory monitor
+2025-02-27 00:54:53,836 INFO    HandlerThread:16629 [interfaces.py:finish():202] Joined network monitor
+2025-02-27 00:54:53,836 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 3
+2025-02-27 00:54:53,836 DEBUG   SenderThread:16629 [sender.py:send():379] send: telemetry
+2025-02-27 00:54:53,836 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,836 DEBUG   SenderThread:16629 [sender.py:send():379] send: stats
+2025-02-27 00:54:53,836 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 3
+2025-02-27 00:54:53,836 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 4
+2025-02-27 00:54:53,836 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,836 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 4
+2025-02-27 00:54:53,836 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-02-27 00:54:53,836 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 5
+2025-02-27 00:54:53,836 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:53,836 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 5
+2025-02-27 00:54:54,032 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:54,032 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-summary.json
+2025-02-27 00:54:54,032 DEBUG   SenderThread:16629 [sender.py:send():379] send: summary
+2025-02-27 00:54:54,032 INFO    SenderThread:16629 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-02-27 00:54:54,032 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:54,032 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-02-27 00:54:54,032 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 6
+2025-02-27 00:54:54,033 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:54,033 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 6
+2025-02-27 00:54:54,033 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:54,033 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-02-27 00:54:54,034 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:54,246 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 7
+2025-02-27 00:54:54,246 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:54,246 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 7
+2025-02-27 00:54:54,246 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:54,246 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-02-27 00:54:54,607 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: poll_exit
+2025-02-27 00:54:54,709 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:54:55,037 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/config.yaml
+2025-02-27 00:54:55,038 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-summary.json
+2025-02-27 00:54:56,038 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:56,194 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:56,196 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: stop_status
+2025-02-27 00:54:56,196 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: stop_status
+2025-02-27 00:54:57,714 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 8
+2025-02-27 00:54:57,714 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: poll_exit
+2025-02-27 00:54:57,717 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:57,717 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 8
+2025-02-27 00:54:57,717 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:57,717 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-02-27 00:54:57,717 INFO    SenderThread:16629 [job_builder.py:build():318] Attempting to build job artifact
+2025-02-27 00:54:57,721 INFO    SenderThread:16629 [job_builder.py:_get_source_type():466] no source found
+2025-02-27 00:54:57,721 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 9
+2025-02-27 00:54:57,721 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:57,721 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 9
+2025-02-27 00:54:57,721 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:57,721 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-02-27 00:54:57,721 INFO    SenderThread:16629 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-02-27 00:54:58,044 INFO    Thread-25 :16629 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:58,058 INFO    SenderThread:16629 [dir_watcher.py:finish():388] scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files
+2025-02-27 00:54:58,058 INFO    SenderThread:16629 [dir_watcher.py:finish():402] scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/requirements.txt requirements.txt
+2025-02-27 00:54:58,058 INFO    SenderThread:16629 [dir_watcher.py:finish():402] scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log output.log
+2025-02-27 00:54:58,061 INFO    SenderThread:16629 [dir_watcher.py:finish():402] scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/config.yaml config.yaml
+2025-02-27 00:54:58,061 INFO    SenderThread:16629 [dir_watcher.py:finish():402] scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:54:58,061 INFO    SenderThread:16629 [dir_watcher.py:finish():402] scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:54:58,062 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 10
+2025-02-27 00:54:58,062 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:58,062 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 10
+2025-02-27 00:54:58,063 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:58,063 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-02-27 00:54:58,064 INFO    SenderThread:16629 [file_pusher.py:finish():172] shutting down file pusher
+2025-02-27 00:54:58,626 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: poll_exit
+2025-02-27 00:54:58,626 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: poll_exit
+2025-02-27 00:54:58,910 INFO    wandb-upload_1:16629 [upload_job.py:push():131] Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/output.log
+2025-02-27 00:54:59,222 INFO    wandb-upload_3:16629 [upload_job.py:push():131] Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/wandb-summary.json
+2025-02-27 00:54:59,242 INFO    wandb-upload_0:16629 [upload_job.py:push():131] Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/requirements.txt
+2025-02-27 00:54:59,525 INFO    wandb-upload_2:16629 [upload_job.py:push():131] Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/files/config.yaml
+2025-02-27 00:54:59,628 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: poll_exit
+2025-02-27 00:54:59,628 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: poll_exit
+2025-02-27 00:54:59,730 INFO    Thread-24 (_thread_body):16629 [sender.py:transition_state():614] send defer: 11
+2025-02-27 00:54:59,730 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:59,731 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 11
+2025-02-27 00:54:59,731 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:59,731 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-02-27 00:54:59,731 INFO    SenderThread:16629 [file_pusher.py:join():178] waiting for file pusher
+2025-02-27 00:54:59,731 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 12
+2025-02-27 00:54:59,731 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:59,731 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 12
+2025-02-27 00:54:59,731 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:59,731 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-02-27 00:54:59,731 INFO    SenderThread:16629 [file_stream.py:finish():614] file stream finish called
+2025-02-27 00:54:59,902 INFO    SenderThread:16629 [file_stream.py:finish():618] file stream finish is done
+2025-02-27 00:54:59,902 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 13
+2025-02-27 00:54:59,902 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:59,902 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 13
+2025-02-27 00:54:59,902 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:59,902 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-02-27 00:54:59,902 INFO    SenderThread:16629 [sender.py:transition_state():614] send defer: 14
+2025-02-27 00:54:59,902 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: defer
+2025-02-27 00:54:59,902 DEBUG   SenderThread:16629 [sender.py:send():379] send: final
+2025-02-27 00:54:59,902 INFO    HandlerThread:16629 [handler.py:handle_request_defer():172] handle defer: 14
+2025-02-27 00:54:59,902 DEBUG   SenderThread:16629 [sender.py:send():379] send: footer
+2025-02-27 00:54:59,902 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: defer
+2025-02-27 00:54:59,902 INFO    SenderThread:16629 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-02-27 00:54:59,903 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: poll_exit
+2025-02-27 00:54:59,903 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: poll_exit
+2025-02-27 00:54:59,903 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: internal_messages
+2025-02-27 00:54:59,903 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: server_info
+2025-02-27 00:54:59,903 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: get_summary
+2025-02-27 00:54:59,903 DEBUG   SenderThread:16629 [sender.py:send_request():406] send_request: server_info
+2025-02-27 00:54:59,903 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: sampled_history
+2025-02-27 00:54:59,904 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: shutdown
+2025-02-27 00:54:59,904 INFO    HandlerThread:16629 [handler.py:finish():866] shutting down handler
+2025-02-27 00:55:00,491 DEBUG   HandlerThread:16629 [handler.py:handle_request():146] handle_request: status_report
+2025-02-27 00:55:00,905 INFO    WriterThread:16629 [datastore.py:close():296] close: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250227_005413-zj73jbeu/run-zj73jbeu.wandb
+2025-02-27 00:55:00,909 INFO    SenderThread:16629 [sender.py:finish():1546] shutting down sender
+2025-02-27 00:55:00,909 INFO    SenderThread:16629 [file_pusher.py:finish():172] shutting down file pusher
+2025-02-27 00:55:00,909 INFO    SenderThread:16629 [file_pusher.py:join():178] waiting for file pusher

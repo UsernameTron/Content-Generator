@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "model": "EleutherAI/pythia-1.4b",
+    "adapter": null,
+    "device": "mps",
+    "evaluation_timestamp": "2025-02-28 12:35:00",
+    "evaluation_duration": 120.45
+  },
+  "contradiction_detection": {
+    "accuracy": 0.76,
+    "precision": 0.79,
+    "recall": 0.75,
+    "f1_score": 0.77,
+    "samples": 150,
+    "correct": 114,
+    "by_category": {
+      "direct_contradiction": {
+        "accuracy": 0.82,
+        "samples": 50,
+        "correct": 41
+      },
+      "temporal_change": {
+        "accuracy": 0.72,
+        "samples": 50,
+        "correct": 36
+      },
+      "methodological_difference": {
+        "accuracy": 0.74,
+        "samples": 50,
+        "correct": 37
+      }
+    },
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.84,
+        "samples": 30,
+        "correct": 25
+      },
+      "oncology": {
+        "accuracy": 0.76,
+        "samples": 30,
+        "correct": 23
+      },
+      "endocrinology": {
+        "accuracy": 0.73,
+        "samples": 30,
+        "correct": 22
+      },
+      "gastroenterology": {
+        "accuracy": 0.70,
+        "samples": 30,
+        "correct": 21
+      },
+      "psychiatry": {
+        "accuracy": 0.77,
+        "samples": 30,
+        "correct": 23
+      }
+    }
+  },
+  "evidence_ranking": {
+    "accuracy": 0.81,
+    "precision": 0.83,
+    "recall": 0.80,
+    "f1_score": 0.81,
+    "samples": 100,
+    "correct": 81,
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.85,
+        "samples": 20,
+        "correct": 17
+      },
+      "oncology": {
+        "accuracy": 0.80,
+        "samples": 20,
+        "correct": 16
+      },
+      "endocrinology": {
+        "accuracy": 0.75,
+        "samples": 20,
+        "correct": 15
+      },
+      "gastroenterology": {
+        "accuracy": 0.80,
+        "samples": 20,
+        "correct": 16
+      },
+      "psychiatry": {
+        "accuracy": 0.85,
+        "samples": 20,
+        "correct": 17
+      }
+    }
+  },
+  "overall": {
+    "accuracy": 0.78,
+    "precision": 0.81,
+    "recall": 0.77,
+    "f1_score": 0.79,
+    "samples": 250,
+    "correct": 195
+  }
+}

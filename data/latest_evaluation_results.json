@@ -1,0 +1,96 @@
+{
+  "healthcare": {
+    "contradiction_detection": {
+      "accuracy": 0.82,
+      "precision": 0.85,
+      "recall": 0.79,
+      "f1_score": 0.82,
+      "categories": {
+        "medication_interaction": {
+          "accuracy": 0.88,
+          "count": 45
+        },
+        "treatment_protocol": {
+          "accuracy": 0.79,
+          "count": 38
+        },
+        "dosage_conflict": {
+          "accuracy": 0.83,
+          "count": 42
+        },
+        "diagnostic_conflict": {
+          "accuracy": 0.77,
+          "count": 35
+        }
+      }
+    },
+    "evidence_ranking": {
+      "ndcg": 0.76,
+      "map": 0.72,
+      "precision_at_3": 0.81,
+      "recall_at_5": 0.68
+    }
+  },
+  "cross_reference": {
+    "accuracy": 0.79,
+    "consistency": 0.75,
+    "scenarios": {
+      "medication_history": {
+        "accuracy": 0.82,
+        "count": 25
+      },
+      "patient_records": {
+        "accuracy": 0.77,
+        "count": 30
+      },
+      "treatment_history": {
+        "accuracy": 0.78,
+        "count": 28
+      }
+    }
+  },
+  "counterfactual": {
+    "accuracy": 0.71,
+    "reasoning_score": 0.68,
+    "scenarios": {
+      "treatment_alternatives": {
+        "accuracy": 0.73,
+        "count": 20
+      },
+      "diagnostic_alternatives": {
+        "accuracy": 0.69,
+        "count": 22
+      }
+    }
+  },
+  "metadata": {
+    "model_version": "healthcare-contradiction-v1.2",
+    "evaluation_date": "2025-02-28",
+    "evaluation_duration_seconds": 1845,
+    "total_examples": 250
+  },
+  "memory_usage": {
+    "peak_memory_mb": 2450,
+    "average_memory_mb": 1850,
+    "memory_samples": [
+      {"timestamp": "2025-02-28T10:00:00", "memory_mb": 1750},
+      {"timestamp": "2025-02-28T10:05:00", "memory_mb": 1850},
+      {"timestamp": "2025-02-28T10:10:00", "memory_mb": 2100},
+      {"timestamp": "2025-02-28T10:15:00", "memory_mb": 2450},
+      {"timestamp": "2025-02-28T10:20:00", "memory_mb": 2200},
+      {"timestamp": "2025-02-28T10:25:00", "memory_mb": 1950},
+      {"timestamp": "2025-02-28T10:30:00", "memory_mb": 1800}
+    ]
+  },
+  "summary": {
+    "overall_accuracy": 0.77,
+    "improvement_from_previous": 0.03,
+    "top_performing_category": "medication_interaction",
+    "lowest_performing_category": "diagnostic_alternatives",
+    "recommendations": [
+      "Focus on improving diagnostic conflict detection",
+      "Enhance counterfactual reasoning capabilities",
+      "Increase training data for treatment alternatives"
+    ]
+  }
+}

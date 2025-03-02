@@ -1,0 +1,77 @@
+[
+    {
+        "scenario": "A fintech company is developing a new fraud detection system that combines traditional rule-based approaches with machine learning. The system needs to balance false positives (legitimate transactions flagged as fraud) and false negatives (fraudulent transactions missed). Analyze how this system should be designed, discussing both technical implementation and customer experience considerations.",
+        "sources": [
+            "customer experience impact of fraud detection",
+            "machine learning for fraud detection",
+            "balancing false positives and negatives"
+        ],
+        "criteria": {
+            "technical_accuracy": "ml techniques/algorithms",
+            "cx_integration": "customer touchpoints",
+            "tradeoff_analysis": "false positive/negative impact",
+            "implementation_strategy": "practical implementation steps",
+            "cross_domain_synthesis": "integrating technical and cx aspects"
+        }
+    },
+    {
+        "scenario": "A healthcare organization is implementing an AI-powered diagnostic assistant for physicians. The system needs to integrate with existing workflows, provide explainable recommendations, and improve patient outcomes. Describe how this system should be designed and implemented.",
+        "sources": [
+            "healthcare AI implementation",
+            "explainable AI in critical applications",
+            "clinical workflow integration"
+        ],
+        "criteria": {
+            "technical_feasibility": "appropriate ai techniques",
+            "workflow_integration": "physician workflow",
+            "explainability": "interpretable recommendations",
+            "ethical_considerations": "patient privacy/safety",
+            "implementation_challenges": "realistic challenges"
+        }
+    },
+    {
+        "scenario": "An e-commerce platform wants to improve its product recommendation system. They need to balance technical sophistication with user experience and business objectives. Analyze how they should approach this challenge.",
+        "sources": [
+            "recommendation system algorithms",
+            "user experience design",
+            "business metrics for e-commerce"
+        ],
+        "criteria": {
+            "algorithm_selection": "recommendation techniques",
+            "user_experience": "interface/interaction design",
+            "business_alignment": "revenue/engagement impact",
+            "implementation_strategy": "practical implementation approach",
+            "evaluation_framework": "performance metrics across domains"
+        }
+    },
+    {
+        "scenario": "A smart city initiative aims to reduce traffic congestion using AI and IoT sensors. The system needs to analyze real-time data, predict congestion patterns, and communicate effectively with citizens. Design a comprehensive approach to this challenge.",
+        "sources": [
+            "IoT and AI for traffic management",
+            "urban planning principles",
+            "citizen communication strategies"
+        ],
+        "criteria": {
+            "technical_architecture": "sensor network/ai components",
+            "data_analysis": "predictive analytics approach",
+            "citizen_engagement": "communication channels",
+            "implementation_phases": "deployment strategy",
+            "impact_assessment": "success metrics"
+        }
+    },
+    {
+        "scenario": "A global manufacturing company wants to implement predictive maintenance using machine learning while ensuring the system is user-friendly for maintenance technicians with varying levels of technical expertise. Propose a comprehensive solution.",
+        "sources": [
+            "predictive maintenance techniques",
+            "human-computer interaction principles",
+            "manufacturing workflow integration"
+        ],
+        "criteria": {
+            "technical_solution": "appropriate ml techniques",
+            "user_interface": "technician-friendly design",
+            "implementation_strategy": "training/deployment approach",
+            "change_management": "organizational adoption",
+            "roi_assessment": "cost/benefit analysis"
+        }
+    }
+]

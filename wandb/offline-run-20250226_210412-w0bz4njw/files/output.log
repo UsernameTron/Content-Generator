@@ -1,0 +1,42 @@
+2025-02-26 21:04:12,860 - __main__ - INFO - Successfully initialized W&B
+2025-02-26 21:04:12,871 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-26 21:04:12,872 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+tokenizer_config.json: 100%|███████████████████████████████████████████████████████| 396/396 [00:00<00:00, 1.34MB/s]
+tokenizer.json: 100%|██████████████████████████████████████████████████████████| 2.11M/2.11M [00:00<00:00, 9.12MB/s]
+special_tokens_map.json: 100%|████████████████████████████████████████████████████| 99.0/99.0 [00:00<00:00, 434kB/s]
+2025-02-26 21:04:19,526 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-26 21:04:19,526 - __main__ - INFO - Loading model on mps device
+config.json: 100%|█████████████████████████████████████████████████████████████████| 570/570 [00:00<00:00, 6.97MB/s]
+model.safetensors: 100%|███████████████████████████████████████████████████████| 2.93G/2.93G [02:54<00:00, 16.8MB/s]
+2025-02-26 21:07:16,860 - __main__ - INFO - Configuring LoRA adapters
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py", line 407, in <module>
+    fine_tune_model(args.config)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py", line 316, in fine_tune_model
+    model = get_peft_model(model, lora_config)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/mapping.py", line 222, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model,
+        ^^^^^^
+    ...<3 lines>...
+        low_cpu_mem_usage=low_cpu_mem_usage,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/peft_model.py", line 1684, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/peft_model.py", line 176, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/tuners/lora/model.py", line 141, in __init__
+    super().__init__(model, config, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 184, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 520, in inject_adapter
+    raise ValueError(error_msg)
+ValueError: Target modules {'k_proj', 'o_proj', 'v_proj', 'q_proj'} not found in the base model. Please check the target modules and try again.

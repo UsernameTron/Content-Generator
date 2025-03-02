@@ -1,0 +1,21 @@
+
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+2025-02-26 21:35:52,854 - __main__ - INFO - Successfully initialized W&B
+2025-02-26 21:35:52,866 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-26 21:35:52,867 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-26 21:35:53,076 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-26 21:35:53,076 - __main__ - INFO - Loading model on mps device
+2025-02-26 21:36:00,006 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-26 21:36:00,233 - __main__ - INFO - Preparing training dataset from data/training/pete_connor_style.jsonl
+2025-02-26 21:36:00,233 - __main__ - INFO - Loading data from data/training/pete_connor_style.jsonl
+2025-02-26 21:36:00,252 - __main__ - INFO - Preparing validation dataset from data/training/pete_connor_validation.jsonl
+2025-02-26 21:36:00,252 - __main__ - INFO - Loading data from data/training/pete_connor_validation.jsonl
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:348: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-26 21:36:00,450 - __main__ - INFO - Starting model fine-tuning
+  1%|▋                                                                                         | 7/1000 [31:53<91:26:33, 331.51s/it]

@@ -1,0 +1,180 @@
+{
+  "timestamp": "2025-02-28T21:23:29.142997",
+  "baseline_metrics": {
+    "accuracy": 0.82,
+    "precision": 0.85,
+    "recall": 0.79,
+    "f1_score": 0.82,
+    "categories": {
+      "medication_interaction": {
+        "accuracy": 0.88,
+        "count": 45
+      },
+      "treatment_protocol": {
+        "accuracy": 0.79,
+        "count": 38
+      },
+      "dosage_conflict": {
+        "accuracy": 0.83,
+        "count": 42
+      },
+      "diagnostic_conflict": {
+        "accuracy": 0.77,
+        "count": 35
+      }
+    }
+  },
+  "enhancement_targets": {
+    "target_metrics": {
+      "accuracy": 0.87,
+      "precision": 0.85,
+      "recall": 0.89,
+      "f1_score": 0.8899999999999999
+    },
+    "interventions": [
+      {
+        "name": "edge_case_training",
+        "description": "Enhance training with edge cases focusing on low-performing categories",
+        "target_metrics": [
+          "recall",
+          "accuracy"
+        ],
+        "expected_improvement": {
+          "recall": 0.05,
+          "accuracy": 0.03
+        },
+        "implementation_steps": [
+          "Identify lowest performing contradiction categories",
+          "Generate additional training examples for these categories",
+          "Implement specialized training cycles focusing on edge cases",
+          "Validate improvements with targeted evaluation"
+        ]
+      },
+      {
+        "name": "error_analysis_pipeline",
+        "description": "Implement automated error analysis to identify and address systematic errors",
+        "target_metrics": [
+          "recall",
+          "f1_score"
+        ],
+        "expected_improvement": {
+          "recall": 0.03,
+          "f1_score": 0.02
+        },
+        "implementation_steps": [
+          "Develop error categorization system",
+          "Implement automated error detection and logging",
+          "Create feedback loop for continuous improvement",
+          "Generate periodic error analysis reports"
+        ]
+      },
+      {
+        "name": "domain_specific_enhancement",
+        "description": "Enhance detection capabilities for diagnostic_conflict contradictions",
+        "target_metrics": [
+          "accuracy",
+          "recall"
+        ],
+        "expected_improvement": {
+          "accuracy": 0.04,
+          "recall": 0.04
+        },
+        "implementation_steps": [
+          "Analyze error patterns in diagnostic_conflict category",
+          "Develop specialized detection rules for this category",
+          "Implement category-specific preprocessing steps",
+          "Evaluate category-specific performance improvements"
+        ]
+      }
+    ],
+    "projected_metrics": {
+      "accuracy": 0.89,
+      "precision": 0.85,
+      "recall": 0.9100000000000001,
+      "f1_score": 0.84
+    },
+    "implementation_timeline": {
+      "phase1": "Edge case training implementation",
+      "phase2": "Error analysis pipeline development",
+      "phase3": "Domain-specific enhancements",
+      "phase4": "Comprehensive evaluation and refinement"
+    }
+  },
+  "error_analysis": {
+    "lowest_performing_categories": [
+      [
+        "diagnostic_conflict",
+        0.77
+      ],
+      [
+        "treatment_protocol",
+        0.79
+      ]
+    ],
+    "recall_issues": [
+      {
+        "metric": "recall",
+        "current_value": 0.79,
+        "target_value": 0.89,
+        "gap": 0.09999999999999998
+      }
+    ],
+    "cardiology": {
+      "count": 5,
+      "examples": [
+        "contra-001",
+        "contra-002",
+        "supp-001"
+      ]
+    },
+    "oncology": {
+      "count": 4,
+      "examples": [
+        "contra-003",
+        "supp-002",
+        "unrel-002"
+      ]
+    },
+    "pharmacology": {
+      "count": 1,
+      "examples": [
+        "temp-001"
+      ]
+    }
+  },
+  "edge_case_coverage": {
+    "categories": {
+      "contradicting": 4,
+      "supporting": 2,
+      "unrelated": 2,
+      "temporally_superseded": 2
+    },
+    "domains": {
+      "cardiology": 5,
+      "oncology": 4,
+      "pharmacology": 1
+    },
+    "complexity_levels": {
+      "simple": 2,
+      "moderate": 8,
+      "complex": 0
+    },
+    "coverage_gaps": [
+      {
+        "type": "domain_coverage",
+        "domain": "pharmacology",
+        "count": 1,
+        "recommendation": "Add more examples for pharmacology domain"
+      },
+      {
+        "type": "complexity_coverage",
+        "level": "complex",
+        "count": 0,
+        "percentage": 0.0,
+        "recommendation": "Add more complex contradiction examples"
+      }
+    ],
+    "total_examples": 10
+  },
+  "projected_improvements": {}
+}

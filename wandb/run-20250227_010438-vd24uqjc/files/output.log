@@ -1,0 +1,82 @@
+2025-02-27 01:04:39,360 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:04:39,603 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 01:04:40,482 - __main__ - INFO - Configuring model for efficient training on Apple Silicon
+2025-02-27 01:04:40,482 - __main__ - INFO - Setting up LoRA configuration
+2025-02-27 01:04:40,482 - __main__ - INFO - Applying LoRA adapters to model
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-27 01:04:40,578 - __main__ - INFO - Preparing datasets
+2025-02-27 01:04:40,579 - __main__ - INFO - Loading 81 examples from data/training_data.jsonl
+2025-02-27 01:04:40,614 - __main__ - INFO - Successfully loaded 81 examples
+2025-02-27 01:04:40,615 - __main__ - INFO - Loading 20 examples from data/validation_data.jsonl
+2025-02-27 01:04:40,623 - __main__ - INFO - Successfully loaded 20 examples
+2025-02-27 01:04:40,623 - __main__ - INFO - Train dataset size: 81
+2025-02-27 01:04:40,623 - __main__ - INFO - Eval dataset size: 20
+2025-02-27 01:04:40,624 - __main__ - INFO - Setting up training arguments
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-02-27 01:04:40,624 - __main__ - INFO - Initializing trainer
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-27 01:04:40,629 - __main__ - INFO - Starting model fine-tuning
+  0%|                                                                                                                                | 0/50 [00:00<?, ?it/s]
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+
+
+
+
+
+
+
+
+
+ 18%|█████████████████████▌                                                                                                  | 9/50 [02:53<13:00, 19.04s/it]
+
+
+
+
+
+
+
+
+
+
+ 38%|█████████████████████████████████████████████▏                                                                         | 19/50 [05:44<08:22, 16.20s/it]
+
+
+
+
+
+
+
+
+
+
+ 58%|█████████████████████████████████████████████████████████████████████                                                  | 29/50 [08:54<06:54, 19.74s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 80%|███████████████████████████████████████████████████████████████████████████████████████████████▏                       | 40/50 [12:03<03:11, 19.16s/it]
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [14:52<00:00, 17.53s/it]
+{'loss': 2.7717, 'grad_norm': 1.282055377960205, 'learning_rate': 0.0, 'epoch': 8.4}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [14:52<00:00, 17.86s/it]
+2025-02-27 01:19:33,691 - __main__ - INFO - Training completed successfully
+2025-02-27 01:19:33,692 - __main__ - INFO - Saving model to outputs/finetune/final
+2025-02-27 01:19:33,911 - __main__ - INFO - Model saving complete.
+2025-02-27 01:19:33,911 - __main__ - INFO - Saving adapter config

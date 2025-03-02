@@ -1,0 +1,52 @@
+[
+    {
+        "scenario": "Current situation: A company uses a traditional logistics system with manual order processing, resulting in frequent delays and errors. Consider the counterfactual: If the company had implemented an AI-powered logistics optimization system two years ago, how would their operations differ today? What specific challenges might they have faced during implementation, and what key performance indicators would show improvement?",
+        "criteria": {
+            "plausible_outcomes": "realistic benefits",
+            "implementation_challenges": "realistic challenges",
+            "performance_metrics": "appropriate KPIs",
+            "technical_accuracy": "logistics AI capabilities",
+            "causal_reasoning": "logical cause-effect chain"
+        }
+    },
+    {
+        "scenario": "Current situation: A bank uses a rule-based system for credit scoring that considers only a handful of factors. Imagine a counterfactual where they instead implemented a machine learning model that considers hundreds of variables including alternative data sources. How would this change their customer base, risk profile, and regulatory compliance? What ethical considerations would emerge?",
+        "criteria": {
+            "accuracy_impact": "prediction improvements",
+            "customer_base_changes": "inclusion effects",
+            "risk_analysis": "portfolio risk effects",
+            "regulatory_challenges": "compliance considerations",
+            "ethical_implications": "fairness/transparency issues"
+        }
+    },
+    {
+        "scenario": "Current situation: A software company follows a traditional waterfall development process with quarterly releases. Consider the counterfactual: If they had transitioned to an AI-augmented continuous deployment pipeline with automated testing and feature flagging, how would this change their product development, team structure, and customer satisfaction?",
+        "criteria": {
+            "development_speed": "cycle time impact",
+            "product_quality": "defect rate impact",
+            "team_structure": "organizational changes",
+            "customer_experience": "user satisfaction effects",
+            "technical_feasibility": "realistic implementation"
+        }
+    },
+    {
+        "scenario": "Current situation: A healthcare provider uses paper records with partial electronic systems that don't communicate with each other. Consider the counterfactual scenario where they had implemented a fully integrated AI-enhanced electronic health record system five years ago. How would patient outcomes, operational efficiency, and medical research capabilities differ today?",
+        "criteria": {
+            "patient_outcomes": "care quality changes",
+            "operational_efficiency": "workflow improvements",
+            "research_capabilities": "data analysis potential",
+            "implementation_reality": "realistic challenges",
+            "unintended_consequences": "negative side effects"
+        }
+    },
+    {
+        "scenario": "Current situation: An educational institution uses traditional standardized testing and fixed curriculum paths. Consider the counterfactual scenario where they had implemented AI-powered adaptive learning and personalized education pathways. How would student outcomes, teaching methods, and assessment approaches change? What challenges would they face with equity and access?",
+        "criteria": {
+            "learning_outcomes": "achievement effects",
+            "teaching_transformation": "instructor role changes",
+            "assessment_evolution": "evaluation method changes",
+            "equity_considerations": "access/fairness issues",
+            "implementation_challenges": "realistic barriers"
+        }
+    }
+]

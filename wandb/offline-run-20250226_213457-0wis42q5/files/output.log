@@ -1,0 +1,34 @@
+2025-02-26 21:34:57,775 - __main__ - INFO - Successfully initialized W&B
+2025-02-26 21:34:57,785 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-26 21:34:57,785 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-26 21:34:58,051 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-26 21:34:58,052 - __main__ - INFO - Loading model on mps device
+2025-02-26 21:34:59,328 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-26 21:34:59,419 - __main__ - INFO - Preparing training dataset from data/training/pete_connor_style.jsonl
+2025-02-26 21:34:59,420 - __main__ - INFO - Loading data from data/training/pete_connor_style.jsonl
+2025-02-26 21:34:59,433 - __main__ - INFO - Preparing validation dataset from data/training/pete_connor_validation.jsonl
+2025-02-26 21:34:59,434 - __main__ - INFO - Loading data from data/training/pete_connor_validation.jsonl
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:348: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-26 21:34:59,441 - __main__ - INFO - Starting model fine-tuning
+ 14%|██████████▋                                                               | 145/1000 [36:10<3:36:26, 15.19s/it]
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+{'loss': 45.8326, 'grad_norm': 26.525598526000977, 'learning_rate': 2.9999999999999997e-05, 'epoch': 1.87}
+{'loss': 38.562, 'grad_norm': 53.13534927368164, 'learning_rate': 5.9999999999999995e-05, 'epoch': 3.87}
+{'loss': 9.3085, 'grad_norm': 1.424973726272583, 'learning_rate': 8.999999999999999e-05, 'epoch': 5.87}
+{'loss': 1.1096, 'grad_norm': 1.161782145500183, 'learning_rate': 0.00011999999999999999, 'epoch': 7.87}
+{'loss': 0.2922, 'grad_norm': 0.1581929475069046, 'learning_rate': 0.00015, 'epoch': 9.87}
+{'loss': 0.0924, 'grad_norm': 0.0483861044049263, 'learning_rate': 0.00017999999999999998, 'epoch': 11.87}
+{'loss': 0.0792, 'grad_norm': 0.041779715567827225, 'learning_rate': 0.00020999999999999998, 'epoch': 13.87}
+{'loss': 0.0729, 'grad_norm': 0.05733645334839821, 'learning_rate': 0.00023999999999999998, 'epoch': 15.87}
+{'loss': 0.0611, 'grad_norm': 0.08021119236946106, 'learning_rate': 0.00027, 'epoch': 17.87}
+{'loss': 0.0346, 'grad_norm': 0.0707070603966713, 'learning_rate': 0.0003, 'epoch': 19.87}
+{'loss': 0.0116, 'grad_norm': 0.13979199528694153, 'learning_rate': 0.00029666666666666665, 'epoch': 21.87}
+{'loss': 0.0063, 'grad_norm': 0.029706936329603195, 'learning_rate': 0.00029333333333333327, 'epoch': 23.87}
+{'loss': 0.0014, 'grad_norm': 0.01307677198201418, 'learning_rate': 0.00029, 'epoch': 25.87}
+{'loss': 0.0006, 'grad_norm': 0.0038738837465643883, 'learning_rate': 0.0002866666666666667, 'epoch': 27.87}

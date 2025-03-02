@@ -1,0 +1,92 @@
+{
+  "description": "Quick testing configuration for rapid iteration and development",
+  "created": "2023-09-15 11:00:00",
+  "modified": "2023-09-15 11:00:00",
+  "tags": ["testing", "quick", "development"],
+  "config": {
+    "dashboard": {
+      "mode": "testing",
+      "refresh_interval": 10,
+      "auto_save": true,
+      "debug_mode": false
+    },
+    "performance": {
+      "thresholds": {
+        "critical": 0.6,
+        "warning": 0.7,
+        "target": 0.8
+      },
+      "metrics": {
+        "accuracy": true,
+        "precision": true,
+        "recall": true,
+        "f1_score": true,
+        "specificity": false,
+        "auc": false,
+        "confusion_matrix": true
+      },
+      "reporting": {
+        "generate_html": true,
+        "generate_json": true,
+        "generate_csv": false,
+        "include_visualizations": true,
+        "include_recommendations": true,
+        "detailed_category_analysis": false,
+        "detailed_domain_analysis": false
+      },
+      "alerts": {
+        "enabled": true,
+        "regression_threshold": 0.1,
+        "stagnation_threshold": 0.05,
+        "consecutive_failures_threshold": 2
+      }
+    },
+    "testing": {
+      "batch_size": 128,
+      "test_split": 0.3,
+      "cross_validation": {
+        "enabled": false,
+        "folds": 3,
+        "stratified": true
+      },
+      "categories": [
+        "medication_conflicts",
+        "treatment_contradictions",
+        "diagnostic_inconsistencies"
+      ],
+      "domains": [
+        "cardiology",
+        "neurology",
+        "oncology",
+        "internal_medicine"
+      ],
+      "data_augmentation": {
+        "enabled": false,
+        "techniques": ["synonym_replacement"],
+        "augmentation_factor": 1
+      }
+    },
+    "visualization": {
+      "theme": "light",
+      "interactive": false,
+      "chart_types": ["line", "bar"],
+      "color_palette": "tab10",
+      "show_trend_lines": false,
+      "show_confidence_intervals": false
+    },
+    "export": {
+      "formats": ["html", "json"],
+      "auto_export": false,
+      "export_directory": "reports/quick",
+      "filename_template": "quick_report_{date}"
+    },
+    "logging": {
+      "level": "INFO",
+      "file_logging": true,
+      "console_logging": true,
+      "log_directory": "logs/quick_testing",
+      "log_format": "%(asctime)s - %(levelname)s - %(message)s",
+      "log_performance_metrics": false
+    }
+  }
+}

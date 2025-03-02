@@ -1,0 +1,11 @@
+{
+  "Twitter": [
+    "Just my thoughts on {topic}: {main_point} {hashtags}"
+  ],
+  "LinkedIn": [
+    "I've been thinking about {topic} lately.\n\n{main_point}\n\n{supporting_points}\n\nWhat are your thoughts on this? {hashtags}"
+  ],
+  "Facebook": [
+    "Today's reflection on {topic}...\n\n{main_point}\n\n{supporting_points} {hashtags}"
+  ]
+}

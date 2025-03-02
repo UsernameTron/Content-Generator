@@ -1,0 +1,616 @@
+2025-02-27 00:04:49 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/run-w0bz4njw.wandb
+2025-02-27 00:04:50 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 00:04:50 INFO run started: w0bz4njw with start time 1740625452.807261
+2025-02-27 00:04:50 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:04:50 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:04:50 INFO handling exit code: 1
+2025-02-27 00:04:50 INFO handling runtime: 184
+2025-02-27 00:04:50 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:04:50 INFO send defer
+2025-02-27 00:04:50 INFO handle sender defer: 0
+2025-02-27 00:04:50 INFO send defer: 1
+2025-02-27 00:04:50 INFO handle sender defer: 1
+2025-02-27 00:04:50 INFO send defer: 2
+2025-02-27 00:04:50 INFO handle sender defer: 2
+2025-02-27 00:04:50 INFO send defer: 3
+2025-02-27 00:04:50 INFO handle sender defer: 3
+2025-02-27 00:04:50 INFO send defer: 4
+2025-02-27 00:04:50 INFO handle sender defer: 4
+2025-02-27 00:04:50 INFO send defer: 5
+2025-02-27 00:04:50 INFO handle sender defer: 5
+2025-02-27 00:04:50 INFO send defer: 6
+2025-02-27 00:04:50 INFO handle sender defer: 6
+2025-02-27 00:04:50 INFO send defer: 7
+2025-02-27 00:04:50 INFO handle sender defer: 7
+2025-02-27 00:04:50 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpsu737chtwandb/b5r4gt43-wandb-metadata.json
+2025-02-27 00:04:51 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 00:04:51 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 00:04:51 INFO file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:04:52 INFO send defer: 8
+2025-02-27 00:04:52 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:04:52 INFO handle sender defer: 8
+2025-02-27 00:04:52 INFO Attempting to build job artifact
+2025-02-27 00:04:52 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:04:52 INFO send defer: 9
+2025-02-27 00:04:52 INFO handle sender defer: 9
+2025-02-27 00:04:52 INFO shutting down directory watcher
+2025-02-27 00:04:53 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 00:04:53 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log output.log
+2025-02-27 00:04:53 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml config.yaml
+2025-02-27 00:04:53 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:04:53 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:04:53 INFO send defer: 10
+2025-02-27 00:04:53 INFO handle sender defer: 10
+2025-02-27 00:04:53 INFO shutting down file pusher
+2025-02-27 00:04:53 INFO shutting down sender
+2025-02-27 00:04:53 INFO shutting down file pusher
+2025-02-27 00:04:53 INFO waiting for file pusher
+2025-02-27 00:04:53 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:04:53 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 00:04:53 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 00:04:53 INFO send defer: 11
+2025-02-27 00:04:54 INFO file stream finish called
+2025-02-27 00:04:55 INFO file stream finish is done
+2025-02-27 00:04:55 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/run-gnmmj6lz.wandb
+2025-02-27 00:04:55 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 00:04:55 INFO run started: gnmmj6lz with start time 1740627109.07261
+2025-02-27 00:04:55 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:04:55 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:04:55 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:04:55 INFO handling exit code: 0
+2025-02-27 00:04:55 INFO handling runtime: 2
+2025-02-27 00:04:55 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:04:55 INFO send defer
+2025-02-27 00:04:55 INFO handle sender defer: 0
+2025-02-27 00:04:55 INFO send defer: 1
+2025-02-27 00:04:55 INFO handle sender defer: 1
+2025-02-27 00:04:55 INFO send defer: 2
+2025-02-27 00:04:55 INFO handle sender defer: 2
+2025-02-27 00:04:55 INFO send defer: 3
+2025-02-27 00:04:55 INFO handle sender defer: 3
+2025-02-27 00:04:55 INFO send defer: 4
+2025-02-27 00:04:55 INFO handle sender defer: 4
+2025-02-27 00:04:55 INFO send defer: 5
+2025-02-27 00:04:55 INFO handle sender defer: 5
+2025-02-27 00:04:55 INFO send defer: 6
+2025-02-27 00:04:55 INFO handle sender defer: 6
+2025-02-27 00:04:55 INFO send defer: 7
+2025-02-27 00:04:55 INFO handle sender defer: 7
+2025-02-27 00:04:56 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpbr3b91j6wandb/4skmysps-wandb-metadata.json
+2025-02-27 00:04:56 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 00:04:56 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 00:04:56 INFO file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:04:57 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:04:59 INFO send defer: 8
+2025-02-27 00:04:59 INFO handle sender defer: 8
+2025-02-27 00:04:59 INFO Attempting to build job artifact
+2025-02-27 00:04:59 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:04:59 INFO send defer: 9
+2025-02-27 00:04:59 INFO handle sender defer: 9
+2025-02-27 00:04:59 INFO shutting down directory watcher
+2025-02-27 00:04:59 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:04:59 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 00:04:59 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log output.log
+2025-02-27 00:04:59 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml config.yaml
+2025-02-27 00:04:59 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:04:59 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:04:59 INFO send defer: 10
+2025-02-27 00:04:59 INFO handle sender defer: 10
+2025-02-27 00:04:59 INFO shutting down file pusher
+2025-02-27 00:04:59 INFO shutting down sender
+2025-02-27 00:04:59 INFO shutting down file pusher
+2025-02-27 00:04:59 INFO waiting for file pusher
+2025-02-27 00:04:59 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 00:05:00 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:05:00 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 00:05:00 INFO send defer: 11
+2025-02-27 00:05:00 INFO file stream finish called
+2025-02-27 00:05:01 INFO file stream finish is done
+2025-02-27 00:05:01 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/run-irsdytfi.wandb
+2025-02-27 00:05:01 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 00:05:01 INFO run started: irsdytfi with start time 1740627174.085904
+2025-02-27 00:05:01 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:05:01 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:05:01 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:05:01 INFO handling exit code: 0
+2025-02-27 00:05:01 INFO handling runtime: 2
+2025-02-27 00:05:01 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:05:01 INFO send defer
+2025-02-27 00:05:01 INFO handle sender defer: 0
+2025-02-27 00:05:01 INFO send defer: 1
+2025-02-27 00:05:01 INFO handle sender defer: 1
+2025-02-27 00:05:01 INFO send defer: 2
+2025-02-27 00:05:01 INFO handle sender defer: 2
+2025-02-27 00:05:01 INFO send defer: 3
+2025-02-27 00:05:01 INFO handle sender defer: 3
+2025-02-27 00:05:01 INFO send defer: 4
+2025-02-27 00:05:01 INFO handle sender defer: 4
+2025-02-27 00:05:01 INFO send defer: 5
+2025-02-27 00:05:01 INFO handle sender defer: 5
+2025-02-27 00:05:01 INFO send defer: 6
+2025-02-27 00:05:01 INFO handle sender defer: 6
+2025-02-27 00:05:01 INFO send defer: 7
+2025-02-27 00:05:01 INFO handle sender defer: 7
+2025-02-27 00:05:01 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp3j2dhdigwandb/aay69vys-wandb-metadata.json
+2025-02-27 00:05:02 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 00:05:02 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 00:05:02 INFO file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:05:03 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:05:05 INFO send defer: 8
+2025-02-27 00:05:05 INFO handle sender defer: 8
+2025-02-27 00:05:05 INFO Attempting to build job artifact
+2025-02-27 00:05:05 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:05:05 INFO send defer: 9
+2025-02-27 00:05:05 INFO handle sender defer: 9
+2025-02-27 00:05:05 INFO shutting down directory watcher
+2025-02-27 00:05:05 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:05:05 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 00:05:05 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log output.log
+2025-02-27 00:05:05 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml config.yaml
+2025-02-27 00:05:05 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:05:05 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:05:05 INFO send defer: 10
+2025-02-27 00:05:05 INFO handle sender defer: 10
+2025-02-27 00:05:05 INFO shutting down file pusher
+2025-02-27 00:05:05 INFO shutting down sender
+2025-02-27 00:05:05 INFO shutting down file pusher
+2025-02-27 00:05:05 INFO waiting for file pusher
+2025-02-27 00:05:05 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 00:05:05 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:05:05 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 00:05:06 INFO send defer: 11
+2025-02-27 00:05:06 INFO file stream finish called
+2025-02-27 00:05:07 INFO file stream finish is done
+2025-02-27 00:05:07 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/run-0wis42q5.wandb
+2025-02-27 00:05:07 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 00:05:07 INFO run started: 0wis42q5 with start time 1740627297.718015
+2025-02-27 00:05:07 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:05:07 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:05:07 INFO shutting down sender
+2025-02-27 00:05:07 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp4eorq6lmwandb/upoq0zqd-wandb-metadata.json
+2025-02-27 00:05:08 INFO file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:05:09 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:05:11 INFO shutting down directory watcher
+2025-02-27 00:05:11 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:05:11 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 00:05:11 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log output.log
+2025-02-27 00:05:11 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml config.yaml
+2025-02-27 00:05:11 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:05:11 INFO shutting down file pusher
+2025-02-27 00:05:11 INFO waiting for file pusher
+2025-02-27 00:05:11 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:05:11 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml
+2025-02-27 00:05:12 INFO file stream finish called
+2025-02-27 00:05:12 INFO file stream finish is done
+2025-02-27 00:05:12 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/run-gss0fisn.wandb
+2025-02-27 00:05:13 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 00:05:13 INFO run started: gss0fisn with start time 1740627352.798993
+2025-02-27 00:05:13 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:05:13 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:05:13 INFO shutting down sender
+2025-02-27 00:05:13 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpsts00ubfwandb/6n3in38k-wandb-metadata.json
+2025-02-27 00:05:14 INFO file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:05:15 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:05:17 INFO shutting down directory watcher
+2025-02-27 00:05:17 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:05:17 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 00:05:17 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log output.log
+2025-02-27 00:05:17 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml config.yaml
+2025-02-27 00:05:17 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:05:17 INFO shutting down file pusher
+2025-02-27 00:05:17 INFO waiting for file pusher
+2025-02-27 00:05:17 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:05:17 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml
+2025-02-27 00:05:18 INFO file stream finish called
+2025-02-27 00:05:18 INFO file stream finish is done
+2025-02-27 00:33:43 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/run-w0bz4njw.wandb
+2025-02-27 00:33:43 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 00:33:43 INFO run started: w0bz4njw with start time 1740625452.807261
+2025-02-27 00:33:43 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:33:43 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:43 INFO handling exit code: 1
+2025-02-27 00:33:43 INFO handling runtime: 184
+2025-02-27 00:33:43 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:43 INFO send defer
+2025-02-27 00:33:43 INFO handle sender defer: 0
+2025-02-27 00:33:43 INFO send defer: 1
+2025-02-27 00:33:43 INFO handle sender defer: 1
+2025-02-27 00:33:43 INFO send defer: 2
+2025-02-27 00:33:43 INFO handle sender defer: 2
+2025-02-27 00:33:43 INFO send defer: 3
+2025-02-27 00:33:43 INFO handle sender defer: 3
+2025-02-27 00:33:43 INFO send defer: 4
+2025-02-27 00:33:43 INFO handle sender defer: 4
+2025-02-27 00:33:43 INFO send defer: 5
+2025-02-27 00:33:43 INFO handle sender defer: 5
+2025-02-27 00:33:43 INFO send defer: 6
+2025-02-27 00:33:43 INFO handle sender defer: 6
+2025-02-27 00:33:43 INFO send defer: 7
+2025-02-27 00:33:43 INFO handle sender defer: 7
+2025-02-27 00:33:44 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpa1t6zvbwwandb/myhsyi8t-wandb-metadata.json
+2025-02-27 00:33:44 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 00:33:44 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:33:44 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 00:33:45 INFO send defer: 8
+2025-02-27 00:33:45 INFO handle sender defer: 8
+2025-02-27 00:33:45 INFO Attempting to build job artifact
+2025-02-27 00:33:45 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:33:45 INFO send defer: 9
+2025-02-27 00:33:45 INFO handle sender defer: 9
+2025-02-27 00:33:45 INFO shutting down directory watcher
+2025-02-27 00:33:45 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:33:45 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 00:33:45 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log output.log
+2025-02-27 00:33:45 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml config.yaml
+2025-02-27 00:33:45 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:33:45 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:33:45 INFO send defer: 10
+2025-02-27 00:33:45 INFO handle sender defer: 10
+2025-02-27 00:33:45 INFO shutting down file pusher
+2025-02-27 00:33:45 INFO shutting down sender
+2025-02-27 00:33:45 INFO shutting down file pusher
+2025-02-27 00:33:45 INFO waiting for file pusher
+2025-02-27 00:33:46 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 00:33:46 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 00:33:46 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 00:33:46 INFO send defer: 11
+2025-02-27 00:33:46 INFO file stream finish called
+2025-02-27 00:33:47 INFO file stream finish is done
+2025-02-27 00:33:47 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/run-gnmmj6lz.wandb
+2025-02-27 00:33:47 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 00:33:47 INFO run started: gnmmj6lz with start time 1740627109.07261
+2025-02-27 00:33:47 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:33:47 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:33:47 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:47 INFO handling exit code: 0
+2025-02-27 00:33:47 INFO handling runtime: 2
+2025-02-27 00:33:47 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:47 INFO send defer
+2025-02-27 00:33:47 INFO handle sender defer: 0
+2025-02-27 00:33:47 INFO send defer: 1
+2025-02-27 00:33:47 INFO handle sender defer: 1
+2025-02-27 00:33:47 INFO send defer: 2
+2025-02-27 00:33:47 INFO handle sender defer: 2
+2025-02-27 00:33:47 INFO send defer: 3
+2025-02-27 00:33:47 INFO handle sender defer: 3
+2025-02-27 00:33:47 INFO send defer: 4
+2025-02-27 00:33:47 INFO handle sender defer: 4
+2025-02-27 00:33:47 INFO send defer: 5
+2025-02-27 00:33:47 INFO handle sender defer: 5
+2025-02-27 00:33:47 INFO send defer: 6
+2025-02-27 00:33:47 INFO handle sender defer: 6
+2025-02-27 00:33:47 INFO send defer: 7
+2025-02-27 00:33:47 INFO handle sender defer: 7
+2025-02-27 00:33:48 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpfk3s31kjwandb/k27zj9ew-wandb-metadata.json
+2025-02-27 00:33:48 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 00:33:48 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:33:48 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 00:33:49 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:33:51 INFO send defer: 8
+2025-02-27 00:33:51 INFO handle sender defer: 8
+2025-02-27 00:33:51 INFO Attempting to build job artifact
+2025-02-27 00:33:51 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:33:51 INFO send defer: 9
+2025-02-27 00:33:51 INFO handle sender defer: 9
+2025-02-27 00:33:51 INFO shutting down directory watcher
+2025-02-27 00:33:51 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:33:51 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 00:33:51 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log output.log
+2025-02-27 00:33:51 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml config.yaml
+2025-02-27 00:33:51 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:33:51 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:33:51 INFO send defer: 10
+2025-02-27 00:33:51 INFO handle sender defer: 10
+2025-02-27 00:33:51 INFO shutting down file pusher
+2025-02-27 00:33:51 INFO shutting down sender
+2025-02-27 00:33:51 INFO shutting down file pusher
+2025-02-27 00:33:51 INFO waiting for file pusher
+2025-02-27 00:33:51 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 00:33:52 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 00:33:52 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 00:33:52 INFO send defer: 11
+2025-02-27 00:33:52 INFO file stream finish called
+2025-02-27 00:33:52 INFO file stream finish is done
+2025-02-27 00:33:52 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/run-irsdytfi.wandb
+2025-02-27 00:33:53 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 00:33:53 INFO run started: irsdytfi with start time 1740627174.085904
+2025-02-27 00:33:53 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:33:53 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:33:53 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:53 INFO handling exit code: 0
+2025-02-27 00:33:53 INFO handling runtime: 2
+2025-02-27 00:33:53 INFO saving file wandb-summary.json with policy end
+2025-02-27 00:33:53 INFO send defer
+2025-02-27 00:33:53 INFO handle sender defer: 0
+2025-02-27 00:33:53 INFO send defer: 1
+2025-02-27 00:33:53 INFO handle sender defer: 1
+2025-02-27 00:33:53 INFO send defer: 2
+2025-02-27 00:33:53 INFO handle sender defer: 2
+2025-02-27 00:33:53 INFO send defer: 3
+2025-02-27 00:33:53 INFO handle sender defer: 3
+2025-02-27 00:33:53 INFO send defer: 4
+2025-02-27 00:33:53 INFO handle sender defer: 4
+2025-02-27 00:33:53 INFO send defer: 5
+2025-02-27 00:33:53 INFO handle sender defer: 5
+2025-02-27 00:33:53 INFO send defer: 6
+2025-02-27 00:33:53 INFO handle sender defer: 6
+2025-02-27 00:33:53 INFO send defer: 7
+2025-02-27 00:33:53 INFO handle sender defer: 7
+2025-02-27 00:33:53 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp42s980xlwandb/xmb564vz-wandb-metadata.json
+2025-02-27 00:33:54 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 00:33:54 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:33:54 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 00:33:55 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:33:57 INFO send defer: 8
+2025-02-27 00:33:57 INFO handle sender defer: 8
+2025-02-27 00:33:57 INFO Attempting to build job artifact
+2025-02-27 00:33:57 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 00:33:57 INFO send defer: 9
+2025-02-27 00:33:57 INFO handle sender defer: 9
+2025-02-27 00:33:57 INFO shutting down directory watcher
+2025-02-27 00:33:57 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:33:57 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 00:33:57 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log output.log
+2025-02-27 00:33:57 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml config.yaml
+2025-02-27 00:33:57 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json wandb-summary.json
+2025-02-27 00:33:57 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:33:57 INFO send defer: 10
+2025-02-27 00:33:57 INFO handle sender defer: 10
+2025-02-27 00:33:57 INFO shutting down file pusher
+2025-02-27 00:33:57 INFO shutting down sender
+2025-02-27 00:33:57 INFO shutting down file pusher
+2025-02-27 00:33:57 INFO waiting for file pusher
+2025-02-27 00:33:57 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 00:33:57 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 00:33:57 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 00:33:58 INFO send defer: 11
+2025-02-27 00:33:58 INFO file stream finish called
+2025-02-27 00:33:58 INFO file stream finish is done
+2025-02-27 00:33:58 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/run-0wis42q5.wandb
+2025-02-27 00:33:58 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 00:33:58 INFO run started: 0wis42q5 with start time 1740627297.718015
+2025-02-27 00:33:58 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:33:58 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:33:58 INFO shutting down sender
+2025-02-27 00:33:59 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp5_bydwifwandb/ruz3qj9b-wandb-metadata.json
+2025-02-27 00:33:59 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:34:00 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:34:02 INFO shutting down directory watcher
+2025-02-27 00:34:02 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:34:02 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 00:34:02 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log output.log
+2025-02-27 00:34:02 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml config.yaml
+2025-02-27 00:34:02 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:34:02 INFO shutting down file pusher
+2025-02-27 00:34:02 INFO waiting for file pusher
+2025-02-27 00:34:03 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 00:34:03 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml
+2025-02-27 00:34:03 INFO file stream finish called
+2025-02-27 00:34:04 INFO file stream finish is done
+2025-02-27 00:34:04 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/run-gss0fisn.wandb
+2025-02-27 00:34:05 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 00:34:05 INFO run started: gss0fisn with start time 1740627352.798993
+2025-02-27 00:34:05 INFO saving file wandb-metadata.json with policy now
+2025-02-27 00:34:05 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 00:34:05 INFO shutting down sender
+2025-02-27 00:34:05 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpyrnkzjc7wandb/p7we1ouc-wandb-metadata.json
+2025-02-27 00:34:06 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:34:07 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:34:09 INFO shutting down directory watcher
+2025-02-27 00:34:09 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:34:09 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 00:34:09 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log output.log
+2025-02-27 00:34:09 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml config.yaml
+2025-02-27 00:34:09 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 00:34:09 INFO shutting down file pusher
+2025-02-27 00:34:09 INFO waiting for file pusher
+2025-02-27 00:34:09 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 00:34:09 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml
+2025-02-27 00:34:10 INFO file stream finish called
+2025-02-27 00:34:10 INFO file stream finish is done
+2025-02-27 14:46:16 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/run-w0bz4njw.wandb
+2025-02-27 14:46:16 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 14:46:16 INFO run started: w0bz4njw with start time 1740625452.807261
+2025-02-27 14:46:16 INFO saving file wandb-metadata.json with policy now
+2025-02-27 14:46:16 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:16 INFO handling exit code: 1
+2025-02-27 14:46:16 INFO handling runtime: 184
+2025-02-27 14:46:16 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:16 INFO send defer
+2025-02-27 14:46:16 INFO handle sender defer: 0
+2025-02-27 14:46:16 INFO send defer: 1
+2025-02-27 14:46:16 INFO handle sender defer: 1
+2025-02-27 14:46:16 INFO send defer: 2
+2025-02-27 14:46:16 INFO handle sender defer: 2
+2025-02-27 14:46:16 INFO send defer: 3
+2025-02-27 14:46:16 INFO handle sender defer: 3
+2025-02-27 14:46:16 INFO send defer: 4
+2025-02-27 14:46:16 INFO handle sender defer: 4
+2025-02-27 14:46:16 INFO send defer: 5
+2025-02-27 14:46:16 INFO handle sender defer: 5
+2025-02-27 14:46:16 INFO send defer: 6
+2025-02-27 14:46:16 INFO handle sender defer: 6
+2025-02-27 14:46:16 INFO send defer: 7
+2025-02-27 14:46:16 INFO handle sender defer: 7
+2025-02-27 14:46:17 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp23o5x3utwandb/3bu5zsjx-wandb-metadata.json
+2025-02-27 14:46:17 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 14:46:17 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 14:46:17 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 14:46:18 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 14:46:18 INFO send defer: 8
+2025-02-27 14:46:18 INFO handle sender defer: 8
+2025-02-27 14:46:18 INFO Attempting to build job artifact
+2025-02-27 14:46:18 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 14:46:18 INFO send defer: 9
+2025-02-27 14:46:18 INFO handle sender defer: 9
+2025-02-27 14:46:18 INFO shutting down directory watcher
+2025-02-27 14:46:19 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files
+2025-02-27 14:46:19 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log output.log
+2025-02-27 14:46:19 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml config.yaml
+2025-02-27 14:46:19 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json wandb-summary.json
+2025-02-27 14:46:19 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 14:46:19 INFO send defer: 10
+2025-02-27 14:46:19 INFO handle sender defer: 10
+2025-02-27 14:46:19 INFO shutting down file pusher
+2025-02-27 14:46:19 INFO shutting down sender
+2025-02-27 14:46:19 INFO shutting down file pusher
+2025-02-27 14:46:19 INFO waiting for file pusher
+2025-02-27 14:46:20 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/output.log
+2025-02-27 14:46:20 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/config.yaml
+2025-02-27 14:46:20 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_210412-w0bz4njw/files/wandb-summary.json
+2025-02-27 14:46:20 INFO send defer: 11
+2025-02-27 14:46:20 INFO file stream finish called
+2025-02-27 14:46:21 INFO file stream finish is done
+2025-02-27 14:46:21 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/run-gnmmj6lz.wandb
+2025-02-27 14:46:21 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 14:46:21 INFO run started: gnmmj6lz with start time 1740627109.07261
+2025-02-27 14:46:21 INFO saving file wandb-metadata.json with policy now
+2025-02-27 14:46:21 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 14:46:21 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:21 INFO handling exit code: 0
+2025-02-27 14:46:21 INFO handling runtime: 2
+2025-02-27 14:46:21 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:21 INFO send defer
+2025-02-27 14:46:21 INFO handle sender defer: 0
+2025-02-27 14:46:21 INFO send defer: 1
+2025-02-27 14:46:21 INFO handle sender defer: 1
+2025-02-27 14:46:21 INFO send defer: 2
+2025-02-27 14:46:21 INFO handle sender defer: 2
+2025-02-27 14:46:21 INFO send defer: 3
+2025-02-27 14:46:21 INFO handle sender defer: 3
+2025-02-27 14:46:21 INFO send defer: 4
+2025-02-27 14:46:21 INFO handle sender defer: 4
+2025-02-27 14:46:21 INFO send defer: 5
+2025-02-27 14:46:21 INFO handle sender defer: 5
+2025-02-27 14:46:21 INFO send defer: 6
+2025-02-27 14:46:21 INFO handle sender defer: 6
+2025-02-27 14:46:21 INFO send defer: 7
+2025-02-27 14:46:21 INFO handle sender defer: 7
+2025-02-27 14:46:22 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmp83kg6ydwwandb/wldt6dgc-wandb-metadata.json
+2025-02-27 14:46:22 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 14:46:22 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 14:46:22 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 14:46:23 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 14:46:25 INFO send defer: 8
+2025-02-27 14:46:25 INFO handle sender defer: 8
+2025-02-27 14:46:25 INFO Attempting to build job artifact
+2025-02-27 14:46:25 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 14:46:25 INFO send defer: 9
+2025-02-27 14:46:25 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 14:46:25 INFO handle sender defer: 9
+2025-02-27 14:46:25 INFO shutting down directory watcher
+2025-02-27 14:46:26 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files
+2025-02-27 14:46:26 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log output.log
+2025-02-27 14:46:26 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml config.yaml
+2025-02-27 14:46:26 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json wandb-summary.json
+2025-02-27 14:46:26 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 14:46:26 INFO send defer: 10
+2025-02-27 14:46:26 INFO handle sender defer: 10
+2025-02-27 14:46:26 INFO shutting down file pusher
+2025-02-27 14:46:26 INFO shutting down sender
+2025-02-27 14:46:26 INFO shutting down file pusher
+2025-02-27 14:46:26 INFO waiting for file pusher
+2025-02-27 14:46:27 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/output.log
+2025-02-27 14:46:27 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/config.yaml
+2025-02-27 14:46:27 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213149-gnmmj6lz/files/wandb-summary.json
+2025-02-27 14:46:27 INFO send defer: 11
+2025-02-27 14:46:27 INFO file stream finish called
+2025-02-27 14:46:28 INFO file stream finish is done
+2025-02-27 14:46:28 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/run-irsdytfi.wandb
+2025-02-27 14:46:28 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 14:46:28 INFO run started: irsdytfi with start time 1740627174.085904
+2025-02-27 14:46:28 INFO saving file wandb-metadata.json with policy now
+2025-02-27 14:46:28 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 14:46:28 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:28 INFO handling exit code: 0
+2025-02-27 14:46:28 INFO handling runtime: 2
+2025-02-27 14:46:28 INFO saving file wandb-summary.json with policy end
+2025-02-27 14:46:28 INFO send defer
+2025-02-27 14:46:28 INFO handle sender defer: 0
+2025-02-27 14:46:28 INFO send defer: 1
+2025-02-27 14:46:28 INFO handle sender defer: 1
+2025-02-27 14:46:28 INFO send defer: 2
+2025-02-27 14:46:28 INFO handle sender defer: 2
+2025-02-27 14:46:28 INFO send defer: 3
+2025-02-27 14:46:28 INFO handle sender defer: 3
+2025-02-27 14:46:28 INFO send defer: 4
+2025-02-27 14:46:28 INFO handle sender defer: 4
+2025-02-27 14:46:28 INFO send defer: 5
+2025-02-27 14:46:28 INFO handle sender defer: 5
+2025-02-27 14:46:28 INFO send defer: 6
+2025-02-27 14:46:28 INFO handle sender defer: 6
+2025-02-27 14:46:28 INFO send defer: 7
+2025-02-27 14:46:28 INFO handle sender defer: 7
+2025-02-27 14:46:29 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpuj7mowulwandb/g5l69eox-wandb-metadata.json
+2025-02-27 14:46:29 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 14:46:29 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 14:46:29 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 14:46:30 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 14:46:32 INFO send defer: 8
+2025-02-27 14:46:32 INFO handle sender defer: 8
+2025-02-27 14:46:32 INFO Attempting to build job artifact
+2025-02-27 14:46:32 WARNING No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2025-02-27 14:46:32 INFO send defer: 9
+2025-02-27 14:46:32 INFO handle sender defer: 9
+2025-02-27 14:46:32 INFO shutting down directory watcher
+2025-02-27 14:46:32 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 14:46:32 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files
+2025-02-27 14:46:32 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log output.log
+2025-02-27 14:46:32 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml config.yaml
+2025-02-27 14:46:32 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json wandb-summary.json
+2025-02-27 14:46:32 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 14:46:32 INFO send defer: 10
+2025-02-27 14:46:32 INFO handle sender defer: 10
+2025-02-27 14:46:32 INFO shutting down file pusher
+2025-02-27 14:46:32 INFO shutting down sender
+2025-02-27 14:46:32 INFO shutting down file pusher
+2025-02-27 14:46:32 INFO waiting for file pusher
+2025-02-27 14:46:32 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/output.log
+2025-02-27 14:46:33 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/config.yaml
+2025-02-27 14:46:33 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213254-irsdytfi/files/wandb-summary.json
+2025-02-27 14:46:33 INFO send defer: 11
+2025-02-27 14:46:33 INFO file stream finish called
+2025-02-27 14:46:34 INFO file stream finish is done
+2025-02-27 14:46:34 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/run-0wis42q5.wandb
+2025-02-27 14:46:34 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 14:46:34 INFO run started: 0wis42q5 with start time 1740627297.718015
+2025-02-27 14:46:34 INFO saving file wandb-metadata.json with policy now
+2025-02-27 14:46:34 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 14:46:34 INFO shutting down sender
+2025-02-27 14:46:35 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpfc5s0atuwandb/culli8z3-wandb-metadata.json
+2025-02-27 14:46:35 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 14:46:36 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 14:46:37 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 14:46:38 INFO shutting down directory watcher
+2025-02-27 14:46:38 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 14:46:38 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files
+2025-02-27 14:46:38 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log output.log
+2025-02-27 14:46:38 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml config.yaml
+2025-02-27 14:46:38 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 14:46:38 INFO shutting down file pusher
+2025-02-27 14:46:38 INFO waiting for file pusher
+2025-02-27 14:46:38 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/output.log
+2025-02-27 14:46:39 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213457-0wis42q5/files/config.yaml
+2025-02-27 14:46:39 INFO file stream finish called
+2025-02-27 14:46:40 INFO file stream finish is done
+2025-02-27 14:46:40 INFO open for scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/run-gss0fisn.wandb
+2025-02-27 14:46:40 INFO watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 14:46:40 INFO run started: gss0fisn with start time 1740627352.798993
+2025-02-27 14:46:40 INFO saving file wandb-metadata.json with policy now
+2025-02-27 14:46:40 WARNING Seen metric with glob (shouldn't happen)
+2025-02-27 14:46:40 INFO shutting down sender
+2025-02-27 14:46:40 INFO Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpqgtfa2xcwandb/n1zkl4sy-wandb-metadata.json
+2025-02-27 14:46:41 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 14:46:42 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 14:46:44 INFO shutting down directory watcher
+2025-02-27 14:46:44 INFO file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 14:46:44 INFO scan: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files
+2025-02-27 14:46:44 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log output.log
+2025-02-27 14:46:44 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml config.yaml
+2025-02-27 14:46:44 INFO scan save: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/wandb-metadata.json wandb-metadata.json
+2025-02-27 14:46:44 INFO shutting down file pusher
+2025-02-27 14:46:44 INFO waiting for file pusher
+2025-02-27 14:46:44 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/output.log
+2025-02-27 14:46:44 INFO Uploaded file /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/offline-run-20250226_213552-gss0fisn/files/config.yaml
+2025-02-27 14:46:45 INFO file stream finish called
+2025-02-27 14:46:45 INFO file stream finish is done

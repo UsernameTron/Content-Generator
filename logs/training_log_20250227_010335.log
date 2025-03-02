@@ -1,0 +1,15 @@
+2025-02-27 01:03:35,008 - __main__ - INFO - Initializing W&B
+2025-02-27 01:03:36,085 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:03:36,269 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 01:03:37,163 - __main__ - INFO - Configuring model for efficient training on Apple Silicon
+2025-02-27 01:03:37,163 - __main__ - INFO - Setting up LoRA configuration
+2025-02-27 01:03:37,163 - __main__ - INFO - Applying LoRA adapters to model
+2025-02-27 01:03:37,304 - __main__ - INFO - Preparing datasets
+2025-02-27 01:03:37,304 - __main__ - INFO - Loading 81 examples from data/training_data.jsonl
+2025-02-27 01:03:37,340 - __main__ - INFO - Successfully loaded 81 examples
+2025-02-27 01:03:37,340 - __main__ - INFO - Loading 20 examples from data/validation_data.jsonl
+2025-02-27 01:03:37,349 - __main__ - INFO - Successfully loaded 20 examples
+2025-02-27 01:03:37,350 - __main__ - INFO - Train dataset size: 81
+2025-02-27 01:03:37,350 - __main__ - INFO - Eval dataset size: 20
+2025-02-27 01:03:37,350 - __main__ - INFO - Setting up training arguments
+2025-02-27 01:03:37,350 - __main__ - INFO - Initializing trainer

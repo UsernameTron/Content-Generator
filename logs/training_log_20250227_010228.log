@@ -1,0 +1,3 @@
+2025-02-27 01:02:28,845 - __main__ - INFO - Initializing W&B
+2025-02-27 01:02:29,994 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:02:30,477 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b

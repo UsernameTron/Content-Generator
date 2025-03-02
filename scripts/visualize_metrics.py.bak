@@ -1,0 +1,851 @@
+#!/usr/bin/env python3
+"""
+Visualization script for AI model evaluation metrics.
+Generates charts and visual reports from evaluation results.
+"""
+
+import os
+import json
+import argparse
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pathlib import Path
+from typing import Dict, List, Any, Optional, Union
+
+# Configure visualization style
+plt.style.use('ggplot')
+sns.set_theme(style="whitegrid")
+
+class MetricsVisualizer:
+    """
+    Class for visualizing AI model evaluation metrics.
+    Generates various charts and reports from evaluation data.
+    """
+    
+    def __init__(self, results_path: str, output_dir: str = 'visualizations'):
+        """
+        Initialize the metrics visualizer.
+        
+        Args:
+            results_path: Path to the evaluation results JSON file
+            output_dir: Directory to save visualization outputs
+        """
+        self.results_path = Path(results_path)
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(exist_ok=True, parents=True)
+        
+        # Load results data
+        if self.results_path.exists():
+            with open(self.results_path, 'r') as f:
+                self.data = json.load(f)
+        else:
+            raise FileNotFoundError(f"Results file not found: {results_path}")
+            
+        # Extract domain names
+        self.domains = [d for d in self.data.keys() 
+                        if d not in ['metadata', 'summary', 'memory_usage', 'performance']]
+        
+    def plot_domain_scores(self, save: bool = True) -> plt.Figure:
+        """
+        Generate a bar chart comparing domain scores.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        # Extract domain scores
+        domain_data = []
+        
+        for domain in self.domains:
+            if domain in self.data and 'overall_score' in self.data[domain]:
+                domain_data.append({
+                    'Domain': domain.replace('_', ' ').title(),
+                    'Score': self.data[domain]['overall_score'],
+                    'Benchmark': self.data[domain].get('benchmark', 3.0)
+                })
+        
+        # Create dataframe for plotting
+        df = pd.DataFrame(domain_data)
+        
+        # Create plot
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        # Plot bars
+        x = np.arange(len(df['Domain']))
+        width = 0.35
+        
+        ax.bar(x - width/2, df['Score'], width, label='Current Score', color='#3498db')
+        ax.bar(x + width/2, df['Benchmark'], width, label='Benchmark', color='#e74c3c')
+        
+        # Add labels and title
+        ax.set_xlabel('Knowledge Domain')
+        ax.set_ylabel('Score (0-5)')
+        ax.set_title('Domain Knowledge Performance vs Benchmark')
+        ax.set_xticks(x)
+        ax.set_xticklabels(df['Domain'], rotation=45, ha='right')
+        ax.legend()
+        
+        plt.tight_layout()
+        
+        # Save figure if requested
+        if save:
+            plt.savefig(self.output_dir / 'domain_scores.png', dpi=300)
+            
+        return fig
+    
+    def plot_radar_chart(self, save: bool = True) -> plt.Figure:
+        """
+        Generate a radar chart showing model capabilities across domains.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        try:
+            # Extract domain scores
+            categories = []
+            scores = []
+            
+            print(f"Domains: {self.domains}")
+            
+            for domain in self.domains:
+                if domain in self.data and 'overall_score' in self.data[domain]:
+                    categories.append(domain.replace('_', ' ').title())
+                    # Normalize to 0-1 range (from 0-5)
+                    scores.append(self.data[domain]['overall_score'] / 5.0)
+            
+            print(f"Categories: {categories}")
+            print(f"Scores: {scores}")
+            
+            # Only add the first point at the end if we have data
+            if len(categories) > 2:  # Need at least 3 points for a meaningful radar chart
+                # Add first point at the end to close the loop
+                categories.append(categories[0])
+                scores.append(scores[0])
+                
+                # Convert to numpy arrays
+                cat_array = np.array(categories)
+                score_array = np.array(scores)
+                
+                # Compute angle for each category
+                angles = np.linspace(0, 2*np.pi, len(cat_array) - 1, endpoint=False).tolist()
+                angles += angles[:1]  # Close the loop
+                
+                print(f"Angles length: {len(angles)}")
+                print(f"Categories length: {len(categories)}")
+                print(f"Scores length: {len(scores)}")
+                
+                # Create figure
+                fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(polar=True))
+                
+                # Plot data
+                ax.plot(angles, scores, 'o-', linewidth=2, label='Model Performance')
+                ax.fill(angles, scores, alpha=0.25)
+                
+                # Set category labels
+                ax.set_thetagrids(np.degrees(angles[:-1]), cat_array[:-1])
+                
+                # Set radial limits
+                ax.set_ylim(0, 1)
+                
+                # Set radial labels
+                ax.set_rticks([0.2, 0.4, 0.6, 0.8, 1.0])
+                ax.set_yticklabels(['1.0', '2.0', '3.0', '4.0', '5.0'])
+                
+                # Add title
+                plt.title('AI Model Capability Profile', size=15, y=1.1)
+                
+                if save:
+                    plt.savefig(self.output_dir / 'radar_chart.png', dpi=300)
+                    
+                return fig
+            else:
+                print("Not enough data for radar chart (need at least 3 domains)")
+                
+                # Create empty figure as fallback
+                fig, ax = plt.subplots(figsize=(10, 6))
+                ax.text(0.5, 0.5, "Insufficient data for radar chart", 
+                        horizontalalignment='center', verticalalignment='center',
+                        transform=ax.transAxes, fontsize=14)
+                plt.axis('off')
+                
+                if save:
+                    plt.savefig(self.output_dir / 'radar_chart.png', dpi=300)
+                
+                return fig
+        except Exception as e:
+            print(f"Error in radar chart: {e}")
+            
+            # Create error figure as fallback
+            fig, ax = plt.subplots(figsize=(10, 6))
+            ax.text(0.5, 0.5, f"Error generating radar chart: {str(e)}", 
+                    horizontalalignment='center', verticalalignment='center',
+                    transform=ax.transAxes, fontsize=14)
+            plt.axis('off')
+            
+            if save:
+                plt.savefig(self.output_dir / 'radar_chart.png', dpi=300)
+            
+            return fig
+    
+    def plot_memory_usage(self, save: bool = True) -> plt.Figure:
+        """
+        Generate a line chart showing memory usage during evaluation.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        # Check if memory usage data exists
+        if 'memory_usage' not in self.data:
+            print("Memory usage data not found in results")
+            return None
+        
+        memory_data = self.data['memory_usage']
+        
+        # Extract memory phases and values
+        phases = []
+        values = []
+        percentages = []
+        
+        for phase, data in memory_data.items():
+            if isinstance(data, dict) and 'ram_gb' in data and 'ram_percent' in data:
+                phases.append(phase.replace('_', ' ').title())
+                values.append(data['ram_gb'])
+                percentages.append(data['ram_percent'])
+        
+        # Create figure with two y-axes
+        fig, ax1 = plt.subplots(figsize=(12, 6))
+        
+        # Plot GB values
+        color = '#3498db'
+        ax1.set_xlabel('Evaluation Phase')
+        ax1.set_ylabel('RAM Usage (GB)', color=color)
+        ax1.plot(phases, values, 'o-', color=color, linewidth=2)
+        ax1.tick_params(axis='y', labelcolor=color)
+        
+        # Add percentage values on secondary y-axis
+        ax2 = ax1.twinx()
+        color = '#e74c3c'
+        ax2.set_ylabel('RAM Usage (%)', color=color)
+        ax2.plot(phases, percentages, 'o-', color=color, linewidth=2, linestyle='--')
+        ax2.tick_params(axis='y', labelcolor=color)
+        
+        # Add title and adjust layout
+        plt.title('Memory Usage During Model Evaluation')
+        plt.xticks(rotation=45, ha='right')
+        fig.tight_layout()
+        
+        if save:
+            plt.savefig(self.output_dir / 'memory_usage.png', dpi=300)
+            
+        return fig
+    
+    def plot_topic_performance(self, save: bool = True) -> Dict[str, plt.Figure]:
+        """
+        Generate heatmaps showing performance on specific topics within domains.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            Dictionary of domain names to matplotlib figure objects
+        """
+        figures = {}
+        
+        for domain in self.domains:
+            if domain not in self.data:
+                continue
+                
+            # Check if domain has topic data or metrics data
+            has_topics = 'topics' in self.data[domain]
+            has_metrics = 'metrics' in self.data[domain]
+            
+            if not has_topics and not has_metrics:
+                continue
+                
+            # Determine which data to use (topics or metrics)
+            if has_topics:
+                item_data = self.data[domain]['topics']
+            else:
+                item_data = self.data[domain]['metrics']
+            
+            # Extract topic/metric names and scores
+            items = []
+            scores = []
+            
+            for item, score in item_data.items():
+                items.append(item.replace('_', ' ').title())
+                scores.append(score)
+            
+            # Sort by score
+            sorted_indices = np.argsort(scores)[::-1]  # Descending
+            items = [items[i] for i in sorted_indices]
+            scores = [scores[i] for i in sorted_indices]
+            
+            # Create color-coded horizontal bar chart
+            fig, ax = plt.subplots(figsize=(10, max(6, len(items) * 0.4)))
+            
+            # Create colormap based on scores
+            # Determine if scores are on a 0-5 scale or 0-1 scale
+            max_score = max(scores) if scores else 5
+            scale_factor = 5.0 if max_score > 1 else 1.0
+            colors = plt.cm.RdYlGn(np.array(scores) / scale_factor)
+            
+            # Plot horizontal bars
+            y_pos = np.arange(len(items))
+            ax.barh(y_pos, scores, color=colors)
+            
+            # Add labels
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(items)
+            ax.invert_yaxis()  # Labels read top-to-bottom
+            
+            # Set appropriate x-axis label and limits
+            if max_score > 1:
+                ax.set_xlabel('Score (0-5)')
+                ax.set_xlim(0, 5)
+            else:
+                ax.set_xlabel('Score (0-1)')
+                ax.set_xlim(0, 1)
+            
+            # Add score values on bars
+            for i, v in enumerate(scores):
+                ax.text(v + (0.1 if max_score > 1 else 0.02), i, f"{v:.1f}", va='center')
+            
+            # Add title
+            domain_title = domain.replace('_', ' ').title()
+            
+            if has_topics:
+                ax.set_title(f'{domain_title} Topic Performance')
+            else:
+                ax.set_title(f'{domain_title} Performance Metrics')
+            
+            plt.tight_layout()
+            
+            # Save figure if requested
+            if save:
+                plt.savefig(self.output_dir / f'{domain}_topics.png', dpi=300)
+                
+            figures[domain] = fig
+            
+        return figures
+    
+    def plot_scenario_performance(self, save: bool = True) -> Dict[str, plt.Figure]:
+        """
+        Generate visualizations for scenario-based domains (cross-referencing, counterfactual).
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            Dictionary of domain names to matplotlib figure objects
+        """
+        figures = {}
+        
+        for domain in self.domains:
+            if domain not in self.data or 'scenarios' not in self.data[domain]:
+                continue
+                
+            scenario_data = self.data[domain]['scenarios']
+            
+            # Extract scenario descriptions and scores
+            descriptions = []
+            scores = []
+            
+            for scenario in scenario_data:
+                # Truncate long descriptions
+                desc = scenario['scenario']
+                if len(desc) > 50:
+                    desc = desc[:47] + "..."
+                descriptions.append(desc)
+                scores.append(scenario['score'])
+            
+            # Sort by score
+            sorted_indices = np.argsort(scores)[::-1]  # Descending
+            descriptions = [descriptions[i] for i in sorted_indices]
+            scores = [scores[i] for i in sorted_indices]
+            
+            # Create horizontal bar chart
+            fig, ax = plt.subplots(figsize=(10, max(6, len(descriptions) * 0.5)))
+            
+            # Create colormap based on scores
+            colors = plt.cm.RdYlGn(np.array(scores) / 5.0)
+            
+            # Plot horizontal bars
+            y_pos = np.arange(len(descriptions))
+            ax.barh(y_pos, scores, color=colors)
+            
+            # Add labels
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(descriptions)
+            ax.invert_yaxis()  # Labels read top-to-bottom
+            ax.set_xlabel('Score (0-5)')
+            ax.set_xlim(0, 5)
+            
+            # Add score values on bars
+            for i, v in enumerate(scores):
+                ax.text(v + 0.1, i, f"{v:.1f}", va='center')
+            
+            # Add title
+            domain_title = domain.replace('_', ' ').title()
+            ax.set_title(f'{domain_title} Scenario Performance')
+            
+            plt.tight_layout()
+            
+            # Save figure if requested
+            if save:
+                plt.savefig(self.output_dir / f'{domain}_scenarios.png', dpi=300)
+                
+            figures[domain] = fig
+            
+        return figures
+    
+    def plot_healthcare_contradiction_metrics(self, save: bool = True) -> plt.Figure:
+        """
+        Generate bar charts for healthcare contradiction detection metrics.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        # Check if healthcare data exists
+        if 'healthcare' not in self.data or 'contradiction_detection' not in self.data['healthcare']:
+            print("No healthcare contradiction detection data found")
+            return None
+        
+        # Extract contradiction detection metrics
+        contradiction_data = self.data['healthcare']['contradiction_detection']
+        
+        # Set up the figure
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 7))
+        
+        # Plot 1: Category accuracies
+        if 'by_category' in contradiction_data:
+            categories = []
+            accuracies = []
+            
+            for category, metrics in contradiction_data['by_category'].items():
+                categories.append(category.replace('_', ' ').title())
+                accuracies.append(metrics['accuracy'])
+            
+            # Sort by accuracy
+            sorted_indices = np.argsort(accuracies)[::-1]
+            categories = [categories[i] for i in sorted_indices]
+            accuracies = [accuracies[i] for i in sorted_indices]
+            
+            # Create bar chart
+            ax1.bar(categories, accuracies, color='#3498db')
+            ax1.set_title('Contradiction Detection by Category')
+            ax1.set_ylabel('Accuracy')
+            ax1.set_ylim(0, 1.0)
+            ax1.axhline(y=contradiction_data['accuracy'], color='r', linestyle='--', 
+                        label=f'Overall Accuracy: {contradiction_data["accuracy"]:.2f}')
+            ax1.legend()
+            ax1.set_xticklabels(categories, rotation=45, ha='right')
+            
+        # Plot 2: Domain accuracies
+        if 'by_domain' in contradiction_data:
+            domains = []
+            accuracies = []
+            
+            for domain, metrics in contradiction_data['by_domain'].items():
+                domains.append(domain.replace('_', ' ').title())
+                accuracies.append(metrics['accuracy'])
+            
+            # Sort by accuracy
+            sorted_indices = np.argsort(accuracies)[::-1]
+            domains = [domains[i] for i in sorted_indices]
+            accuracies = [accuracies[i] for i in sorted_indices]
+            
+            # Create bar chart
+            ax2.bar(domains, accuracies, color='#2ecc71')
+            ax2.set_title('Contradiction Detection by Domain')
+            ax2.set_ylabel('Accuracy')
+            ax2.set_ylim(0, 1.0)
+            ax2.axhline(y=contradiction_data['accuracy'], color='r', linestyle='--',
+                        label=f'Overall Accuracy: {contradiction_data["accuracy"]:.2f}')
+            ax2.legend()
+            ax2.set_xticklabels(domains, rotation=45, ha='right')
+        
+        plt.tight_layout()
+        
+        # Save figure if requested
+        if save:
+            plt.savefig(self.output_dir / 'healthcare_contradiction_metrics.png', dpi=300)
+        
+        return fig
+    
+    def plot_healthcare_evidence_ranking(self, save: bool = True) -> plt.Figure:
+        """
+        Generate bar charts for healthcare evidence ranking metrics.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        # Check if healthcare data exists
+        if 'healthcare' not in self.data or 'evidence_ranking' not in self.data['healthcare']:
+            print("No healthcare evidence ranking data found")
+            return None
+        
+        # Extract evidence ranking metrics
+        evidence_data = self.data['healthcare']['evidence_ranking']
+        
+        # Set up the figure
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 7))
+        
+        # Plot 1: Evidence type accuracies
+        if 'by_evidence_type' in evidence_data:
+            ev_types = []
+            accuracies = []
+            
+            for ev_type, metrics in evidence_data['by_evidence_type'].items():
+                ev_types.append(ev_type.replace('_', ' ').title())
+                accuracies.append(metrics['accuracy'])
+            
+            # Sort by accuracy
+            sorted_indices = np.argsort(accuracies)[::-1]
+            ev_types = [ev_types[i] for i in sorted_indices]
+            accuracies = [accuracies[i] for i in sorted_indices]
+            
+            # Create bar chart
+            ax1.bar(ev_types, accuracies, color='#9b59b6')
+            ax1.set_title('Evidence Ranking by Evidence Type')
+            ax1.set_ylabel('Accuracy')
+            ax1.set_ylim(0, 1.0)
+            ax1.axhline(y=evidence_data['accuracy'], color='r', linestyle='--',
+                        label=f'Overall Accuracy: {evidence_data["accuracy"]:.2f}')
+            ax1.legend()
+            ax1.set_xticklabels(ev_types, rotation=45, ha='right')
+            
+        # Plot 2: Domain accuracies
+        if 'by_domain' in evidence_data:
+            domains = []
+            accuracies = []
+            
+            for domain, metrics in evidence_data['by_domain'].items():
+                domains.append(domain.replace('_', ' ').title())
+                accuracies.append(metrics['accuracy'])
+            
+            # Sort by accuracy
+            sorted_indices = np.argsort(accuracies)[::-1]
+            domains = [domains[i] for i in sorted_indices]
+            accuracies = [accuracies[i] for i in sorted_indices]
+            
+            # Create bar chart
+            ax2.bar(domains, accuracies, color='#f1c40f')
+            ax2.set_title('Evidence Ranking by Domain')
+            ax2.set_ylabel('Accuracy')
+            ax2.set_ylim(0, 1.0)
+            ax2.axhline(y=evidence_data['accuracy'], color='r', linestyle='--',
+                        label=f'Overall Accuracy: {evidence_data["accuracy"]:.2f}')
+            ax2.legend()
+            ax2.set_xticklabels(domains, rotation=45, ha='right')
+        
+        plt.tight_layout()
+        
+        # Save figure if requested
+        if save:
+            plt.savefig(self.output_dir / 'healthcare_evidence_ranking.png', dpi=300)
+        
+        return fig
+    
+    def plot_healthcare_combined_metrics(self, save: bool = True) -> plt.Figure:
+        """
+        Generate a combined visualization of healthcare metrics.
+        
+        Args:
+            save: Whether to save the figure to disk
+            
+        Returns:
+            The matplotlib figure object
+        """
+        # Check if healthcare data exists
+        if 'healthcare' not in self.data:
+            print("No healthcare data found")
+            return None
+        
+        # Extract metrics
+        healthcare_data = self.data['healthcare']
+        
+        # Initialize metrics 
+        metrics = []
+        
+        # Add contradiction detection accuracy if available
+        if 'contradiction_detection' in healthcare_data and 'accuracy' in healthcare_data['contradiction_detection']:
+            metrics.append({
+                'Metric': 'Contradiction Detection',
+                'Value': healthcare_data['contradiction_detection']['accuracy'],
+                'Target': 0.75  # Target from config
+            })
+        
+        # Add evidence ranking accuracy if available
+        if 'evidence_ranking' in healthcare_data and 'accuracy' in healthcare_data['evidence_ranking']:
+            metrics.append({
+                'Metric': 'Evidence Ranking',
+                'Value': healthcare_data['evidence_ranking']['accuracy'],
+                'Target': 0.80  # Target from config
+            })
+        
+        # Create dataframe for plotting
+        df = pd.DataFrame(metrics)
+        
+        if len(df) == 0:
+            print("No healthcare metrics available for plotting")
+            return None
+        
+        # Create plot
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        # Plot bars
+        x = np.arange(len(df['Metric']))
+        width = 0.35
+        
+        ax.bar(x - width/2, df['Value'], width, label='Current Performance', color='#3498db')
+        ax.bar(x + width/2, df['Target'], width, label='Target Performance', color='#e74c3c')
+        
+        # Add labels and title
+        ax.set_xlabel('Metric')
+        ax.set_ylabel('Accuracy')
+        ax.set_title('Healthcare Cross-Reference Performance')
+        ax.set_xticks(x)
+        ax.set_xticklabels(df['Metric'])
+        ax.set_ylim(0, 1.0)
+        ax.legend()
+        
+        # Add values as text on bars
+        for i, v in enumerate(df['Value']):
+            ax.text(i - width/2, v + 0.02, f'{v:.2f}', ha='center')
+        
+        for i, v in enumerate(df['Target']):
+            ax.text(i + width/2, v + 0.02, f'{v:.2f}', ha='center')
+        
+        plt.tight_layout()
+        
+        # Save figure if requested
+        if save:
+            plt.savefig(self.output_dir / 'healthcare_combined_metrics.png', dpi=300)
+        
+        return fig
+
+    def generate_all_visualizations(self, save: bool = True):
+        """
+        Generate all available visualizations and save them.
+        """
+        self.plot_domain_scores()
+        self.plot_radar_chart()
+        self.plot_memory_usage()
+        self.plot_topic_performance()
+        self.plot_scenario_performance()
+        self.plot_healthcare_contradiction_metrics()
+        self.plot_healthcare_evidence_ranking()
+        self.plot_healthcare_combined_metrics()
+        
+        print(f"Visualizations saved to {self.output_dir}")
+    
+    def generate_html_report(self, save: bool = True) -> str:
+        """
+        Generate an HTML report with all visualizations.
+        
+        Args:
+            save: Whether to save the HTML file to disk
+            
+        Returns:
+            HTML string containing the report
+        """
+        # Generate all visualizations
+        self.generate_all_visualizations()
+        
+        # Create HTML report
+        html = """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>AI Model Evaluation Results</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2, h3 { color: #2c3e50; }
+                .visualization { margin: 20px 0; }
+                .visualization img { max-width: 100%; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { text-align: left; padding: 8px; }
+                tr:nth-child(even) { background-color: #f2f2f2; }
+                th { background-color: #2c3e50; color: white; }
+                .improvement { color: green; }
+                .regression { color: red; }
+            </style>
+        </head>
+        <body>
+            <h1>AI Model Evaluation Results</h1>
+        """
+        
+        # Add metadata if available
+        if 'metadata' in self.data:
+            metadata = self.data['metadata']
+            html += "<h2>Evaluation Details</h2>"
+            html += "<table>"
+            html += "<tr><th>Property</th><th>Value</th></tr>"
+            
+            for key, value in metadata.items():
+                html += f"<tr><td>{key.replace('_', ' ').title()}</td><td>{value}</td></tr>"
+            
+            html += "</table>"
+        
+        # Add visualizations
+        html += "<h2>Performance Visualizations</h2>"
+        
+        # Domain scores
+        html += """
+        <div class="visualization">
+            <h3>Domain Knowledge Performance</h3>
+            <img src="domain_scores.png" alt="Domain Scores">
+        </div>
+        """
+        
+        # Radar chart
+        html += """
+        <div class="visualization">
+            <h3>Capability Profile</h3>
+            <img src="radar_chart.png" alt="Capability Radar Chart">
+        </div>
+        """
+        
+        # Memory usage
+        html += """
+        <div class="visualization">
+            <h3>Memory Usage During Evaluation</h3>
+            <img src="memory_usage.png" alt="Memory Usage">
+        </div>
+        """
+        
+        # Topic performance for each domain
+        html += "<h2>Detailed Topic Performance</h2>"
+        
+        for domain in self.domains:
+            domain_name = domain.replace('_', ' ').title()
+            
+            # First check if topics visualization exists
+            topic_file = self.output_dir / f"{domain}_topics.png"
+            if topic_file.exists():
+                html += f"""
+                <div class="visualization">
+                    <h3>{domain_name} Topics</h3>
+                    <img src="{domain}_topics.png" alt="{domain_name} Topic Performance">
+                </div>
+                """
+            
+            # Also check if scenarios visualization exists
+            scenario_file = self.output_dir / f"{domain}_scenarios.png"
+            if scenario_file.exists():
+                html += f"""
+                <div class="visualization">
+                    <h3>{domain_name} Scenarios</h3>
+                    <img src="{domain}_scenarios.png" alt="{domain_name} Scenario Performance">
+                </div>
+                """
+        
+        # Add healthcare visualizations
+        html += "<h2>Healthcare Performance</h2>"
+        
+        # Contradiction detection metrics
+        html += """
+        <div class="visualization">
+            <h3>Healthcare Contradiction Detection Metrics</h3>
+            <img src="healthcare_contradiction_metrics.png" alt="Healthcare Contradiction Detection Metrics">
+        </div>
+        """
+        
+        # Evidence ranking metrics
+        html += """
+        <div class="visualization">
+            <h3>Healthcare Evidence Ranking Metrics</h3>
+            <img src="healthcare_evidence_ranking.png" alt="Healthcare Evidence Ranking Metrics">
+        </div>
+        """
+        
+        # Combined healthcare metrics
+        html += """
+        <div class="visualization">
+            <h3>Healthcare Combined Metrics</h3>
+            <img src="healthcare_combined_metrics.png" alt="Healthcare Combined Metrics">
+        </div>
+        """
+        
+        # Add summary
+        if 'summary' in self.data:
+            summary = self.data['summary']
+            html += "<h2>Performance Summary</h2>"
+            
+            if 'strengths' in summary:
+                html += "<h3>Strengths</h3><ul>"
+                for strength in summary['strengths']:
+                    html += f"<li>{strength}</li>"
+                html += "</ul>"
+                
+            if 'weaknesses' in summary:
+                html += "<h3>Areas for Improvement</h3><ul>"
+                for weakness in summary['weaknesses']:
+                    html += f"<li>{weakness}</li>"
+                html += "</ul>"
+                
+            if 'recommendations' in summary:
+                html += "<h3>Recommendations</h3><ul>"
+                for rec in summary['recommendations']:
+                    html += f"<li>{rec}</li>"
+                html += "</ul>"
+        
+        html += """
+        </body>
+        </html>
+        """
+        
+        # Save file if requested
+        if save:
+            with open(self.output_dir / 'evaluation_report.html', 'w') as f:
+                f.write(html)
+            
+        return html
+
+
+def main():
+    """Main function to run the metrics visualization script."""
+    parser = argparse.ArgumentParser(description='Visualize AI model evaluation metrics')
+    parser.add_argument('--results', type=str, required=True, 
+                        help='Path to evaluation results JSON file')
+    parser.add_argument('--output', type=str, default='visualizations',
+                        help='Directory to save visualization outputs')
+    parser.add_argument('--html', action='store_true',
+                        help='Generate HTML report with all visualizations')
+    
+    args = parser.parse_args()
+    
+    try:
+        visualizer = MetricsVisualizer(args.results, args.output)
+        
+        if args.html:
+            visualizer.generate_html_report()
+        else:
+            visualizer.generate_all_visualizations()
+            
+    except Exception as e:
+        print(f"Error generating visualizations: {e}")
+        return 1
+        
+    return 0
+
+
+if __name__ == "__main__":
+    exit(main())

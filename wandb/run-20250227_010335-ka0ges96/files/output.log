@@ -1,0 +1,41 @@
+2025-02-27 01:03:36,085 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:03:36,269 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 01:03:37,163 - __main__ - INFO - Configuring model for efficient training on Apple Silicon
+2025-02-27 01:03:37,163 - __main__ - INFO - Setting up LoRA configuration
+2025-02-27 01:03:37,163 - __main__ - INFO - Applying LoRA adapters to model
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-27 01:03:37,304 - __main__ - INFO - Preparing datasets
+2025-02-27 01:03:37,304 - __main__ - INFO - Loading 81 examples from data/training_data.jsonl
+2025-02-27 01:03:37,340 - __main__ - INFO - Successfully loaded 81 examples
+2025-02-27 01:03:37,340 - __main__ - INFO - Loading 20 examples from data/validation_data.jsonl
+2025-02-27 01:03:37,349 - __main__ - INFO - Successfully loaded 20 examples
+2025-02-27 01:03:37,350 - __main__ - INFO - Train dataset size: 81
+2025-02-27 01:03:37,350 - __main__ - INFO - Eval dataset size: 20
+2025-02-27 01:03:37,350 - __main__ - INFO - Setting up training arguments
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-02-27 01:03:37,350 - __main__ - INFO - Initializing trainer
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/apple_silicon_training.py", line 255, in <module>
+    main()
+    ~~~~^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/apple_silicon_training.py", line 214, in main
+    trainer = Trainer(
+        model=model,
+    ...<3 lines>...
+        data_collator=data_collator,
+    )
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 461, in __init__
+    self.create_accelerator_and_postprocess()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 5099, in create_accelerator_and_postprocess
+    self.accelerator = Accelerator(**args)
+                       ~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/accelerate/accelerator.py", line 477, in __init__
+    raise ValueError(f"fp16 mixed precision requires a GPU (not {self.device.type!r}).")
+ValueError: fp16 mixed precision requires a GPU (not 'mps').
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+trainable params: 6,291,456 || all params: 1,420,939,264 || trainable%: 0.4428

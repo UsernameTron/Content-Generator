@@ -1,0 +1,17 @@
+{
+  "id": "performance_benchmark",
+  "name": "Performance Benchmark Test",
+  "description": "Benchmark test for model performance across different healthcare domains",
+  "test_parameters": {
+    "batch_size": 50,
+    "iterations": 3,
+    "domains": ["cardiology", "oncology", "neurology", "endocrinology"],
+    "metrics": ["accuracy", "precision", "recall", "f1"]
+  },
+  "baseline": {
+    "accuracy": 0.82,
+    "precision": 0.79,
+    "recall": 0.85,
+    "f1": 0.82
+  }
+}

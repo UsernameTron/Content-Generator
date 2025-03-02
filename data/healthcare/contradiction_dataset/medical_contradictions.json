@@ -1,0 +1,92 @@
+[
+  {
+    "id": "contra-001",
+    "category": "contradicting",
+    "statement1": "Aspirin is recommended for primary prevention of cardiovascular disease in patients over 50.",
+    "statement2": "The use of aspirin for primary prevention of cardiovascular disease is no longer recommended in most patients.",
+    "domain": "cardiology",
+    "evidence": "2019 ACC/AHA guidelines revised recommendations based on new trial data showing marginal benefit and increased bleeding risk.",
+    "created_at": "2023-09-15T08:00:00Z"
+  },
+  {
+    "id": "contra-002",
+    "category": "contradicting",
+    "statement1": "Beta-blockers are contraindicated in patients with heart failure.",
+    "statement2": "Beta-blockers are a cornerstone of heart failure management and have been shown to reduce mortality.",
+    "domain": "cardiology",
+    "evidence": "Multiple randomized controlled trials have demonstrated mortality benefit of specific beta-blockers in heart failure with reduced ejection fraction.",
+    "created_at": "2023-09-15T08:01:00Z"
+  },
+  {
+    "id": "contra-003",
+    "category": "contradicting",
+    "statement1": "Adjuvant chemotherapy is recommended for all breast cancer patients regardless of stage.",
+    "statement2": "Adjuvant chemotherapy decisions should be based on individual risk assessment including tumor stage, grade, and biomarkers.",
+    "domain": "oncology",
+    "evidence": "Genomic testing like Oncotype DX helps identify patients who can safely avoid chemotherapy based on recurrence risk.",
+    "created_at": "2023-09-15T08:02:00Z"
+  },
+  {
+    "id": "supp-001",
+    "category": "supporting",
+    "statement1": "Regular physical activity is beneficial for cardiovascular health.",
+    "statement2": "Exercise regimens that include both aerobic and resistance training provide optimal cardiovascular benefits.",
+    "domain": "cardiology", 
+    "evidence": "Both statements support the importance of exercise, with the second providing more specific guidance.",
+    "created_at": "2023-09-15T08:03:00Z"
+  },
+  {
+    "id": "supp-002",
+    "category": "supporting",
+    "statement1": "HPV vaccination prevents cervical cancer.",
+    "statement2": "The HPV vaccine is highly effective at preventing HPV infections that can lead to cervical cancer development.",
+    "domain": "oncology",
+    "evidence": "The second statement explains the mechanism by which the first statement is true.",
+    "created_at": "2023-09-15T08:04:00Z"
+  },
+  {
+    "id": "unrel-001",
+    "category": "unrelated",
+    "statement1": "ACE inhibitors are used to treat hypertension.",
+    "statement2": "Diabetes management involves monitoring blood glucose levels.",
+    "domain": "cardiology",
+    "evidence": "These statements address different medical conditions and treatments without direct relationship.",
+    "created_at": "2023-09-15T08:05:00Z"
+  },
+  {
+    "id": "unrel-002",
+    "category": "unrelated",
+    "statement1": "Chemotherapy may cause hair loss as a side effect.",
+    "statement2": "Vaccination schedules should begin in early childhood.",
+    "domain": "oncology",
+    "evidence": "These statements discuss unrelated medical topics without connection.",
+    "created_at": "2023-09-15T08:06:00Z"
+  },
+  {
+    "id": "temp-001",
+    "category": "temporally_superseded",
+    "statement1": "Hormone replacement therapy was widely recommended for menopausal women in the 1990s.",
+    "statement2": "Current guidelines recommend individualized hormone therapy decisions based on risk factors and symptom severity.",
+    "domain": "pharmacology",
+    "evidence": "The Women's Health Initiative study results led to revised recommendations about hormone therapy in the early 2000s.",
+    "created_at": "2023-09-15T08:07:00Z"
+  },
+  {
+    "id": "temp-002",
+    "category": "temporally_superseded",
+    "statement1": "PSA screening was routinely recommended for all men over 50.",
+    "statement2": "Current guidelines recommend shared decision-making regarding PSA screening, weighing potential benefits and harms.",
+    "domain": "oncology",
+    "evidence": "Evidence accumulated over time showed potential harms of widespread PSA screening including overdiagnosis and overtreatment.",
+    "created_at": "2023-09-15T08:08:00Z"
+  },
+  {
+    "id": "contra-004",
+    "category": "contradicting",
+    "statement1": "Patients with mild hypertension should start medication immediately upon diagnosis.",
+    "statement2": "Lifestyle modifications are the first-line treatment for mild hypertension before initiating medications.",
+    "domain": "cardiology",
+    "evidence": "Current guidelines recommend 3-6 months of lifestyle changes before medication for stage 1 hypertension without target organ damage or high cardiovascular risk.",
+    "created_at": "2023-09-15T08:09:00Z"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "test_results": {
+    "Basic Reasoning Test": {
+      "metric": "Reasoning",
+      "confidence": 0.75,
+      "insights": []
+    },
+    "Knowledge Integration Test": {
+      "metric": "Knowledge Integration",
+      "confidence": 0.75,
+      "insights": []
+    },
+    "Adaptability Test": {
+      "metric": "Adaptability",
+      "confidence": 0.75,
+      "insights": []
+    },
+    "Complex Integration Test": {
+      "metric": "Patient Satisfaction",
+      "confidence": 0.75,
+      "insights": [
+        {
+          "type": "enhanced",
+          "content": "Patient appointment wait times strongly impact satisfaction scores",
+          "confidence": 0.75
+        },
+        {
+          "type": "enhanced",
+          "content": "Communication quality between providers and patients affects perception",
+          "confidence": 0.75
+        },
+        {
+          "type": "enhanced",
+          "content": "Facility cleanliness and comfort contribute to overall satisfaction",
+          "confidence": 0.75
+        },
+        {
+          "type": "enhanced",
+          "content": "Billing transparency is a key factor in patient experience",
+          "confidence": 0.75
+        },
+        {
+          "type": "key_factor",
+          "content": "Appointment wait times have a strong impact on satisfaction scores",
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "Reasoning": 0.75,
+    "Knowledge Integration": 0.75,
+    "Adaptability": 0.75,
+    "Overall AI Score": 0.75
+  },
+  "baseline_metrics": {
+    "Reasoning": 0.85,
+    "Knowledge Integration": 0.88,
+    "Adaptability": 0.86,
+    "Overall AI Score": 0.86
+  },
+  "target_metrics": {
+    "Reasoning": 0.89,
+    "Knowledge Integration": 0.91,
+    "Adaptability": 0.89,
+    "Overall AI Score": 0.89
+  },
+  "timestamp": "2025-03-02_13-11-59"
+}

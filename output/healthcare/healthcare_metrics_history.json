@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-02-28 11:55:35",
+    "metrics": {
+      "contradiction_detection": {
+        "accuracy": 0.74,
+        "target": 0.75
+      },
+      "evidence_ranking": {
+        "accuracy": 0.77,
+        "target": 0.8
+      }
+    }
+  },
+  {
+    "timestamp": "2025-02-28 12:13:10",
+    "metrics": {
+      "contradiction_detection": {
+        "accuracy": 0.74,
+        "target": 0.75
+      },
+      "evidence_ranking": {
+        "accuracy": 0.77,
+        "target": 0.8
+      }
+    }
+  },
+  {
+    "timestamp": "2025-02-28 12:13:19",
+    "metrics": {
+      "contradiction_detection": {
+        "accuracy": 0.74,
+        "target": 0.75
+      },
+      "evidence_ranking": {
+        "accuracy": 0.77,
+        "target": 0.8
+      }
+    }
+  }
+]

@@ -1,0 +1,61 @@
+2025-02-26 22:12:57,200 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2025-02-26 22:12:57,200 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Configure stats pid to 13627
+2025-02-26 22:12:57,200 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/.config/wandb/settings
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/settings
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'silent': 'true', 'notebook_name': 'finetune_model.py'}
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'finetune_model.py', 'program_abspath': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py'}
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying login settings: {}
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:_log_setup():521] Logging user logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221257-krq6o5ea/logs/debug.log
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221257-krq6o5ea/logs/debug-internal.log
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:init():561] calling init triggers
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'base_model': 'EleutherAI/pythia-1.4b', 'training_config': {'lora_r': 8, 'lora_alpha': 16, 'lora_dropout': 0.05, 'target_modules': ['query_key_value', 'dense', 'dense_h_to_4h', 'dense_4h_to_h'], 'bias': 'none', 'task_type': 'CAUSAL_LM', 'training_args': {'output_dir': './outputs/finetune', 'evaluation_strategy': 'steps', 'eval_steps': 50, 'logging_steps': 10, 'save_steps': 100, 'learning_rate': 0.0005, 'weight_decay': 0.01, 'fp16': False, 'bf16': False, 'max_grad_norm': 0.3, 'max_steps': 500, 'warmup_ratio': 0.03, 'group_by_length': True, 'lr_scheduler_type': 'cosine', 'report_to': 'wandb', 'gradient_checkpointing': True, 'gradient_accumulation_steps': 4, 'per_device_train_batch_size': 2, 'per_device_eval_batch_size': 2, 'run_name': './outputs/finetune'}}, 'data_config': {'train_file': 'data/training/pete_connor_style.jsonl', 'validation_file': 'data/training/pete_connor_validation.jsonl', 'preprocessing_num_workers': 4, 'max_seq_length': 512, 'overwrite_cache': False, 'pad_to_max_length': True}, 'wandb_config': {'project': 'pete-connor-cx-ai-expert', 'name': 'cx-ai-ml-expertise-run', 'tags': ['cx-ai-expert', 'customer-experience', 'machine-learning', 'satirical-tech-expert', 'lora-finetuning'], 'notes': "Fine-tuning run for C. Pete Connor's expertise in customer experience, AI, and machine learning"}, 'custom_loss_config': {'penalized_phrases': ['game changer', "here's the kicker", 'cutting-edge', 'revolutionary', 'disruptive', 'innovative', 'next-generation', 'state-of-the-art', 'seamless customer journey', 'delightful experience', 'customer-centric', 'AI-powered experience', 'frictionless', 'hyper-personalization', 'digital transformation', 'customer obsession'], 'rewarded_phrases': ['paradoxically', 'absurdly', 'statistically speaking', 'data shows', 'ironically', 'contrary to popular belief', 'in stark contrast to the marketing', 'customer experience data indicates', 'model bias reveals', 'sentiment analysis demonstrates', 'customer retention metrics show', 'NPS fails to capture', 'ML models often amplify', 'AI implementation reality', 'CX automation paradox'], 'penalty_weight': 0.5, 'reward_weight': 0.5}, 'specializations': {'customer_experience': {'keywords': ['customer journey', 'touchpoints', 'engagement', 'satisfaction metrics', 'customer retention', 'experience design', 'CX metrics', 'VoC', 'service design'], 'weight': 0.35}, 'artificial_intelligence': {'keywords': ['machine learning', 'neural networks', 'deep learning', 'LLMs', 'prompt engineering', 'transformer models', 'model training', 'data bias', 'AI ethics'], 'weight': 0.35}, 'machine_learning': {'keywords': ['supervised learning', 'unsupervised learning', 'reinforcement learning', 'model evaluation', 'feature engineering', 'overfitting', 'hyperparameters'], 'weight': 0.3}, 'satirical_style': {'keywords': ['satire', 'irony', 'sarcasm', 'humor', 'mockery', 'parody', 'critique', 'exaggeration', 'wit'], 'weight': 0.5}}}
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:init():611] starting backend
+2025-02-26 22:12:57,201 INFO    MainThread:13627 [wandb_init.py:init():615] setting up manager
+2025-02-26 22:12:57,202 INFO    MainThread:13627 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-02-26 22:12:57,204 INFO    MainThread:13627 [wandb_init.py:init():623] backend started and connected
+2025-02-26 22:12:57,207 INFO    MainThread:13627 [wandb_init.py:init():715] updated telemetry
+2025-02-26 22:12:57,208 INFO    MainThread:13627 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2025-02-26 22:12:57,428 ERROR   MainThread:13627 [wandb_init.py:init():774] encountered error: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2025-02-26 22:12:57,626 ERROR   MainThread:13627 [wandb_init.py:init():1199] The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.AuthenticationError: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2025-02-26 22:13:00,158 INFO    MainThread:13627 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Configure stats pid to 13627
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/.config/wandb/settings
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/settings
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'silent': 'true', 'notebook_name': 'finetune_model.py'}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'finetune_model.py', 'program_abspath': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py'}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying login settings: {}
+2025-02-26 22:13:00,160 WARNING MainThread:13627 [wandb_setup.py:_flush():76] [34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:_log_setup():521] Logging user logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221300-qdxhb707/logs/debug.log
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221300-qdxhb707/logs/debug-internal.log
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():561] calling init triggers
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():611] starting backend
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():615] setting up manager
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():623] backend started and connected
+2025-02-26 22:13:00,161 INFO    MainThread:13627 [wandb_init.py:init():715] updated telemetry
+2025-02-26 22:13:00,161 INFO    MainThread:13627 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2025-02-26 22:14:30,465 ERROR   MainThread:13627 [wandb_init.py:init():774] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2025-02-26 22:14:30,537 ERROR   MainThread:13627 [wandb_init.py:init():1199] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2025-02-26 22:14:32,977 WARNING MsgRouterThr:13627 [router.py:message_loop():77] message_loop has been closed
+2025-02-26 22:14:32,977 WARNING MsgRouterThr:13627 [router.py:message_loop():77] message_loop has been closed

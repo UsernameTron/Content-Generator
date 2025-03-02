@@ -1,0 +1,40 @@
+{
+  "id": "medication_contradiction",
+  "name": "Medication Contradiction Scenarios",
+  "description": "Test cases for detecting contradictions in medication information",
+  "test_cases": [
+    {
+      "id": "med_contra_001",
+      "description": "Patient prescribed both medication A and medication B which are contraindicated",
+      "input": {
+        "text1": "Patient is currently taking 20mg of Lisinopril daily for hypertension.",
+        "text2": "Patient should begin taking potassium supplements immediately."
+      },
+      "expected_result": true,
+      "category": "medication",
+      "domain": "cardiology"
+    },
+    {
+      "id": "med_contra_002",
+      "description": "Patient prescribed medication at different dosages",
+      "input": {
+        "text1": "Prescribe Metformin 500mg twice daily.",
+        "text2": "Patient is currently taking Metformin 1000mg once daily."
+      },
+      "expected_result": true,
+      "category": "medication",
+      "domain": "endocrinology"
+    },
+    {
+      "id": "med_contra_003",
+      "description": "Non-contradictory medication information",
+      "input": {
+        "text1": "Patient is taking Atorvastatin 40mg at bedtime.",
+        "text2": "Continue Atorvastatin 40mg daily at night."
+      },
+      "expected_result": false,
+      "category": "medication",
+      "domain": "cardiology"
+    }
+  ]
+}

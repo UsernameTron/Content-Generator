@@ -1,0 +1,285 @@
+[02/28/25 01:31:42] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m184[22m - evaluator - INFO - WandB initialized:                   ]8;id=13992;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=54440;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#134\134]8;;\
+                             evaluation-[1m20250228[22m-[1m013140
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m185[22m - evaluator - INFO - Setting up evaluators                 ]8;id=936294;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=197913;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#88\88]8;;\
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m188[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=848273;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=184530;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             customer_experience
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m188[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=102132;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=384791;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             artificial_intelligence
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m189[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=78585;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=194805;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             machine_learning
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m189[22m - cross_referencing - INFO - Loaded [1m5[22m cross-referencing         ]8;id=726045;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/cross_referencing.py\cross_referencing.py]8;;\:]8;id=878074;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/cross_referencing.py#32\32]8;;\
+                             scenarios
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m190[22m - counterfactual - INFO - Loaded [1m5[22m counterfactual scenarios        ]8;id=9333;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/counterfactual.py\counterfactual.py]8;;\:]8;id=369336;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/counterfactual.py#32\32]8;;\
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m190[22m - evaluator - INFO - Initialized [1m5[22m evaluators             ]8;id=799617;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=638141;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#107\107]8;;\
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m191[22m - evaluator - INFO - Starting comprehensive evaluation    ]8;id=955682;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=205555;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#250\250]8;;\
+[32m───────────────────────────────────────────────────── [39mC. Pete Connor Model Evaluation[32m ──────────────────────────────────────────────────────
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m191[22m - evaluator - INFO - Loading adapter config from          ]8;id=863384;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=207942;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#138\138]8;;\
+                             outputs/finetune/lora_adapter
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m205[22m - evaluator - INFO - Using device: mps                    ]8;id=449580;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=775701;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#151\151]8;;\
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m206[22m - evaluator - INFO - Memory at before_model_load: [1m50.5[22m%   ]8;id=506388;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=429654;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m23.[22m20GB
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:42[22m,[1m207[22m - evaluator - INFO - Loading base model:                  ]8;id=190704;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=776835;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#157\157]8;;\
+                             EleutherAI/pythia-[1m1.[22m4b
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[02/28/25 01:31:44] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:44[22m,[1m157[22m - evaluator - INFO - Loading LoRA adapters                ]8;id=665716;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=895949;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#169\169]8;;\
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:44[22m,[1m311[22m - evaluator - INFO - Memory at after_model_load: [1m61.3[22m%    ]8;id=134322;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=919102;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m28.[22m40GB
+[32m⠋[39m [32mRunning evaluations...[39m                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:44[22m,[1m313[22m - domain_knowledge - INFO - Evaluating customer_experience       ]8;id=143044;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=864940;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#61\61]8;;\
+                             knowledge
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:44[22m,[1m313[22m - domain_knowledge - INFO - Processing question [1m1[22m/[1m1[22m: Explain the ]8;id=67381;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=296009;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#77\77]8;;\
+                             difference between Customer Satisfacti[33m...
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:31:44[22m,[1m315[22m - evaluator - INFO - Memory at before_generation: [1m61.3[22m%   ]8;id=725404;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=282289;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m28.[22m39GB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[32m⠏[39m [32mEvaluating cx...
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[32m⠧[39m [32mEvaluating cx...[39m[02/28/25 01:35:36] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m111[22m - evaluator - INFO - Memory at after_generation: [1m84.4[22m%    ]8;id=410483;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=250670;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m17.[22m74GB
+                    [33mWARNING [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m114[22m - evaluator - WARNING - WARNING: Memory usage above [1m70[22m%,  ]8;id=991459;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=199205;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#202\202]8;;\
+                             performance may be impacted
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m119[22m - evaluator - ERROR - Error evaluating cx: unsupported    ]8;id=772424;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=747370;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#286\286]8;;\
+                             operand [1mtype([22ms[1m)[22m for +=: [32m'int'[39m and [32m'tuple'
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m120[22m - domain_knowledge - INFO - Evaluating artificial_intelligence   ]8;id=98114;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=111595;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#61\61]8;;\
+                             knowledge
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m121[22m - domain_knowledge - INFO - Processing question [1m1[22m/[1m1[22m: Explain the ]8;id=527033;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=153265;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#77\77]8;;\
+                             concept of transformer architecture an[33m...
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m125[22m - evaluator - INFO - Memory at before_generation: [1m84.4[22m%   ]8;id=693527;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=26954;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m17.[22m75GB
+                    [33mWARNING [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:36[22m,[1m125[22m - evaluator - WARNING - WARNING: Memory usage above [1m70[22m%,  ]8;id=940062;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=735420;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#202\202]8;;\
+                             performance may be impacted
+
+
+
+
+
+
+
+
+
+[32m⠹[39m [32mEvaluating ai...
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[32m⠹[39m [32mEvaluating ai...[39m[02/28/25 01:35:55] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m780[22m - evaluator - INFO - Memory at after_generation: [1m84.5[22m%    ]8;id=964202;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=861203;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m17.[22m78GB
+                    [33mWARNING [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m780[22m - evaluator - WARNING - WARNING: Memory usage above [1m70[22m%,  ]8;id=549359;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=731643;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#202\202]8;;\
+                             performance may be impacted
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m781[22m - evaluator - ERROR - Error evaluating ai: unsupported    ]8;id=120539;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=471278;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#286\286]8;;\
+                             operand [1mtype([22ms[1m)[22m for +=: [32m'int'[39m and [32m'tuple'
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m782[22m - domain_knowledge - INFO - Evaluating machine_learning          ]8;id=953161;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=518095;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#61\61]8;;\
+                             knowledge
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m782[22m - domain_knowledge - INFO - Processing question [1m1[22m/[1m1[22m: Explain the ]8;id=664572;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=402555;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#77\77]8;;\
+                             concept of explainable AI [1m([22mXAI[1m)[22m and me[33m...
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m784[22m - evaluator - INFO - Memory at before_generation: [1m84.5[22m%   ]8;id=164936;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=545689;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m17.[22m78GB
+                    [33mWARNING [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:35:55[22m,[1m785[22m - evaluator - WARNING - WARNING: Memory usage above [1m70[22m%,  ]8;id=148319;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=600023;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#202\202]8;;\
+                             performance may be impacted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[32m⠹[39m [32mEvaluating ml...[39m[02/28/25 01:36:54] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m051[22m - evaluator - INFO - Memory at after_generation: [1m83.8[22m%    ]8;id=450940;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=329971;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#196\196]8;;\
+                             RAM used, [1m18.[22m23GB
+                    [33mWARNING [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m051[22m - evaluator - WARNING - WARNING: Memory usage above [1m70[22m%,  ]8;id=568563;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=853715;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#202\202]8;;\
+                             performance may be impacted
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m052[22m - evaluator - ERROR - Error evaluating ml: unsupported    ]8;id=433928;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=951503;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#286\286]8;;\
+                             operand [1mtype([22ms[1m)[22m for +=: [32m'int'[39m and [32m'tuple'
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m054[22m - cross_referencing - INFO - Evaluating cross-referencing      ]8;id=568591;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/cross_referencing.py\cross_referencing.py]8;;\:]8;id=886986;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/cross_referencing.py#104\104]8;;\
+                             capabilities
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m055[22m - evaluator - ERROR - Error evaluating cross_reference:   ]8;id=951139;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=485807;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#286\286]8;;\
+                             [32m'name'
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m055[22m - counterfactual - INFO - Evaluating counterfactual reasoning      ]8;id=418154;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/counterfactual.py\counterfactual.py]8;;\:]8;id=751386;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/counterfactual.py#92\92]8;;\
+                             capabilities
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m055[22m - evaluator - ERROR - Error evaluating counterfactual:    ]8;id=527284;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=583193;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#286\286]8;;\
+                             [32m'name'
+  [32mEvaluating counterfactual...
+[?25h[3m                                 Evaluation Results                                  
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m Domain/Capability [22m┃[1m Score [22m┃[1m Details                                               [22m┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m cx                [39m│[32m 0.00  [39m│[33m ERROR: unsupported operand type(s) for +=: 'int' a... [39m│
+│[36m ai                [39m│[32m 0.00  [39m│[33m ERROR: unsupported operand type(s) for +=: 'int' a... [39m│
+│[36m ml                [39m│[32m 0.00  [39m│[33m ERROR: unsupported operand type(s) for +=: 'int' a... [39m│
+│[36m cross_reference   [39m│[32m 0.00  [39m│[33m ERROR: 'name'...                                      [39m│
+│[36m counterfactual    [39m│[32m 0.00  [39m│[33m ERROR: 'name'...                                      [39m│
+└───────────────────┴───────┴───────────────────────────────────────────────────────┘
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m060[22m - evaluator - INFO - Results saved to                     ]8;id=207506;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=174841;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#341\341]8;;\
+                             evaluation_results/eval_results_20250228-[1m013654.j[22mson
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m061[22m - evaluator - INFO - Logging memory usage data to WandB   ]8;id=822212;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=364174;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#348\348]8;;\
+                    [1mERROR   [22m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:36:54[22m,[1m062[22m - evaluator - ERROR - Error during evaluation:            ]8;id=469821;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=99523;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#431\431]8;;\
+                             [1mline_series()[22m got an unexpected keyword argument [32m'x_title'[39m. Did you mean [32m'title'[39m?
+                             [31m╭────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ──────────────────────╮
+                             [31m│[39m /Users/cpconnor/CascadeProjects/multi-platform-content-generator/[1mcomprehensiv[22m [31m│
+                             [31m│[39m [1me_evaluate.py[22m:[94m427[39m in [92m<module>[39m                                                 [31m│
+                             [31m│[39m                                                                               [31m│
+                             [31m│[39m   424 │                                                                       [31m│
+                             [31m│[39m   425 │   # Run the evaluation                                                [31m│
+                             [31m│[39m   426 │   [94mtry[39m:                                                                [31m│
+                             [31m│[39m [31m❱ [39m427 │   │   manager.run_evaluation()                                        [31m│
+                             [31m│[39m   428 │   [94mexcept[39m [96mKeyboardInterrupt[39m:                                           [31m│
+                             [31m│[39m   429 │   │   logger.info([33m"Evaluation interrupted by user"[39m)                   [31m│
+                             [31m│[39m   430 │   [94mexcept[39m [96mException[39m [94mas[39m e:                                              [31m│
+                             [31m│[39m                                                                               [31m│
+                             [31m│[39m /Users/cpconnor/CascadeProjects/multi-platform-content-generator/[1mcomprehensiv[22m [31m│
+                             [31m│[39m [1me_evaluate.py[22m:[94m300[39m in [92mrun_evaluation[39m                                           [31m│
+                             [31m│[39m                                                                               [31m│
+                             [31m│[39m   297 │   │                                                                   [31m│
+                             [31m│[39m   298 │   │   # Update wandb with memory tracking                             [31m│
+                             [31m│[39m   299 │   │   [94mif[39m [96mself[39m.args.use_wandb [95mand[39m [96mself[39m.wandb_run:                      [31m│
+                             [31m│[39m [31m❱ [39m300 │   │   │   [1mself._log_memory_to_wandb()[22m                                 [31m│
+                             [31m│[39m   301 │   │                                                                   [31m│
+                             [31m│[39m   302 │   │   logger.info([33m"Evaluation complete"[39m)                              [31m│
+                             [31m│[39m   303                                                                         [31m│
+                             [31m│[39m                                                                               [31m│
+                             [31m│[39m /Users/cpconnor/CascadeProjects/multi-platform-content-generator/[1mcomprehensiv[22m [31m│
+                             [31m│[39m [1me_evaluate.py[22m:[94m367[39m in [92m_log_memory_to_wandb[39m                                     [31m│
+                             [31m│[39m                                                                               [31m│
+                             [31m│[39m   364 │   │   # Log the data to wandb                                         [31m│
+                             [31m│[39m   365 │   │   [96mself[39m.wandb_run.log({                                            [31m│
+                             [31m│[39m   366 │   │   │   [33m"memory_usage"[39m: memory_table,                               [31m│
+                             [31m│[39m [31m❱ [39m367 │   │   │   [33m"memory_chart"[39m: wandb.plot.line_series(                     [31m│
+                             [31m│[39m   368 │   │   │   │   xs=[timestamps],                                        [31m│
+                             [31m│[39m   369 │   │   │   │   ys=[ram_usage],                                         [31m│
+                             [31m│[39m   370 │   │   │   │   keys=[[33m"RAM %"[39m],                                         [31m│
+                             [31m╰───────────────────────────────────────────────────────────────────────────────╯
+                             [1mTypeError: line_series()[22m got an unexpected keyword argument [32m'x_title'[39m. Did you
+                             mean [32m'title'[39m?

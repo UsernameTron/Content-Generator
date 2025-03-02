@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2025-02-28 12:35:00",
+    "metrics": {
+      "contradiction_detection": {
+        "accuracy": 0.76,
+        "target": 0.75
+      },
+      "evidence_ranking": {
+        "accuracy": 0.81,
+        "target": 0.8
+      }
+    }
+  }
+]

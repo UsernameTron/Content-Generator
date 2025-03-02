@@ -1,0 +1,33 @@
+{
+  "id": "integration_test_1",
+  "title": "Integration Test",
+  "description": "Testing the integrated counterfactual generator",
+  "industry": "Technology",
+  "project_type": "Test",
+  "primary_failure_modes": [
+    "Data Quality",
+    "Model Selection"
+  ],
+  "decision_points": [
+    {
+      "id": "dp1",
+      "description": "Data selection approach",
+      "actual_decision": "Used synthetic data instead of real-world data",
+      "alternatives": [
+        "Use real-world data",
+        "Use a mix of synthetic and real data"
+      ],
+      "consequences": {
+        "Used synthetic data": "Models didn't generalize to real-world scenarios"
+      },
+      "impact_areas": [
+        "Generalization",
+        "Production Performance"
+      ],
+      "importance": 4.2,
+      "stage": "data_preparation"
+    }
+  ],
+  "observed_outcome": "The model failed when deployed to production",
+  "sources": []
+}

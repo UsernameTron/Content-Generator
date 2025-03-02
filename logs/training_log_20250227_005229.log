@@ -1,0 +1,241 @@
+=== C. Pete Connor Model Training Log - Started at 2025-02-27T00:52:29.937928 ===
+
+2025-02-27 00:52:31,675 - __main__ - INFO - Initializing W&B project: pete-connor-cx-ai-expert
+2025-02-27 00:52:31,676 - __main__ - INFO - Loaded environment variables from .env file
+2025-02-27 00:52:31,676 - __main__ - INFO - WANDB_API_KEY found, running in online mode
+2025-02-27 00:52:32,471 - __main__ - INFO - Successfully initialized W&B
+2025-02-27 00:52:32,481 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-27 00:52:32,481 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 00:52:32,757 - __main__ - INFO - Tokenizer loaded successfully
+2025-02-27 00:52:32,758 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-27 00:52:32,758 - __main__ - INFO - Loading model on mps device
+2025-02-27 00:52:34,073 - __main__ - INFO - Model loaded successfully
+2025-02-27 00:52:34,073 - __main__ - INFO - Preparing model for kbit training
+2025-02-27 00:52:34,073 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-27 00:52:34,147 - __main__ - INFO - LoRA adapters successfully applied to model
+2025-02-27 00:52:34,148 - __main__ - INFO - Model size: 1420.94M parameters
+2025-02-27 00:52:34,148 - __main__ - INFO - Trainable parameters: 6.29M (0.44%)
+2025-02-27 00:52:34,148 - __main__ - INFO - Preparing training dataset from data/training_data.jsonl
+2025-02-27 00:52:34,149 - __main__ - INFO - Loading data from data/training_data.jsonl
+2025-02-27 00:52:34,196 - __main__ - INFO - Preparing validation dataset from data/training_data.jsonl
+2025-02-27 00:52:34,196 - __main__ - INFO - Loading data from data/training_data.jsonl
+2025-02-27 00:52:34,245 - __main__ - INFO - Training dataset size: 81
+2025-02-27 00:52:34,245 - __main__ - INFO - Evaluation dataset size: 81
+2025-02-27 00:52:34,247 - wandb_dashboards - INFO - Created custom metrics callback for W&B tracking
+2025-02-27 00:52:34,247 - __main__ - INFO - Custom W&B metrics callback loaded successfully
+2025-02-27 00:52:34,248 - __main__ - INFO - Setting up training arguments
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-02-27 00:52:34,249 - __main__ - INFO - Initializing trainer
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:525: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-27 00:52:34,253 - __main__ - INFO - Checkpoints will be saved every 7200 steps
+2025-02-27 00:52:34,253 - __main__ - INFO - Starting model fine-tuning
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+  0%|          | 0/20 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Exception in thread Exception in thread ChkStopThr:
+NetStatThr:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1041, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1041, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 286, in check_stop_status
+    self._loop_check_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        lock=self._stop_status_lock,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        process=_process_stop_status,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 268, in check_network_status
+    self._loop_check_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        lock=self._network_status_lock,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        process=_process_network_status,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 224, in _loop_check_status
+    local_handle = request()
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 224, in _loop_check_status
+    local_handle = request()
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface.py", line 840, in deliver_stop_status
+    return self._deliver_stop_status(status)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface.py", line 848, in deliver_network_status
+    return self._deliver_network_status(status)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_shared.py", line 494, in _deliver_stop_status
+    return self._deliver_record(record)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_shared.py", line 510, in _deliver_network_status
+    return self._deliver_record(record)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_shared.py", line 459, in _deliver_record
+    handle = mailbox._deliver_record(record, interface=self)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_shared.py", line 459, in _deliver_record
+    handle = mailbox._deliver_record(record, interface=self)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/mailbox.py", line 455, in _deliver_record
+    interface._publish(record)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/mailbox.py", line 455, in _deliver_record
+    interface._publish(record)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+    ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+    ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+2025-02-27 00:53:13,005 - __main__ - ERROR - Error during training: MPS backend out of memory (MPS allocated: 10.11 GB, other allocations: 50.66 GB, max allowed: 61.20 GB). Tried to allocate 3.07 GB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2025-02-27 00:53:13,038 - __main__ - WARNING - Training was interrupted. Saving checkpoint of the current state.
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py", line 548, in fine_tune_model
+    trainer.train()
+    ~~~~~~~~~~~~~^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+        args=args,
+    ...<2 lines>...
+        ignore_keys_for_eval=ignore_keys_for_eval,
+    )
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/peft_model.py", line 1719, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py", line 850, in forward
+    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/loss/loss_utils.py", line 47, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/loss/loss_utils.py", line 26, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 3494, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<4 lines>...
+        label_smoothing,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: MPS backend out of memory (MPS allocated: 10.11 GB, other allocations: 50.66 GB, max allowed: 61.20 GB). Tried to allocate 3.07 GB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py", line 643, in <module>
+    fine_tune_model(args.config)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py", line 566, in fine_tune_model
+    wandb.alert(
+    ~~~~~~~~~~~^
+        title="Training Error",
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        text=f"Error during training: {str(e)}",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        level=wandb.AlertLevel.ERROR
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 3445, in alert
+    self._backend.interface.publish_alert(title, text, level_str, wait_duration)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface.py", line 704, in publish_alert
+    self._publish_alert(proto_alert)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_shared.py", line 418, in _publish_alert
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+    ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+  0%|          | 0/20 [00:42<?, ?it/s]

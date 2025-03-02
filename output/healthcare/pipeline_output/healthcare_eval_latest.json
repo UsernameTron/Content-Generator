@@ -1,0 +1,39 @@
+{
+  "healthcare": {
+    "contradiction_detection": {
+      "accuracy": 0.74,
+      "precision": 0.76,
+      "recall": 0.73,
+      "f1": 0.744,
+      "by_category": {
+        "Healthcare": 0.74
+      },
+      "by_domain": {
+        "healthcare": 0.74
+      }
+    },
+    "evidence_ranking": {
+      "accuracy": 0.79,
+      "precision": 0.78,
+      "recall": 0.77,
+      "f1": 0.774,
+      "by_evidence_type": {
+        "primary_source": 0.80,
+        "secondary_source": 0.78,
+        "expert_opinion": 0.77,
+        "statistical_evidence": 0.81
+      },
+      "by_domain": {
+        "healthcare": 0.79
+      }
+    },
+    "overall_score": 3.825
+  },
+  "metadata": {
+    "model_name": "healthcare-cross-reference-model",
+    "model_version": "1.0.0",
+    "evaluation_timestamp": "2025-02-28 10:37:00",
+    "dataset_size": 1000,
+    "evaluation_type": "healthcare_cross_reference"
+  }
+}

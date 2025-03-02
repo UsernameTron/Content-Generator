@@ -1,0 +1,271 @@
+{
+  "contradiction_detection": {
+    "accuracy": 0.6941784231778233,
+    "by_category": {
+      "direct_contradiction": {
+        "accuracy": 0.7685723188515854,
+        "total": 43,
+        "correct": 33
+      },
+      "partial_contradiction": {
+        "accuracy": 0.5552047454681113,
+        "total": 26,
+        "correct": 14
+      },
+      "temporal_conflict": {
+        "accuracy": 0.5654541016694362,
+        "total": 19,
+        "correct": 10
+      },
+      "demographic_conflict": {
+        "accuracy": 0.746149400446387,
+        "total": 25,
+        "correct": 18
+      },
+      "dosage_conflict": {
+        "accuracy": 0.6123912159753861,
+        "total": 30,
+        "correct": 18
+      },
+      "treatment_guidance": {
+        "accuracy": 0.6787501731694647,
+        "total": 18,
+        "correct": 12
+      }
+    },
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.8295847832191982,
+        "total": 59,
+        "correct": 48
+      },
+      "oncology": {
+        "accuracy": 0.652888172010419,
+        "total": 50,
+        "correct": 32
+      },
+      "neurology": {
+        "accuracy": 0.6244385330583941,
+        "total": 32,
+        "correct": 19
+      },
+      "pediatrics": {
+        "accuracy": 0.7622837961079963,
+        "total": 24,
+        "correct": 18
+      },
+      "emergency_medicine": {
+        "accuracy": 0.7720400017891174,
+        "total": 49,
+        "correct": 37
+      },
+      "internal_medicine": {
+        "accuracy": 0.6309118431791662,
+        "total": 20,
+        "correct": 12
+      }
+    },
+    "examples": [
+      {
+        "task": "Sample contradiction task 1",
+        "statement_1": "Sample medical statement 1 for pediatrics",
+        "statement_2": "Sample medical statement 2 for pediatrics - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "temporal_conflict",
+        "domain": "pediatrics"
+      },
+      {
+        "task": "Sample contradiction task 2",
+        "statement_1": "Sample medical statement 1 for emergency_medicine",
+        "statement_2": "Sample medical statement 2 for emergency_medicine - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "demographic_conflict",
+        "domain": "emergency_medicine"
+      },
+      {
+        "task": "Sample contradiction task 3",
+        "statement_1": "Sample medical statement 1 for neurology",
+        "statement_2": "Sample medical statement 2 for neurology - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "dosage_conflict",
+        "domain": "neurology"
+      },
+      {
+        "task": "Sample contradiction task 4",
+        "statement_1": "Sample medical statement 1 for emergency_medicine",
+        "statement_2": "Sample medical statement 2 for emergency_medicine - supporting",
+        "expected": "non_contradiction",
+        "predicted": "non_contradiction",
+        "correct": false,
+        "category": "dosage_conflict",
+        "domain": "emergency_medicine"
+      },
+      {
+        "task": "Sample contradiction task 5",
+        "statement_1": "Sample medical statement 1 for emergency_medicine",
+        "statement_2": "Sample medical statement 2 for emergency_medicine - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "treatment_guidance",
+        "domain": "emergency_medicine"
+      }
+    ]
+  },
+  "evidence_ranking": {
+    "accuracy": 0.6590170271424166,
+    "by_evidence_type": {
+      "clinical_trial": {
+        "accuracy": 0.7161018015608753,
+        "total": 23,
+        "correct": 16
+      },
+      "meta_analysis": {
+        "accuracy": 0.695719517795027,
+        "total": 28,
+        "correct": 19
+      },
+      "case_study": {
+        "accuracy": 0.589527006257353,
+        "total": 33,
+        "correct": 19
+      },
+      "expert_opinion": {
+        "accuracy": 0.5813861823258661,
+        "total": 31,
+        "correct": 18
+      },
+      "clinical_guideline": {
+        "accuracy": 0.7299051095529001,
+        "total": 10,
+        "correct": 7
+      },
+      "observational_study": {
+        "accuracy": 0.6603391640546558,
+        "total": 15,
+        "correct": 9
+      }
+    },
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.7504768960668287,
+        "total": 15,
+        "correct": 11
+      },
+      "oncology": {
+        "accuracy": 0.6773804271273526,
+        "total": 36,
+        "correct": 24
+      },
+      "neurology": {
+        "accuracy": 0.641131964991199,
+        "total": 40,
+        "correct": 25
+      },
+      "pediatrics": {
+        "accuracy": 0.5269038360533794,
+        "total": 23,
+        "correct": 12
+      },
+      "emergency_medicine": {
+        "accuracy": 0.6259062401632312,
+        "total": 32,
+        "correct": 20
+      },
+      "internal_medicine": {
+        "accuracy": 0.6063322723463296,
+        "total": 33,
+        "correct": 20
+      }
+    },
+    "examples": [
+      {
+        "task": "Sample evidence ranking task 1",
+        "evidence_1": {
+          "description": "Sample expert_opinion evidence for internal_medicine",
+          "type": "expert_opinion"
+        },
+        "evidence_2": {
+          "description": "Sample clinical_guideline evidence for internal_medicine",
+          "type": "clinical_guideline"
+        },
+        "stronger_evidence": "expert_opinion",
+        "predicted_stronger": "evidence_1",
+        "correct": true,
+        "domain": "internal_medicine"
+      },
+      {
+        "task": "Sample evidence ranking task 2",
+        "evidence_1": {
+          "description": "Sample clinical_guideline evidence for oncology",
+          "type": "clinical_guideline"
+        },
+        "evidence_2": {
+          "description": "Sample case_study evidence for oncology",
+          "type": "case_study"
+        },
+        "stronger_evidence": "clinical_guideline",
+        "predicted_stronger": "evidence_1",
+        "correct": true,
+        "domain": "oncology"
+      },
+      {
+        "task": "Sample evidence ranking task 3",
+        "evidence_1": {
+          "description": "Sample case_study evidence for neurology",
+          "type": "case_study"
+        },
+        "evidence_2": {
+          "description": "Sample observational_study evidence for neurology",
+          "type": "observational_study"
+        },
+        "stronger_evidence": "observational_study",
+        "predicted_stronger": "evidence_2",
+        "correct": false,
+        "domain": "neurology"
+      },
+      {
+        "task": "Sample evidence ranking task 4",
+        "evidence_1": {
+          "description": "Sample expert_opinion evidence for emergency_medicine",
+          "type": "expert_opinion"
+        },
+        "evidence_2": {
+          "description": "Sample clinical_trial evidence for emergency_medicine",
+          "type": "clinical_trial"
+        },
+        "stronger_evidence": "clinical_trial",
+        "predicted_stronger": "evidence_2",
+        "correct": false,
+        "domain": "emergency_medicine"
+      },
+      {
+        "task": "Sample evidence ranking task 5",
+        "evidence_1": {
+          "description": "Sample clinical_guideline evidence for emergency_medicine",
+          "type": "clinical_guideline"
+        },
+        "evidence_2": {
+          "description": "Sample meta_analysis evidence for emergency_medicine",
+          "type": "meta_analysis"
+        },
+        "stronger_evidence": "meta_analysis",
+        "predicted_stronger": "evidence_2",
+        "correct": false,
+        "domain": "emergency_medicine"
+      }
+    ]
+  },
+  "metadata": {
+    "model_path": "sample/healthcare/model",
+    "adapter_path": "sample/healthcare/adapter",
+    "device": "mps",
+    "evaluation_timestamp": "2025-02-28 10:36:27"
+  }
+}

@@ -1,0 +1,105 @@
+2025-03-02 11:43:52,683 INFO    StreamThr :57922 [internal.py:wandb_internal():86] W&B internal server running at pid: 57922, started at: 2025-03-02 11:43:52.682567
+2025-03-02 11:43:52,684 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status
+2025-03-02 11:43:52,686 INFO    WriterThread:57922 [datastore.py:open_for_write():87] open: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/run-ugt6a1mg.wandb
+2025-03-02 11:43:52,686 DEBUG   SenderThread:57922 [sender.py:send():379] send: header
+2025-03-02 11:43:52,686 DEBUG   SenderThread:57922 [sender.py:send():379] send: run
+2025-03-02 11:43:52,976 INFO    SenderThread:57922 [dir_watcher.py:__init__():211] watching files in: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files
+2025-03-02 11:43:52,976 INFO    SenderThread:57922 [sender.py:_start_run_threads():1124] run started: ugt6a1mg with start time 1740937432.683533
+2025-03-02 11:43:52,982 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: check_version
+2025-03-02 11:43:52,982 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: check_version
+2025-03-02 11:43:53,665 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: run_start
+2025-03-02 11:43:53,671 DEBUG   HandlerThread:57922 [system_info.py:__init__():26] System info init
+2025-03-02 11:43:53,672 DEBUG   HandlerThread:57922 [system_info.py:__init__():41] System info init done
+2025-03-02 11:43:53,672 INFO    HandlerThread:57922 [system_monitor.py:start():194] Starting system monitor
+2025-03-02 11:43:53,672 INFO    SystemMonitor:57922 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-03-02 11:43:53,672 INFO    HandlerThread:57922 [system_monitor.py:probe():214] Collecting system info
+2025-03-02 11:43:53,672 INFO    SystemMonitor:57922 [interfaces.py:start():190] Started cpu monitoring
+2025-03-02 11:43:53,673 DEBUG   HandlerThread:57922 [system_info.py:probe():150] Probing system
+2025-03-02 11:43:53,674 INFO    SystemMonitor:57922 [interfaces.py:start():190] Started disk monitoring
+2025-03-02 11:43:53,674 INFO    SystemMonitor:57922 [interfaces.py:start():190] Started gpuapple monitoring
+2025-03-02 11:43:53,674 INFO    SystemMonitor:57922 [interfaces.py:start():190] Started memory monitoring
+2025-03-02 11:43:53,676 INFO    SystemMonitor:57922 [interfaces.py:start():190] Started network monitoring
+2025-03-02 11:43:53,678 DEBUG   HandlerThread:57922 [gitlib.py:_init_repo():56] git repository is invalid
+2025-03-02 11:43:53,678 DEBUG   HandlerThread:57922 [system_info.py:probe():198] Probing system done
+2025-03-02 11:43:53,678 DEBUG   HandlerThread:57922 [system_monitor.py:probe():223] {'os': 'macOS-15.3.1-arm64-arm-64bit-Mach-O', 'python': '3.13.2', 'heartbeatAt': '2025-03-02T17:43:53.674232', 'startedAt': '2025-03-02T17:43:52.676276', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/app.py', 'codePathLocal': 'app.py', 'codePath': 'app.py', 'host': 'Mac.lan', 'username': 'cpconnor', 'executable': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/bin/python', 'cpu_count': 14, 'cpu_count_logical': 14, 'cpu_freq': {'current': 4, 'min': 1, 'max': 4}, 'cpu_freq_per_core': [{'current': 4, 'min': 1, 'max': 4}], 'disk': {'/': {'total': 460.4317207336426, 'used': 10.393470764160156}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 48.0}}
+2025-03-02 11:43:53,678 INFO    HandlerThread:57922 [system_monitor.py:probe():224] Finished collecting system info
+2025-03-02 11:43:53,678 INFO    HandlerThread:57922 [system_monitor.py:probe():227] Publishing system info
+2025-03-02 11:43:53,678 INFO    HandlerThread:57922 [system_monitor.py:probe():229] Finished publishing system info
+2025-03-02 11:43:53,680 DEBUG   SenderThread:57922 [sender.py:send():379] send: files
+2025-03-02 11:43:53,680 INFO    SenderThread:57922 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2025-03-02 11:43:53,758 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: python_packages
+2025-03-02 11:43:53,758 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: python_packages
+2025-03-02 11:43:53,758 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:43:53,758 DEBUG   SenderThread:57922 [sender.py:send():379] send: telemetry
+2025-03-02 11:43:53,759 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:43:53,759 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:43:53,906 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: log_artifact
+2025-03-02 11:43:53,959 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: log_artifact
+2025-03-02 11:43:53,982 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/media/table/generation_examples_0_ec7ab7ae3c20fe173b7d.table.json
+2025-03-02 11:43:53,982 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/requirements.txt
+2025-03-02 11:43:53,982 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/wandb-metadata.json
+2025-03-02 11:43:53,982 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/media/table
+2025-03-02 11:43:53,982 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/media
+2025-03-02 11:43:54,061 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-02 11:43:54,098 INFO    wandb-upload_0:57922 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpwfdkmj1rwandb/wu41fpe8-wandb-metadata.json
+2025-03-02 11:43:54,357 INFO    wandb-upload_1:57922 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpwfdkmj1rwandb/83u8kavh-media/table/generation_examples_0_ec7ab7ae3c20fe173b7d.table.json
+2025-03-02 11:43:54,481 INFO    wandb-upload_0:57922 [upload_job.py:push():89] Uploaded file /Users/cpconnor/Library/Application Support/wandb/artifacts/staging/tmp7udmi8tw
+2025-03-02 11:43:55,059 INFO    SenderThread:57922 [sender.py:send_request_log_artifact():1456] logged artifact run-ugt6a1mg-generation_examples - {'id': 'QXJ0aWZhY3Q6MTUzNzQ2MjY1NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU2OTA4ODIyNQ==', 'latestArtifact': None}}
+2025-03-02 11:43:55,059 DEBUG   SenderThread:57922 [sender.py:send():379] send: files
+2025-03-02 11:43:55,059 INFO    SenderThread:57922 [sender.py:_save_file():1390] saving file media/table/generation_examples_0_ec7ab7ae3c20fe173b7d.table.json with policy now
+2025-03-02 11:43:55,059 DEBUG   SenderThread:57922 [sender.py:send():379] send: history
+2025-03-02 11:43:55,060 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: summary_record
+2025-03-02 11:43:55,060 INFO    SenderThread:57922 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-03-02 11:43:55,363 INFO    wandb-upload_1:57922 [upload_job.py:push():131] Uploaded file /var/folders/7v/4r1xclxs6l333vvl10wx5t6w0000gn/T/tmpwfdkmj1rwandb/otfa0h7a-media/table/generation_examples_0_ec7ab7ae3c20fe173b7d.table.json
+2025-03-02 11:43:55,989 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/output.log
+2025-03-02 11:43:55,989 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/wandb-summary.json
+2025-03-02 11:43:57,997 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/output.log
+2025-03-02 11:43:58,075 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:03,095 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:08,112 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:08,762 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:44:08,763 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:44:08,763 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:44:13,852 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:18,870 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:23,767 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:44:23,767 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:44:23,768 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:44:23,906 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:24,078 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/config.yaml
+2025-03-02 11:44:29,010 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:34,024 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:38,770 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:44:38,770 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:44:38,771 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:44:39,844 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:44,860 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:49,878 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:53,680 DEBUG   SystemMonitor:57922 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-03-02 11:44:53,681 DEBUG   SenderThread:57922 [sender.py:send():379] send: telemetry
+2025-03-02 11:44:53,681 DEBUG   SenderThread:57922 [sender.py:send():379] send: stats
+2025-03-02 11:44:53,771 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:44:53,771 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:44:53,771 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:44:54,923 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:44:55,201 INFO    Thread-12 :57922 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250302_114352-ugt6a1mg/files/config.yaml
+2025-03-02 11:45:00,009 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:05,022 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:08,773 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:45:08,773 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:45:08,775 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:45:10,929 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:15,944 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:20,961 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:23,684 DEBUG   SenderThread:57922 [sender.py:send():379] send: stats
+2025-03-02 11:45:23,773 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-02 11:45:23,773 DEBUG   SenderThread:57922 [sender.py:send_request():406] send_request: stop_status
+2025-03-02 11:45:23,774 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-02 11:45:26,023 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:31,039 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:35,847 INFO    memory    :57922 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2025-03-02 11:45:35,848 DEBUG   SystemMonitor:57922 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-03-02 11:45:35,848 DEBUG   SystemMonitor:57922 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-03-02 11:45:35,849 DEBUG   SenderThread:57922 [sender.py:send():379] send: stats
+2025-03-02 11:45:36,854 DEBUG   HandlerThread:57922 [handler.py:handle_request():146] handle_request: status_report
+2025-03-02 11:45:37,766 INFO    MainThread:57922 [internal.py:handle_exit():76] Internal process exited

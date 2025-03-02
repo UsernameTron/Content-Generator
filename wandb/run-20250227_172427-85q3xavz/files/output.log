@@ -1,0 +1,45 @@
+2025-02-27 17:24:27,740 - __main__ - INFO - Successfully initialized W&B
+2025-02-27 17:24:27,751 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-27 17:24:27,752 - __main__ - INFO - Applied Apple Silicon optimization settings
+2025-02-27 17:24:27,752 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 17:24:28,021 - __main__ - INFO - Tokenizer loaded successfully
+2025-02-27 17:24:28,022 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-27 17:24:28,023 - __main__ - INFO - Resuming training from checkpoint: outputs/finetune/checkpoint-50
+2025-02-27 17:24:28,023 - __main__ - INFO - Loading model on mps device
+2025-02-27 17:24:29,345 - __main__ - INFO - Model loaded successfully
+2025-02-27 17:24:29,346 - __main__ - INFO - Preparing model for kbit training
+2025-02-27 17:24:29,346 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-27 17:24:29,423 - __main__ - INFO - LoRA adapters successfully applied to model
+2025-02-27 17:24:29,425 - __main__ - INFO - Number of trainable parameters: 6291456
+2025-02-27 17:24:29,426 - __main__ - INFO - Model size: 1420.94M parameters
+2025-02-27 17:24:29,426 - __main__ - INFO - Trainable parameters: 6.29M (0.44%)
+2025-02-27 17:24:29,426 - __main__ - INFO - Preparing training dataset from data/training_data.jsonl
+2025-02-27 17:24:29,426 - __main__ - INFO - Loading data from data/training_data.jsonl
+2025-02-27 17:24:29,462 - __main__ - INFO - Preparing validation dataset from data/validation_data.jsonl
+2025-02-27 17:24:29,462 - __main__ - INFO - Loading data from data/validation_data.jsonl
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+2025-02-27 17:24:29,471 - __main__ - INFO - Training dataset size: 81
+2025-02-27 17:24:29,471 - __main__ - INFO - Evaluation dataset size: 20
+2025-02-27 17:24:29,474 - wandb_dashboards - INFO - Created custom metrics callback for W&B tracking
+2025-02-27 17:24:29,474 - __main__ - INFO - Custom W&B metrics callback loaded successfully
+2025-02-27 17:24:29,475 - __main__ - INFO - Setting up training arguments
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-02-27 17:24:29,476 - __main__ - INFO - Initializing trainer
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:583: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-27 17:24:29,482 - __main__ - INFO - Checkpoints will be saved every 7200 steps
+2025-02-27 17:24:29,482 - __main__ - INFO - Starting model fine-tuning
+2025-02-27 17:24:29,588 - wandb_dashboards - INFO - Initializing training metrics for W&B
+2025-02-27 17:24:29,589 - wandb_dashboards - INFO - Successfully initialized training metrics
+  0%|                                                                                                                | 0/50 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+2025-02-27 17:24:30,284 - __main__ - ERROR - Error during training: element 0 of tensors does not require grad and does not have a grad_fn
+2025-02-27 17:24:30,284 - __main__ - WARNING - Training was interrupted. Saving checkpoint of the current state.
+2025-02-27 17:24:30,284 - __main__ - INFO - Saving model to outputs/finetune/final
+2025-02-27 17:24:30,885 - __main__ - INFO - Model saving complete.
+2025-02-27 17:24:30,886 - __main__ - INFO - Fine-tuning process complete.

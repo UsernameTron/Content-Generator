@@ -1,0 +1,428 @@
+[
+  {
+    "statement1": "Aspirin is recommended for primary prevention of cardiovascular disease in patients over 50.",
+    "statement2": "The use of aspirin for primary prevention of cardiovascular disease is no longer recommended in most patients.",
+    "type": "contradicting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Beta-blockers are contraindicated in patients with heart failure.",
+    "statement2": "Beta-blockers are a cornerstone of heart failure management and have been shown to reduce mortality.",
+    "type": "contradicting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Patients with mild hypertension should start medication immediately upon diagnosis.",
+    "statement2": "Lifestyle modifications are the first-line treatment for mild hypertension before initiating medications.",
+    "type": "contradicting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Adjuvant chemotherapy is recommended for all breast cancer patients regardless of stage.",
+    "statement2": "Adjuvant chemotherapy decisions should be based on individual risk assessment including tumor stage, grade, and biomarkers.",
+    "type": "contradicting",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Annual mammograms should begin at age 40 for all women.",
+    "statement2": "Mammogram screening should be individualized based on risk factors and begin at age 50 for average-risk women.",
+    "type": "contradicting",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Seizure medications should be discontinued after a period of seizure freedom.",
+    "statement2": "The decision to discontinue seizure medication requires careful consideration of multiple factors including seizure type, EEG findings, and patient preference.",
+    "type": "contradicting",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "All patients with suspected stroke should receive thrombolytic therapy.",
+    "statement2": "Thrombolytic therapy for stroke is contraindicated in many scenarios including hemorrhagic stroke or recent surgery.",
+    "type": "contradicting",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Antibiotics should be prescribed for all upper respiratory infections.",
+    "statement2": "Most upper respiratory infections are viral and do not require antibiotic treatment.",
+    "type": "contradicting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Patients with mild COVID-19 benefit from early steroid treatment.",
+    "statement2": "Steroids are not recommended for mild COVID-19 and should be reserved for severe cases requiring oxygen.",
+    "type": "contradicting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "NSAIDs are safe for all patients with pain.",
+    "statement2": "NSAIDs should be used with caution in patients with kidney disease, heart failure, or gastrointestinal risks.",
+    "type": "contradicting",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Opioids are appropriate first-line treatment for chronic pain.",
+    "statement2": "Non-opioid and non-pharmacological approaches should be first-line for chronic pain management.",
+    "type": "contradicting",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Regular physical activity is beneficial for cardiovascular health.",
+    "statement2": "Exercise regimens that include both aerobic and resistance training provide optimal cardiovascular benefits.",
+    "type": "supporting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Statins are effective for lowering cholesterol levels.",
+    "statement2": "Statin therapy has been shown to significantly reduce LDL cholesterol and cardiovascular events in high-risk patients.",
+    "type": "supporting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "HPV vaccination prevents cervical cancer.",
+    "statement2": "The HPV vaccine is highly effective at preventing HPV infections that can lead to cervical cancer development.",
+    "type": "supporting",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Tobacco cessation reduces cancer risk.",
+    "statement2": "Smoking cessation at any age significantly decreases the risk of developing multiple types of cancer.",
+    "type": "supporting",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Regular physical exercise may reduce the risk of dementia.",
+    "statement2": "Studies have shown that active individuals have lower rates of cognitive decline and dementia than sedentary individuals.",
+    "type": "supporting",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Sleep is essential for brain health.",
+    "statement2": "Adequate quality sleep is required for proper cognitive function, memory consolidation, and neurological health.",
+    "type": "supporting",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Vaccination is a key strategy for preventing infectious diseases.",
+    "statement2": "Vaccines have dramatically reduced the global burden of many serious infectious diseases through direct and indirect protection.",
+    "type": "supporting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Hand hygiene is effective at reducing disease transmission.",
+    "statement2": "Proper hand washing significantly decreases the spread of infectious pathogens in healthcare and community settings.",
+    "type": "supporting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Medication adherence improves treatment outcomes.",
+    "statement2": "Taking medications as prescribed is associated with better disease control and fewer complications across therapeutic areas.",
+    "type": "supporting",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Polypharmacy increases the risk of adverse drug events.",
+    "statement2": "The use of multiple medications simultaneously raises the likelihood of drug interactions and side effects, particularly in elderly patients.",
+    "type": "supporting",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "ACE inhibitors are used to treat hypertension.",
+    "statement2": "Diabetes management involves monitoring blood glucose levels.",
+    "type": "unrelated",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Chemotherapy may cause hair loss as a side effect.",
+    "statement2": "Vaccination schedules should begin in early childhood.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Multiple sclerosis is an autoimmune disease affecting the central nervous system.",
+    "statement2": "Proper nutrition is essential during pregnancy for fetal development.",
+    "type": "unrelated",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Antibiotics are not effective against viral infections.",
+    "statement2": "Physical therapy can help improve mobility after joint replacement surgery.",
+    "type": "unrelated",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Some medications require monitoring of blood levels to ensure proper dosing.",
+    "statement2": "Regular dental check-ups help maintain oral health.",
+    "type": "unrelated",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Hormone replacement therapy was widely recommended for menopausal women in the 1990s.",
+    "statement2": "Current guidelines recommend individualized hormone therapy decisions based on risk factors and symptom severity.",
+    "type": "temporally_superseded",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Bed rest was historically prescribed for back pain management.",
+    "statement2": "Current evidence supports early mobilization and physical activity for most cases of back pain.",
+    "type": "temporally_superseded",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Aggressive fluid resuscitation was recommended for all sepsis patients.",
+    "statement2": "Recent studies suggest a more conservative, individualized approach to fluid management in sepsis.",
+    "type": "temporally_superseded",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "PSA screening was routinely recommended for all men over 50.",
+    "statement2": "Current guidelines recommend shared decision-making regarding PSA screening, weighing potential benefits and harms.",
+    "type": "temporally_superseded",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Strict bed rest was previously recommended for patients after myocardial infarction.",
+    "statement2": "Early mobilization is now standard practice following myocardial infarction to prevent complications.",
+    "type": "temporally_superseded",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Evidence shows targeted therapy improves outcomes in patients with breast cancer in recommended doses.",
+    "statement2": "Research indicates targeted therapy has no significant benefit for breast cancer.",
+    "type": "temporally_superseded",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Medical consensus suggests that evidence shows ace inhibitors improves outcomes in patients with coronary artery disease.",
+    "statement2": "Research indicates ACE inhibitors has no significant benefit for coronary artery disease.",
+    "type": "unrelated",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "According to clinical guidelines, beta blockers has been shown effective for coronary artery disease in clinical trials.",
+    "statement2": "Based on recent evidence, patients with atrial fibrillation should be treated with ace inhibitors.",
+    "type": "temporally_superseded",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend beta blockers as first-line therapy for hypertension in the absence of contraindications.",
+    "statement2": "Evidence shows statins improves outcomes in patients with coronary artery disease in clinical settings.",
+    "type": "temporally_superseded",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Based on recent evidence, recent studies suggest chemotherapy may reduce symptoms of colon cancer.",
+    "statement2": "Evidence supports that research indicates chemotherapy has no significant benefit for colon cancer.",
+    "type": "temporally_superseded",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Based on recent evidence, clinical guidelines recommend anticonvulsants as first-line therapy for parkinson's disease in recommended doses.",
+    "statement2": "Research indicates anticonvulsants has no significant benefit for Parkinson's disease in the absence of contraindications.",
+    "type": "unrelated",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "It is widely accepted that evidence shows anticonvulsants improves outcomes in patients with multiple sclerosis.",
+    "statement2": "Studies indicate that multiple studies confirm anticonvulsants is effective for multiple sclerosis.",
+    "type": "temporally_superseded",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Patients with COVID-19 should be treated with antivirals.",
+    "statement2": "Clinical practice shows that antifungals has been shown effective for urinary tract infection in clinical trials.",
+    "type": "unrelated",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "radiation therapy has been shown effective for lymphoma in clinical trials.",
+    "statement2": "Clinical guidelines recommend immunotherapy as first-line therapy for lung cancer as part of a comprehensive treatment plan.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "beta blockers has been shown effective for heart failure in clinical trials.",
+    "statement2": "Research consistently demonstrates the benefits of beta blockers for heart failure in clinical settings.",
+    "type": "unrelated",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Evidence shows radiation therapy improves outcomes in patients with colon cancer.",
+    "statement2": "Medical consensus suggests that recent evidence suggests radiation therapy may worsen outcomes in colon cancer with appropriate monitoring.",
+    "type": "unrelated",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Based on recent evidence, evidence shows vaccines improves outcomes in patients with urinary tract infection.",
+    "statement2": "Clinical guidelines advise against using vaccines for urinary tract infection.",
+    "type": "supporting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Recent studies suggest immunotherapy may reduce symptoms of colon cancer with appropriate monitoring.",
+    "statement2": "Clinical experience has validated immunotherapy for colon cancer for most patients.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "dopamine agonists has been shown effective for Parkinson's disease in clinical trials.",
+    "statement2": "According to clinical guidelines, clinical experience has validated dopamine agonists for parkinson's disease.",
+    "type": "unrelated",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Clinical guidelines recommend statins as first-line therapy for coronary artery disease under medical supervision.",
+    "statement2": "Evidence shows ACE inhibitors improves outcomes in patients with hypertension.",
+    "type": "unrelated",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Studies indicate that patients with covid-19 should be treated with vaccines in most cases.",
+    "statement2": "Current practice indicates that antifungals has been shown effective for cellulitis in clinical trials as part of a comprehensive treatment plan.",
+    "type": "supporting",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend corticosteroids as first-line therapy for Parkinson's disease in the absence of contraindications.",
+    "statement2": "Meta-analyses support the use of corticosteroids in Parkinson's disease in clinical settings.",
+    "type": "unrelated",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Studies indicate that clinical guidelines recommend dopamine agonists as first-line therapy for epilepsy.",
+    "statement2": "Research suggests that research indicates dopamine agonists has no significant benefit for epilepsy in recommended doses.",
+    "type": "contradicting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Based on recent evidence, evidence shows vaccines improves outcomes in patients with urinary tract infection.",
+    "statement2": "Clinical guidelines advise against using vaccines for urinary tract infection.",
+    "type": "supporting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Medical consensus suggests that patients with cellulitis should be treated with antibiotics.",
+    "statement2": "Medical consensus suggests that clinical experience has validated antibiotics for cellulitis.",
+    "type": "unrelated",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Experts recommend that evidence shows antivirals improves outcomes in patients with covid-19 for most patients.",
+    "statement2": "Studies have shown antivirals is ineffective for COVID-19.",
+    "type": "contradicting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Medical consensus suggests that recent studies suggest anticonvulsants may reduce symptoms of epilepsy as part of a comprehensive treatment plan.",
+    "statement2": "Clinical guidelines advise against using anticonvulsants for epilepsy as part of a comprehensive treatment plan.",
+    "type": "unrelated",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Evidence shows anticonvulsants improves outcomes in patients with epilepsy.",
+    "statement2": "Research consistently demonstrates the benefits of anticonvulsants for epilepsy in most cases.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "antivirals has been shown effective for cellulitis in clinical trials.",
+    "statement2": "Clinical guidelines advise against using antivirals for cellulitis.",
+    "type": "temporally_superseded",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Patients with epilepsy should be treated with triptans.",
+    "statement2": "Evidence supports that evidence shows anticonvulsants improves outcomes in patients with migraine.",
+    "type": "unrelated",
+    "domain": "neurology"
+  },
+  {
+    "statement1": "Patients with nausea should be treated with NSAIDs.",
+    "statement2": "Based on recent evidence, clinical guidelines advise against using nsaids for nausea.",
+    "type": "temporally_superseded",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend triptans as first-line therapy for migraine when properly administered.",
+    "statement2": "Recent studies suggest dopamine agonists may reduce symptoms of epilepsy.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend radiation therapy as first-line therapy for colon cancer.",
+    "statement2": "Research indicates radiation therapy has no significant benefit for colon cancer.",
+    "type": "contradicting",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Recent studies suggest chemotherapy may reduce symptoms of lung cancer.",
+    "statement2": "According to clinical guidelines, evidence shows targeted therapy improves outcomes in patients with breast cancer for most patients.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Evidence supports that clinical guidelines recommend vaccines as first-line therapy for pneumonia under medical supervision.",
+    "statement2": "Research indicates vaccines has no significant benefit for pneumonia.",
+    "type": "contradicting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Studies indicate that evidence shows triptans improves outcomes in patients with parkinson's disease.",
+    "statement2": "Studies indicate that triptans is contraindicated for patients with parkinson's disease.",
+    "type": "temporally_superseded",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend chemotherapy as first-line therapy for lymphoma.",
+    "statement2": "Recent studies suggest immunotherapy may reduce symptoms of lung cancer.",
+    "type": "temporally_superseded",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Clinical guidelines recommend chemotherapy as first-line therapy for colon cancer.",
+    "statement2": "chemotherapy remains a cornerstone of therapy for colon cancer with appropriate monitoring.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "Experts recommend that clinical guidelines recommend opioids as first-line therapy for insomnia.",
+    "statement2": "Studies have shown opioids is ineffective for insomnia.",
+    "type": "contradicting",
+    "domain": "cardiology"
+  },
+  {
+    "statement1": "Recent studies suggest immunotherapy may reduce symptoms of lung cancer.",
+    "statement2": "Clinical guidelines advise against using immunotherapy for lung cancer.",
+    "type": "temporally_superseded",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "According to clinical guidelines, recent studies suggest benzodiazepines may reduce symptoms of inflammation.",
+    "statement2": "According to clinical guidelines, meta-analyses support the use of benzodiazepines in inflammation.",
+    "type": "unrelated",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Current practice indicates that evidence shows corticosteroids improves outcomes in patients with epilepsy.",
+    "statement2": "Medical consensus suggests that clinical experience has validated corticosteroids for epilepsy.",
+    "type": "supporting",
+    "domain": "infectious_disease"
+  },
+  {
+    "statement1": "Patients with Parkinson's disease should be treated with corticosteroids.",
+    "statement2": "Medical consensus suggests that patients with migraine should be treated with anticonvulsants in the absence of contraindications.",
+    "type": "unrelated",
+    "domain": "oncology"
+  },
+  {
+    "statement1": "According to clinical guidelines, patients with pain should be treated with opioids.",
+    "statement2": "Multiple studies confirm opioids is effective for pain.",
+    "type": "unrelated",
+    "domain": "pharmacology"
+  },
+  {
+    "statement1": "Patients with heart failure should be treated with statins.",
+    "statement2": "Research indicates statins has no significant benefit for heart failure when properly administered.",
+    "type": "supporting",
+    "domain": "oncology"
+  }
+]

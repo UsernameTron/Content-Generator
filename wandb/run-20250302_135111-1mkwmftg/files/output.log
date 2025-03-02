@@ -1,0 +1,83 @@
+2025-03-02 13:51:12,501 - src.utils.wandb_monitor - INFO - Logged generation example for Twitter to W&B
+2025-03-02 13:51:12,501 - src.models.content_generator - INFO - Successfully generated content for Twitter
+2025-03-02 13:51:12,503 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:51:23,265 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:51:23,265 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:51:23,409 - src.models.content_generator - INFO - Generating content for platform: Substack with style: pete_connor
+2025-03-02 13:51:23,411 - src.models.templates - WARNING - No templates found for platform: Substack. Using generic templates.
+2025-03-02 13:51:23,411 - src.models.content_generator - INFO - Successfully generated content for Substack
+2025-03-02 13:51:23,414 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:51:38,697 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:51:38,698 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:51:38,805 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 13:51:38,807 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 13:51:38,808 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 13:51:38,809 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:51:46,089 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:51:46,089 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:51:46,183 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:51:46,183 - src.models.content_generator - INFO - Generating content for platform: LinkedIn with style: pete_connor
+2025-03-02 13:51:46,185 - src.models.templates - WARNING - No templates found for platform: LinkedIn. Using generic templates.
+2025-03-02 13:51:46,185 - src.models.content_generator - INFO - Successfully generated content for LinkedIn
+2025-03-02 13:51:46,186 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:51:46,187 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:51:53,098 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:51:53,099 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:51:53,257 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 13:51:53,259 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 13:51:53,259 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 13:51:53,261 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:53:24,762 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:53:24,763 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:53:24,764 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:53:24,775 - src.models.content_generator - INFO - Generating content for platform: LinkedIn with style: pete_connor
+2025-03-02 13:53:24,775 - src.models.templates - WARNING - No templates found for platform: LinkedIn. Using generic templates.
+2025-03-02 13:53:24,776 - src.models.content_generator - INFO - Successfully generated content for LinkedIn
+2025-03-02 13:53:24,780 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:53:24,782 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 13:53:36,475 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 13:53:36,476 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 13:53:36,485 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:53:36,485 - src.models.content_generator - INFO - Generating content for platform: LinkedIn with style: pete_connor
+2025-03-02 13:53:36,486 - src.models.templates - WARNING - No templates found for platform: LinkedIn. Using generic templates.
+2025-03-02 13:53:36,486 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:53:36,780 - src.utils.wandb_monitor - INFO - Logged generation example for LinkedIn to W&B
+2025-03-02 13:53:36,780 - src.models.content_generator - INFO - Successfully generated content for LinkedIn
+2025-03-02 13:53:36,782 - src.models.platform_specs - WARNING - No specifications found for platform: LinkedIn. Using defaults.
+2025-03-02 13:53:36,783 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 15:35:14,595 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 15:35:14,596 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 15:35:14,621 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 15:35:14,622 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 15:35:14,622 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 15:35:14,628 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 15:35:15,788 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 15:35:15,788 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 15:35:15,801 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 15:35:15,801 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 15:35:15,801 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 15:35:15,805 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 15:35:20,579 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 15:35:20,580 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 15:35:20,711 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 15:35:20,714 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 15:35:21,268 - src.utils.wandb_monitor - INFO - Logged generation example for Medium to W&B
+2025-03-02 15:35:21,268 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 15:35:21,271 - src.utils.health_monitor - INFO - Health check: System is healthy
+2025-03-02 15:35:31,137 - src.models.content_generator - INFO - Loaded writing style configuration
+2025-03-02 15:35:31,137 - src.models.content_generator - INFO - ContentGenerator initialized with W&B monitoring: True
+2025-03-02 15:35:31,259 - src.models.content_generator - INFO - Generating content for platform: Medium with style: pete_connor
+2025-03-02 15:35:31,262 - src.models.templates - WARNING - No templates found for platform: Medium. Using generic templates.
+2025-03-02 15:35:31,262 - src.models.content_generator - INFO - Successfully generated content for Medium
+2025-03-02 15:35:31,262 - src.models.content_generator - INFO - Generating content for platform: Substack with style: pete_connor
+2025-03-02 15:35:31,262 - src.models.templates - WARNING - No templates found for platform: Substack. Using generic templates.
+2025-03-02 15:35:31,263 - src.models.content_generator - INFO - Successfully generated content for Substack
+2025-03-02 15:35:31,267 - src.utils.health_monitor - INFO - Health check: System is healthy
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/app.py", line 623, in <lambda>
+    copy_btn.clicked.connect(lambda checked, editor=output_text: self.copy_to_clipboard(editor))
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/app.py", line 696, in copy_to_clipboard
+    editor.moveCursor(editor.textCursor().Start)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QTextCursor' object has no attribute 'Start'. Did you mean: 'atStart'?

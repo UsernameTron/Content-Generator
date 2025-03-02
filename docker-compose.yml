@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  content-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: multi-platform-content-generator
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./reports:/app/reports
+    environment:
+      - WANDB_API_KEY=${WANDB_API_KEY}
+      - QT_QPA_PLATFORM=offscreen
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/healthcheck')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+  
+  # Optional: Add monitoring service
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - content-generator
+    profiles:
+      - monitoring
+  
+  # Optional: Add visualization service  
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./monitoring/grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    profiles:
+      - monitoring
+
+volumes:
+  data-volume:
+  output-volume:
+  reports-volume:

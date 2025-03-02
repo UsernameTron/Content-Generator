@@ -1,0 +1,27 @@
+
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+2025-02-26 21:32:54,141 - __main__ - INFO - Successfully initialized W&B
+2025-02-26 21:32:54,151 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-26 21:32:54,151 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-26 21:32:54,421 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-26 21:32:54,421 - __main__ - INFO - Loading model on mps device
+2025-02-26 21:32:55,696 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-26 21:32:55,786 - __main__ - INFO - Preparing training dataset from data/training/pete_connor_style.jsonl
+2025-02-26 21:32:55,786 - __main__ - INFO - Loading data from data/training/pete_connor_style.jsonl
+2025-02-26 21:32:55,800 - __main__ - INFO - Preparing validation dataset from data/training/pete_connor_validation.jsonl
+2025-02-26 21:32:55,800 - __main__ - INFO - Loading data from data/training/pete_connor_validation.jsonl
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:334: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-26 21:32:55,807 - __main__ - INFO - Starting model fine-tuning
+[34m[1mwandb[39m[22m: [33mWARNING[39m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                      | 0/1000 [00:00<?, ?it/s]2025-02-26 21:32:56,023 - __main__ - ERROR - Error during training: fine_tune_model.<locals>.<lambda>() got an unexpected keyword argument 'num_items_in_batch'
+2025-02-26 21:32:56,023 - __main__ - WARNING - Training was interrupted. Saving checkpoint of the current state.
+2025-02-26 21:32:56,023 - __main__ - INFO - Saving model to outputs/finetune/final
+2025-02-26 21:32:56,523 - __main__ - INFO - Model saving complete.
+2025-02-26 21:32:56,523 - __main__ - ERROR - Error saving model: 'PosixPath' object has no attribute 'ctime'
+2025-02-26 21:32:56,523 - __main__ - ERROR - Could not save the trained model. Check the logs for details.

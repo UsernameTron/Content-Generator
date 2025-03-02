@@ -1,0 +1,224 @@
+{
+  "timestamp": "2025-02-28 22:01:18",
+  "preset": null,
+  "config": {
+    "dashboard": {
+      "mode": "regular",
+      "refresh_interval": 15,
+      "auto_save": true,
+      "debug_mode": false
+    },
+    "performance": {
+      "thresholds": {
+        "critical": 0.65,
+        "warning": 0.75,
+        "target": 0.85
+      },
+      "metrics": {
+        "accuracy": true,
+        "precision": true,
+        "recall": true,
+        "f1_score": true,
+        "specificity": true,
+        "auc": true,
+        "confusion_matrix": true
+      },
+      "reporting": {
+        "generate_html": true,
+        "generate_json": true,
+        "generate_csv": true,
+        "include_visualizations": true,
+        "include_recommendations": true,
+        "detailed_category_analysis": true,
+        "detailed_domain_analysis": true
+      },
+      "alerts": {
+        "enabled": true,
+        "regression_threshold": 0.05,
+        "stagnation_threshold": 0.02,
+        "consecutive_failures_threshold": 3
+      }
+    },
+    "testing": {
+      "batch_size": 64,
+      "test_split": 0.2,
+      "cross_validation": {
+        "enabled": true,
+        "folds": 5,
+        "stratified": true
+      },
+      "categories": [
+        "medication_conflicts",
+        "treatment_contradictions",
+        "diagnostic_inconsistencies",
+        "temporal_contradictions",
+        "procedural_conflicts"
+      ],
+      "domains": [
+        "cardiology",
+        "neurology",
+        "oncology",
+        "pediatrics",
+        "emergency_medicine",
+        "internal_medicine",
+        "surgery",
+        "psychiatry"
+      ],
+      "data_augmentation": {
+        "enabled": false,
+        "techniques": [
+          "synonym_replacement",
+          "random_insertion",
+          "random_swap",
+          "random_deletion"
+        ],
+        "augmentation_factor": 2
+      }
+    },
+    "visualization": {
+      "theme": "default",
+      "interactive": true,
+      "chart_types": [
+        "line",
+        "bar",
+        "radar",
+        "heatmap",
+        "confusion_matrix"
+      ],
+      "color_palette": "viridis",
+      "show_trend_lines": true,
+      "show_confidence_intervals": true
+    },
+    "export": {
+      "formats": [
+        "html",
+        "json",
+        "csv"
+      ],
+      "auto_export": false,
+      "export_directory": "reports",
+      "filename_template": "report_{date}_{time}_{mode}"
+    },
+    "logging": {
+      "level": "INFO",
+      "file_logging": true,
+      "console_logging": true,
+      "log_directory": "logs",
+      "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+      "log_performance_metrics": true
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8080997223839466,
+    "precision": 0.826545288933055,
+    "recall": 0.8083519230909367,
+    "f1_score": 0.8165310547101139,
+    "domain_accuracy": 0.8148757724623577,
+    "domain_precision": 0.8557032042692655,
+    "domain_recall": 0.8212799335273608,
+    "domain_f1_score": 0.8348291831321369,
+    "customer_experience": 0.88,
+    "artificial_intelligence": 0.8633333333333333,
+    "machine_learning": 0.8533333333333334
+  },
+  "category_results": {
+    "medication_conflicts": {
+      "accuracy": 0.79059072113314,
+      "precision": 0.7731586344979646,
+      "recall": 0.7136508489452174,
+      "f1_score": 0.7422138774646618
+    },
+    "treatment_contradictions": {
+      "accuracy": 0.7801308409843265,
+      "precision": 0.7564661450039825,
+      "recall": 0.7028334630082436,
+      "f1_score": 0.7286642406021818
+    },
+    "diagnostic_inconsistencies": {
+      "accuracy": 0.7919963213653507,
+      "precision": 0.8783818391126104,
+      "recall": 0.8899630608233298,
+      "f1_score": 0.8841345261737154
+    },
+    "temporal_contradictions": {
+      "accuracy": 0.7319058042271921,
+      "precision": 0.8618170849450344,
+      "recall": 0.803100173030471,
+      "f1_score": 0.831423239472668
+    },
+    "procedural_conflicts": {
+      "accuracy": 0.9458749242097237,
+      "precision": 0.8629027411056837,
+      "recall": 0.9322120696474214,
+      "f1_score": 0.8962193898373428
+    }
+  },
+  "domain_results": {
+    "cardiology": {
+      "accuracy": 0.9350293912547774,
+      "precision": 0.9126188153592627,
+      "recall": 0.8485048125019391,
+      "f1_score": 0.8793947733840548
+    },
+    "neurology": {
+      "accuracy": 0.7591368958471227,
+      "precision": 0.9130008287287169,
+      "recall": 0.7234831074896948,
+      "f1_score": 0.8072681461642655
+    },
+    "oncology": {
+      "accuracy": 0.8135184281339387,
+      "precision": 0.7695009683293829,
+      "recall": 0.9435855601603282,
+      "f1_score": 0.8476979885950421
+    },
+    "pediatrics": {
+      "accuracy": 0.924185076943403,
+      "precision": 0.8315109089674219,
+      "recall": 0.8717384398879519,
+      "f1_score": 0.8511496252973145
+    },
+    "emergency_medicine": {
+      "accuracy": 0.7429100562397598,
+      "precision": 0.7407611283165011,
+      "recall": 0.7447029198981981,
+      "f1_score": 0.7427267941858001
+    },
+    "internal_medicine": {
+      "accuracy": 0.8645191659724176,
+      "precision": 0.947398391883237,
+      "recall": 0.8051517390530689,
+      "f1_score": 0.8705023032845752
+    },
+    "surgery": {
+      "accuracy": 0.7394991558213814,
+      "precision": 0.9046870144289061,
+      "recall": 0.8853883413065491,
+      "f1_score": 0.8949336490671829
+    },
+    "psychiatry": {
+      "accuracy": 0.7402080094860607,
+      "precision": 0.8261475781406957,
+      "recall": 0.7476845479211561,
+      "f1_score": 0.7849601850788608
+    }
+  },
+  "customer_experience": {
+    "overall_score": 0.88,
+    "response_time": 0.91,
+    "satisfaction": 0.86,
+    "usability": 0.87
+  },
+  "artificial_intelligence": {
+    "overall_score": 0.8633333333333333,
+    "reasoning": 0.85,
+    "knowledge_integration": 0.88,
+    "adaptability": 0.86
+  },
+  "machine_learning": {
+    "overall_score": 0.8533333333333334,
+    "prediction_accuracy": 0.87,
+    "model_robustness": 0.84,
+    "generalization": 0.85
+  }
+}

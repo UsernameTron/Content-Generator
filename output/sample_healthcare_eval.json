@@ -1,0 +1,271 @@
+{
+  "contradiction_detection": {
+    "accuracy": 0.7241338580529654,
+    "by_category": {
+      "direct_contradiction": {
+        "accuracy": 0.7146491299525151,
+        "total": 19,
+        "correct": 13
+      },
+      "partial_contradiction": {
+        "accuracy": 0.8535198177152558,
+        "total": 46,
+        "correct": 39
+      },
+      "temporal_conflict": {
+        "accuracy": 0.5599744459059208,
+        "total": 35,
+        "correct": 19
+      },
+      "demographic_conflict": {
+        "accuracy": 0.6015541497275908,
+        "total": 47,
+        "correct": 28
+      },
+      "dosage_conflict": {
+        "accuracy": 0.44856761503855114,
+        "total": 31,
+        "correct": 13
+      },
+      "treatment_guidance": {
+        "accuracy": 0.7863296817872157,
+        "total": 17,
+        "correct": 13
+      }
+    },
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.7305175495788762,
+        "total": 45,
+        "correct": 32
+      },
+      "oncology": {
+        "accuracy": 0.7136166432212968,
+        "total": 53,
+        "correct": 37
+      },
+      "neurology": {
+        "accuracy": 0.7749293642961512,
+        "total": 58,
+        "correct": 44
+      },
+      "pediatrics": {
+        "accuracy": 0.5200492299469235,
+        "total": 42,
+        "correct": 21
+      },
+      "emergency_medicine": {
+        "accuracy": 0.6997398926761698,
+        "total": 53,
+        "correct": 37
+      },
+      "internal_medicine": {
+        "accuracy": 0.6543936115709655,
+        "total": 39,
+        "correct": 25
+      }
+    },
+    "examples": [
+      {
+        "task": "Sample contradiction task 1",
+        "statement_1": "Sample medical statement 1 for pediatrics",
+        "statement_2": "Sample medical statement 2 for pediatrics - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "direct_contradiction",
+        "domain": "pediatrics"
+      },
+      {
+        "task": "Sample contradiction task 2",
+        "statement_1": "Sample medical statement 1 for emergency_medicine",
+        "statement_2": "Sample medical statement 2 for emergency_medicine - supporting",
+        "expected": "non_contradiction",
+        "predicted": "non_contradiction",
+        "correct": false,
+        "category": "partial_contradiction",
+        "domain": "emergency_medicine"
+      },
+      {
+        "task": "Sample contradiction task 3",
+        "statement_1": "Sample medical statement 1 for internal_medicine",
+        "statement_2": "Sample medical statement 2 for internal_medicine - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "direct_contradiction",
+        "domain": "internal_medicine"
+      },
+      {
+        "task": "Sample contradiction task 4",
+        "statement_1": "Sample medical statement 1 for internal_medicine",
+        "statement_2": "Sample medical statement 2 for internal_medicine - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "temporal_conflict",
+        "domain": "internal_medicine"
+      },
+      {
+        "task": "Sample contradiction task 5",
+        "statement_1": "Sample medical statement 1 for cardiology",
+        "statement_2": "Sample medical statement 2 for cardiology - contradicting",
+        "expected": "contradiction",
+        "predicted": "contradiction",
+        "correct": true,
+        "category": "dosage_conflict",
+        "domain": "cardiology"
+      }
+    ]
+  },
+  "evidence_ranking": {
+    "accuracy": 0.6677518328038349,
+    "by_evidence_type": {
+      "clinical_trial": {
+        "accuracy": 0.7305685304406269,
+        "total": 11,
+        "correct": 8
+      },
+      "meta_analysis": {
+        "accuracy": 0.6260345282775831,
+        "total": 33,
+        "correct": 20
+      },
+      "case_study": {
+        "accuracy": 0.458909434328411,
+        "total": 37,
+        "correct": 16
+      },
+      "expert_opinion": {
+        "accuracy": 0.7115706264730461,
+        "total": 19,
+        "correct": 13
+      },
+      "clinical_guideline": {
+        "accuracy": 0.7445945402903583,
+        "total": 12,
+        "correct": 8
+      },
+      "observational_study": {
+        "accuracy": 0.694495838961493,
+        "total": 10,
+        "correct": 6
+      }
+    },
+    "by_domain": {
+      "cardiology": {
+        "accuracy": 0.6675921195515675,
+        "total": 29,
+        "correct": 19
+      },
+      "oncology": {
+        "accuracy": 0.7005030934303259,
+        "total": 42,
+        "correct": 29
+      },
+      "neurology": {
+        "accuracy": 0.5874536989324991,
+        "total": 15,
+        "correct": 8
+      },
+      "pediatrics": {
+        "accuracy": 0.622909333461409,
+        "total": 26,
+        "correct": 16
+      },
+      "emergency_medicine": {
+        "accuracy": 0.5138383896692109,
+        "total": 30,
+        "correct": 15
+      },
+      "internal_medicine": {
+        "accuracy": 0.6654143646653706,
+        "total": 32,
+        "correct": 21
+      }
+    },
+    "examples": [
+      {
+        "task": "Sample evidence ranking task 1",
+        "evidence_1": {
+          "description": "Sample case_study evidence for neurology",
+          "type": "case_study"
+        },
+        "evidence_2": {
+          "description": "Sample clinical_trial evidence for neurology",
+          "type": "clinical_trial"
+        },
+        "stronger_evidence": "clinical_trial",
+        "predicted_stronger": "evidence_2",
+        "correct": false,
+        "domain": "neurology"
+      },
+      {
+        "task": "Sample evidence ranking task 2",
+        "evidence_1": {
+          "description": "Sample case_study evidence for pediatrics",
+          "type": "case_study"
+        },
+        "evidence_2": {
+          "description": "Sample observational_study evidence for pediatrics",
+          "type": "observational_study"
+        },
+        "stronger_evidence": "case_study",
+        "predicted_stronger": "evidence_1",
+        "correct": true,
+        "domain": "pediatrics"
+      },
+      {
+        "task": "Sample evidence ranking task 3",
+        "evidence_1": {
+          "description": "Sample meta_analysis evidence for cardiology",
+          "type": "meta_analysis"
+        },
+        "evidence_2": {
+          "description": "Sample observational_study evidence for cardiology",
+          "type": "observational_study"
+        },
+        "stronger_evidence": "meta_analysis",
+        "predicted_stronger": "evidence_1",
+        "correct": true,
+        "domain": "cardiology"
+      },
+      {
+        "task": "Sample evidence ranking task 4",
+        "evidence_1": {
+          "description": "Sample clinical_trial evidence for internal_medicine",
+          "type": "clinical_trial"
+        },
+        "evidence_2": {
+          "description": "Sample meta_analysis evidence for internal_medicine",
+          "type": "meta_analysis"
+        },
+        "stronger_evidence": "meta_analysis",
+        "predicted_stronger": "evidence_2",
+        "correct": false,
+        "domain": "internal_medicine"
+      },
+      {
+        "task": "Sample evidence ranking task 5",
+        "evidence_1": {
+          "description": "Sample expert_opinion evidence for oncology",
+          "type": "expert_opinion"
+        },
+        "evidence_2": {
+          "description": "Sample case_study evidence for oncology",
+          "type": "case_study"
+        },
+        "stronger_evidence": "expert_opinion",
+        "predicted_stronger": "evidence_1",
+        "correct": true,
+        "domain": "oncology"
+      }
+    ]
+  },
+  "metadata": {
+    "model_path": "sample/healthcare/model",
+    "adapter_path": "sample/healthcare/adapter",
+    "device": "mps",
+    "evaluation_timestamp": "2025-02-28 02:18:49"
+  }
+}

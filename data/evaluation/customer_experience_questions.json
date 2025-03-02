@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What are the key components of a successful Voice of Customer (VoC) program?",
+        "criteria": {
+            "data_collection": "collection methods",
+            "analysis": "analysis",
+            "action": "action plans",
+            "feedback_loop": "closed loop",
+            "metrics": "metrics"
+        }
+    },
+    {
+        "question": "Explain the difference between Customer Satisfaction (CSAT), Net Promoter Score (NPS), and Customer Effort Score (CES).",
+        "criteria": {
+            "csat_def": "satisfaction",
+            "nps_def": "recommend",
+            "ces_def": "effort",
+            "comparison": "different purposes",
+            "use_cases": "when to use"
+        }
+    },
+    {
+        "question": "What strategies can a company implement to reduce customer churn?",
+        "criteria": {
+            "onboarding": "onboarding",
+            "value": "value demonstration",
+            "feedback": "feedback collection",
+            "proactive": "proactive support",
+            "loyalty": "loyalty program"
+        }
+    },
+    {
+        "question": "How can a company effectively integrate customer feedback into its product development process?",
+        "criteria": {
+            "collection_methods": "collection methods",
+            "prioritization": "prioritization framework",
+            "stakeholder_involvement": "cross-functional",
+            "validation": "validate solutions",
+            "continuous_improvement": "continuous feedback"
+        }
+    },
+    {
+        "question": "Describe the key principles of customer journey mapping and how it can improve the overall customer experience.",
+        "criteria": {
+            "definition": "visual representation",
+            "touchpoints": "touchpoints",
+            "emotions": "customer emotions",
+            "pain_points": "pain points",
+            "business_value": "business value"
+        }
+    }
+]

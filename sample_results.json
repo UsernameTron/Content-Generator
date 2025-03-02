@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "model_name": "EleutherAI/pythia-1.4b",
+    "adapter_path": "outputs/finetune/lora_adapter",
+    "device": "mps",
+    "batch_size": 1,
+    "evaluation_timestamp": "2025-02-28 01:31:40",
+    "wandb_run": "evaluation-20250228-013140",
+    "total_evaluation_time": "23m 14s"
+  },
+  "customer_experience": {
+    "overall_score": 3.7,
+    "normalized_score": 74.0,
+    "confidence": 0.82,
+    "benchmark": 3.5,
+    "topics": {
+      "customer_journey_mapping": 4.5,
+      "satisfaction_metrics": 4.2,
+      "feedback_collection": 3.9,
+      "service_recovery": 3.7,
+      "customer_segmentation": 3.6,
+      "omnichannel_integration": 3.1,
+      "customer_retention": 2.8
+    },
+    "metrics": {
+      "factual_accuracy": 0.91,
+      "comprehensiveness": 0.76,
+      "practical_application": 0.82
+    },
+    "questions": [
+      {
+        "question": "Explain the difference between Customer Satisfaction (CSAT) and Net Promoter Score (NPS).",
+        "score": 4.2,
+        "feedback": "Correctly identified key differences and use cases, but missed some nuances about industry benchmarks."
+      },
+      {
+        "question": "Describe a customer journey map and how it can improve customer experience.",
+        "score": 4.5,
+        "feedback": "Excellent explanation with practical examples and implementation steps."
+      }
+    ]
+  },
+  "artificial_intelligence": {
+    "overall_score": 4.1,
+    "normalized_score": 82.0,
+    "confidence": 0.88,
+    "benchmark": 3.8,
+    "topics": {
+      "neural_networks": 4.7,
+      "supervised_learning": 4.5,
+      "reinforcement_learning": 4.2,
+      "computer_vision": 4.1,
+      "nlp": 4.0,
+      "explainable_ai": 3.8,
+      "ethical_considerations": 3.6
+    },
+    "metrics": {
+      "factual_accuracy": 0.93,
+      "comprehensiveness": 0.84,
+      "practical_application": 0.85
+    },
+    "questions": [
+      {
+        "question": "Explain how neural networks learn through backpropagation.",
+        "score": 4.7,
+        "feedback": "Comprehensive explanation with mathematical foundations and practical implementation details."
+      },
+      {
+        "question": "Compare and contrast supervised, unsupervised, and reinforcement learning.",
+        "score": 4.5,
+        "feedback": "Clear distinctions with appropriate examples, though could have included more recent developments."
+      }
+    ]
+  },
+  "machine_learning": {
+    "overall_score": 3.9,
+    "normalized_score": 78.0,
+    "confidence": 0.85,
+    "benchmark": 3.7,
+    "topics": {
+      "model_evaluation": 4.6,
+      "feature_engineering": 4.3,
+      "classification_algorithms": 4.0,
+      "regression_techniques": 3.9,
+      "deep_learning": 3.8,
+      "hyperparameter_tuning": 3.5,
+      "ensemble_methods": 3.2
+    },
+    "metrics": {
+      "factual_accuracy": 0.92,
+      "comprehensiveness": 0.79,
+      "practical_application": 0.87
+    },
+    "questions": [
+      {
+        "question": "Describe the process of feature engineering and why it's important in machine learning.",
+        "score": 4.3,
+        "feedback": "Strong explanation with practical techniques and impact on model performance."
+      },
+      {
+        "question": "Explain common metrics for evaluating classification models and when to use each.",
+        "score": 4.6,
+        "feedback": "Excellent coverage of metrics with appropriate use cases and limitations."
+      }
+    ]
+  },
+  "cross_referencing": {
+    "overall_score": 3.3,
+    "normalized_score": 66.0,
+    "confidence": 0.75,
+    "benchmark": 3.2,
+    "metrics": {
+      "information_integration": 3.4,
+      "source_correlation": 3.2,
+      "contradiction_identification": 2.8,
+      "contextual_relevance": 3.6
+    },
+    "scenarios": [
+      {
+        "scenario": "Describe how customer segmentation techniques from marketing can be applied to improve AI recommendation systems.",
+        "score": 3.5,
+        "feedback": "Good connections between domains but missed some advanced integration opportunities."
+      },
+      {
+        "scenario": "Explain how principles of reinforcement learning might apply to customer retention strategies.",
+        "score": 3.2,
+        "feedback": "Basic connections established but lacked depth in translating technical concepts to business applications."
+      }
+    ]
+  },
+  "counterfactual_reasoning": {
+    "overall_score": 3.6,
+    "normalized_score": 72.0,
+    "confidence": 0.78,
+    "benchmark": 3.5,
+    "metrics": {
+      "alternative_scenario_development": 3.8,
+      "causal_relationship_analysis": 3.2,
+      "logical_consistency": 3.9,
+      "insight_generation": 3.5
+    },
+    "scenarios": [
+      {
+        "scenario": "How might machine learning systems evolve if gradient descent had never been discovered?",
+        "score": 3.8,
+        "feedback": "Creative alternative approaches identified with good technical understanding of optimization methods."
+      },
+      {
+        "scenario": "What would customer experience strategies look like if social media had never been invented?",
+        "score": 3.4,
+        "feedback": "Reasonable alternative channels identified but limited exploration of deeper societal impacts."
+      }
+    ]
+  },
+  "memory_usage": {
+    "baseline": {
+      "ram_gb": 23.2,
+      "ram_percent": 50.5
+    },
+    "model_loaded": {
+      "ram_gb": 28.4,
+      "ram_percent": 61.3
+    },
+    "peak_evaluation": {
+      "ram_gb": 31.7,
+      "ram_percent": 68.7
+    },
+    "average_evaluation": {
+      "ram_gb": 29.8,
+      "ram_percent": 64.6
+    },
+    "final": {
+      "ram_gb": 28.9,
+      "ram_percent": 62.8
+    }
+  },
+  "performance": {
+    "tokens_per_second": 28.7,
+    "median_response_time": 12.4,
+    "longest_response_time": 24.8,
+    "average_response_length": 289,
+    "domain_speeds": {
+      "customer_experience": 31.2,
+      "artificial_intelligence": 27.8,
+      "machine_learning": 29.1,
+      "cross_referencing": 25.6,
+      "counterfactual_reasoning": 26.4
+    }
+  },
+  "industry_modules": {
+    "healthcare": {
+      "score": 3.5,
+      "benchmark": 3.7,
+      "gap": -0.2
+    },
+    "finance": {
+      "score": 3.8,
+      "benchmark": 3.6,
+      "gap": 0.2
+    },
+    "technology": {
+      "score": 4.2,
+      "benchmark": 4.0,
+      "gap": 0.2
+    },
+    "retail": {
+      "score": 3.7,
+      "benchmark": 3.8,
+      "gap": -0.1
+    },
+    "manufacturing": {
+      "score": 3.4,
+      "benchmark": 3.5,
+      "gap": -0.1
+    }
+  },
+  "version_comparison": {
+    "v1.0": {
+      "overall_score": 3.4,
+      "strongest_domain": "technology",
+      "strongest_score": 3.8,
+      "weakest_domain": "healthcare",
+      "weakest_score": 2.9,
+      "reasoning_quality": 3.0
+    },
+    "v1.1": {
+      "overall_score": 3.6,
+      "strongest_domain": "technology",
+      "strongest_score": 3.9,
+      "weakest_domain": "retail",
+      "weakest_score": 3.2,
+      "reasoning_quality": 3.1
+    },
+    "v1.2": {
+      "overall_score": 3.9,
+      "strongest_domain": "technology",
+      "strongest_score": 4.2,
+      "weakest_domain": "manufacturing",
+      "weakest_score": 3.4,
+      "reasoning_quality": 3.5
+    }
+  },
+  "summary": {
+    "strengths": [
+      "Strong performance in core AI concepts and neural networks",
+      "Excellent understanding of model evaluation techniques",
+      "Good customer journey mapping capabilities",
+      "Improved performance in technology industry domain"
+    ],
+    "weaknesses": [
+      "Struggles with contradiction identification in cross-referencing",
+      "Limited knowledge of customer retention strategies",
+      "Gaps in healthcare domain knowledge",
+      "Difficulty identifying non-obvious causal relationships"
+    ],
+    "recommendations": [
+      "Create targeted training datasets for customer retention strategies",
+      "Develop specialized reasoning examples for contradiction resolution",
+      "Enhance healthcare domain knowledge with regulatory content",
+      "Implement memory optimization for cross-referencing scenarios"
+    ]
+  }
+}

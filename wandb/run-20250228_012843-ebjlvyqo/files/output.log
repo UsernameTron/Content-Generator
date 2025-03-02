@@ -1,0 +1,19 @@
+[02/28/25 01:28:44] [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:28:44[22m,[1m448[22m - evaluator - INFO - WandB initialized:                   ]8;id=576982;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=410484;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#134\134]8;;\
+                             evaluation-[1m20250228[22m-[1m012842
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:28:44[22m,[1m449[22m - evaluator - INFO - Setting up evaluators                 ]8;id=483503;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py\comprehensive_evaluate.py]8;;\:]8;id=758510;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py#88\88]8;;\
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:28:44[22m,[1m450[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=834053;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=932686;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             customer_experience
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:28:44[22m,[1m451[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=90351;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=427674;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             artificial_intelligence
+                    [34mINFO    [39m [1m2025[22m-[1m02[22m-[1m28[22m [1m01:28:44[22m,[1m451[22m - domain_knowledge - INFO - Loaded [1m5[22m questions for               ]8;id=933977;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py\domain_knowledge.py]8;;\:]8;id=257931;file:///Users/cpconnor/CascadeProjects/multi-platform-content-generator/evaluators/domain_knowledge.py#41\41]8;;\
+                             machine_learning
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py", line 423, in <module>
+    manager = EvaluationManager(args)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py", line 84, in __init__
+    self._setup_evaluators()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/comprehensive_evaluate.py", line 102, in _setup_evaluators
+    self.evaluators["cross_reference"] = CrossReferencingEvaluator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: Can't instantiate abstract class CrossReferencingEvaluator without an implementation for abstract method 'get_default_questions'

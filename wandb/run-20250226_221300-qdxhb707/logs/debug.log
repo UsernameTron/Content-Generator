@@ -1,0 +1,33 @@
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Configure stats pid to 13627
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/.config/wandb/settings
+2025-02-26 22:13:00,159 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/settings
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'silent': 'true', 'notebook_name': 'finetune_model.py'}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'finetune_model.py', 'program_abspath': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py', 'program': '/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py'}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_setup.py:_flush():76] Applying login settings: {}
+2025-02-26 22:13:00,160 WARNING MainThread:13627 [wandb_setup.py:_flush():76] [34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:_log_setup():521] Logging user logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221300-qdxhb707/logs/debug.log
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/cpconnor/CascadeProjects/multi-platform-content-generator/wandb/run-20250226_221300-qdxhb707/logs/debug-internal.log
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():561] calling init triggers
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():611] starting backend
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():615] setting up manager
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-02-26 22:13:00,160 INFO    MainThread:13627 [wandb_init.py:init():623] backend started and connected
+2025-02-26 22:13:00,161 INFO    MainThread:13627 [wandb_init.py:init():715] updated telemetry
+2025-02-26 22:13:00,161 INFO    MainThread:13627 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2025-02-26 22:14:30,465 ERROR   MainThread:13627 [wandb_init.py:init():774] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2025-02-26 22:14:30,537 ERROR   MainThread:13627 [wandb_init.py:init():1199] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2025-02-26 22:14:32,977 WARNING MsgRouterThr:13627 [router.py:message_loop():77] message_loop has been closed
+2025-02-26 22:14:32,977 WARNING MsgRouterThr:13627 [router.py:message_loop():77] message_loop has been closed

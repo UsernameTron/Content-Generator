@@ -1,0 +1,1 @@
+{"status": "failed", "_timestamp": 1740699172.801526, "_runtime": 8.323534965515137, "_step": 3, "training_status": "started", "trainable_parameters": 6291456, "total_steps": 50, "batch_size": 16, "learning_rate": 2e-05, "training_complete": 0, "_wandb": {"runtime": 7}}

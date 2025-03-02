@@ -1,0 +1,147 @@
+2025-02-27 00:58:16,763 - __main__ - INFO - Initializing W&B project: pete-connor-cx-ai-expert
+2025-02-27 00:58:16,764 - __main__ - INFO - Loaded environment variables from .env file
+2025-02-27 00:58:16,764 - __main__ - INFO - WANDB_API_KEY found, running in online mode
+2025-02-27 00:58:17,916 - __main__ - INFO - Successfully initialized W&B
+2025-02-27 00:58:17,927 - __main__ - INFO - Using MPS (Metal Performance Shaders) for training on Apple Silicon
+2025-02-27 00:58:17,927 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+2025-02-27 00:58:18,265 - __main__ - INFO - Tokenizer loaded successfully
+2025-02-27 00:58:18,266 - __main__ - INFO - Disabled FP16 as it's only supported on CUDA devices
+2025-02-27 00:58:18,266 - __main__ - INFO - Loading model on mps device
+2025-02-27 00:58:19,555 - __main__ - INFO - Model loaded successfully
+2025-02-27 00:58:19,556 - __main__ - INFO - Preparing model for kbit training
+2025-02-27 00:58:19,556 - __main__ - INFO - Configuring LoRA adapters
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+2025-02-27 00:58:19,633 - __main__ - INFO - LoRA adapters successfully applied to model
+2025-02-27 00:58:19,635 - __main__ - INFO - Model size: 1420.94M parameters
+2025-02-27 00:58:19,635 - __main__ - INFO - Trainable parameters: 6.29M (0.44%)
+2025-02-27 00:58:19,635 - __main__ - INFO - Preparing training dataset from data/training_data.jsonl
+2025-02-27 00:58:19,635 - __main__ - INFO - Loading data from data/training_data.jsonl
+2025-02-27 00:58:19,637 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,638 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,638 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,638 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,639 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,639 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,640 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,640 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,640 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,641 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,641 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,641 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,642 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,642 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,643 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,643 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,643 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,644 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,644 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,644 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,645 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,645 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,645 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,646 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,646 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,646 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,647 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,647 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,648 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,648 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,649 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,649 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,650 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,650 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,651 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,651 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,652 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,652 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,653 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,654 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,654 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,655 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,655 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,656 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,656 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,657 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,657 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,658 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,658 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,659 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,659 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,660 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,660 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,661 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,661 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,661 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,662 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,662 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,663 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,663 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,664 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,664 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,665 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,665 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,666 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,667 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,667 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,668 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,668 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,669 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,670 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,670 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,671 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,671 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,672 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,672 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,673 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,673 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,674 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,674 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,675 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,675 - __main__ - INFO - Preparing validation dataset from data/validation_data.jsonl
+2025-02-27 00:58:19,675 - __main__ - INFO - Loading data from data/validation_data.jsonl
+2025-02-27 00:58:19,675 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,676 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,676 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,676 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,677 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,677 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,678 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,678 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,678 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,679 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,679 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,679 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,679 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,680 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,680 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,680 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,681 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,681 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,681 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,682 - __main__ - WARNING - Error processing line: only Tensors of floating point dtype can require gradients
+2025-02-27 00:58:19,682 - __main__ - INFO - Training dataset size: 0
+2025-02-27 00:58:19,682 - __main__ - INFO - Evaluation dataset size: 0
+2025-02-27 00:58:19,682 - wandb_dashboards - INFO - Created custom metrics callback for W&B tracking
+2025-02-27 00:58:19,682 - __main__ - INFO - Custom W&B metrics callback loaded successfully
+2025-02-27 00:58:19,684 - __main__ - INFO - Setting up training arguments
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/training_args.py:1594: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-02-27 00:58:19,684 - __main__ - INFO - Initializing trainer
+/Users/cpconnor/CascadeProjects/multi-platform-content-generator/finetune_model.py:563: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-02-27 00:58:19,689 - __main__ - INFO - Checkpoints will be saved every 7200 steps
+2025-02-27 00:58:19,689 - __main__ - INFO - Starting model fine-tuning
+2025-02-27 00:58:19,769 - __main__ - ERROR - Error during training: list index out of range
+2025-02-27 00:58:19,769 - __main__ - WARNING - Training was interrupted. Saving checkpoint of the current state.
+2025-02-27 00:58:19,769 - __main__ - INFO - Saving model to outputs/finetune/final
+2025-02-27 00:58:20,219 - __main__ - INFO - Model saving complete.
+2025-02-27 00:58:20,220 - __main__ - INFO - Fine-tuning process complete.
+2025-02-27 00:58:25,731 - __main__ - INFO - Fine-tuning completed
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+=== C. Pete Connor Model Training Log - Started at 2025-02-27T00:58:15.074218 ===
+
+
+
+=== Training completed successfully! Finished at 2025-02-27T00:58:27.120907 ===

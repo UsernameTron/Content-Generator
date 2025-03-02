@@ -1,0 +1,259 @@
+{
+  "customer_experience": {
+    "overall_score": 0.84,
+    "response_time": 0.89,
+    "satisfaction": 0.82,
+    "usability": 0.85,
+    "topics": {
+      "interface_design": {
+        "score": 0.87,
+        "count": 42
+      },
+      "information_clarity": {
+        "score": 0.83,
+        "count": 38
+      },
+      "accessibility": {
+        "score": 0.81,
+        "count": 35
+      },
+      "user_journey": {
+        "score": 0.86,
+        "count": 40
+      }
+    }
+  },
+  "artificial_intelligence": {
+    "overall_score": 0.79,
+    "reasoning": 0.77,
+    "knowledge_integration": 0.81,
+    "adaptability": 0.78,
+    "topics": {
+      "knowledge_representation": {
+        "score": 0.82,
+        "count": 30
+      },
+      "reasoning_chains": {
+        "score": 0.76,
+        "count": 35
+      },
+      "uncertainty_handling": {
+        "score": 0.75,
+        "count": 28
+      },
+      "context_awareness": {
+        "score": 0.83,
+        "count": 32
+      }
+    }
+  },
+  "machine_learning": {
+    "overall_score": 0.81,
+    "prediction_accuracy": 0.83,
+    "model_robustness": 0.79,
+    "generalization": 0.8,
+    "topics": {
+      "feature_importance": {
+        "score": 0.84,
+        "count": 25
+      },
+      "model_calibration": {
+        "score": 0.78,
+        "count": 30
+      },
+      "data_efficiency": {
+        "score": 0.82,
+        "count": 28
+      },
+      "training_stability": {
+        "score": 0.81,
+        "count": 32
+      }
+    }
+  },
+  "cross_reference": {
+    "overall_score": 0.76,
+    "consistency": 0.75,
+    "completeness": 0.77,
+    "relevance": 0.78,
+    "topics": {
+      "source_integration": {
+        "score": 0.79,
+        "count": 35
+      },
+      "contradiction_resolution": {
+        "score": 0.72,
+        "count": 40
+      },
+      "temporal_alignment": {
+        "score": 0.75,
+        "count": 38
+      },
+      "contextual_relevance": {
+        "score": 0.8,
+        "count": 42
+      }
+    }
+  },
+  "counterfactual_reasoning": {
+    "overall_score": 0.73,
+    "plausibility": 0.71,
+    "coherence": 0.74,
+    "relevance": 0.75,
+    "topics": {
+      "alternative_scenarios": {
+        "score": 0.76,
+        "count": 30
+      },
+      "causal_inference": {
+        "score": 0.7,
+        "count": 35
+      },
+      "constraint_satisfaction": {
+        "score": 0.72,
+        "count": 32
+      },
+      "practical_applicability": {
+        "score": 0.75,
+        "count": 28
+      }
+    }
+  },
+  "healthcare": {
+    "contradiction_detection": {
+      "accuracy": 0.82,
+      "precision": 0.85,
+      "recall": 0.79,
+      "f1_score": 0.82,
+      "categories": {
+        "medication_interaction": {
+          "accuracy": 0.88,
+          "count": 45
+        },
+        "treatment_protocol": {
+          "accuracy": 0.79,
+          "count": 38
+        },
+        "dosage_conflict": {
+          "accuracy": 0.83,
+          "count": 42
+        },
+        "diagnostic_conflict": {
+          "accuracy": 0.77,
+          "count": 35
+        }
+      }
+    },
+    "evidence_ranking": {
+      "ndcg": 0.76,
+      "map": 0.72,
+      "precision_at_3": 0.81,
+      "recall_at_5": 0.68
+    }
+  },
+  "metadata": {
+    "model_version": "healthcare-metrics-v2.1",
+    "evaluation_date": "2025-02-28",
+    "evaluation_duration_seconds": 2450,
+    "total_examples": 420
+  },
+  "memory_usage": {
+    "peak_memory_mb": 2850,
+    "average_memory_mb": 2150,
+    "memory_samples": [
+      {
+        "timestamp": "2025-02-28T10:00:00",
+        "memory_mb": 1950
+      },
+      {
+        "timestamp": "2025-02-28T10:05:00",
+        "memory_mb": 2050
+      },
+      {
+        "timestamp": "2025-02-28T10:10:00",
+        "memory_mb": 2350
+      },
+      {
+        "timestamp": "2025-02-28T10:15:00",
+        "memory_mb": 2650
+      },
+      {
+        "timestamp": "2025-02-28T10:20:00",
+        "memory_mb": 2850
+      },
+      {
+        "timestamp": "2025-02-28T10:25:00",
+        "memory_mb": 2450
+      },
+      {
+        "timestamp": "2025-02-28T10:30:00",
+        "memory_mb": 2100
+      }
+    ]
+  },
+  "strengths_and_weaknesses": {
+    "strengths": [
+      "Customer experience metrics show strong performance, particularly in interface design",
+      "Machine learning models demonstrate good prediction accuracy and feature importance understanding",
+      "Healthcare contradiction detection performs well in medication interaction identification",
+      "Context awareness in AI systems shows promising results",
+      "User journey mapping and response time metrics exceed expectations"
+    ],
+    "weaknesses": [
+      "Cross-reference contradiction resolution scores (0.72) are below target thresholds",
+      "Counterfactual reasoning requires improvement, especially in plausibility assessment (0.71)",
+      "Healthcare contradiction detection recall (0.79) needs enhancement for edge cases",
+      "AI reasoning chains show inconsistent performance across different scenarios",
+      "Knowledge integration across multiple sources needs strengthening"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "area": "cross_reference",
+      "description": "Implement advanced source correlation algorithms with improved temporal context awareness",
+      "expected_impact": "Increase cross-referencing scores by 0.10-0.14"
+    },
+    {
+      "priority": "high",
+      "area": "counterfactual_reasoning",
+      "description": "Enhance causal inference capabilities through training on complex healthcare scenarios",
+      "expected_impact": "Improve counterfactual reasoning scores by 0.10-0.14"
+    },
+    {
+      "priority": "high",
+      "area": "healthcare",
+      "description": "Improve contradiction detection recall by implementing the healthcare contradiction dataset",
+      "expected_impact": "Increase recall from 0.79 to 0.89-0.92"
+    },
+    {
+      "priority": "medium",
+      "area": "cross_reference",
+      "description": "Expand knowledge integration techniques for better handling of diverse medical terminology",
+      "expected_impact": "Improve knowledge integration by 0.03-0.04"
+    },
+    {
+      "priority": "medium",
+      "area": "counterfactual_reasoning",
+      "description": "Refine plausibility assessment through better constraint modeling",
+      "expected_impact": "Increase plausibility scores from 0.71 to 0.75-0.77"
+    },
+    {
+      "priority": "medium",
+      "area": "healthcare",
+      "description": "Establish automated error analysis and continuous improvement pipeline",
+      "expected_impact": "Provide ongoing improvements of 0.02-0.03 per quarter"
+    }
+  ],
+  "summary": {
+    "overall_performance": 0.79,
+    "improvement_from_previous": 0.04,
+    "top_performing_domain": "customer_experience",
+    "lowest_performing_domain": "counterfactual_reasoning",
+    "critical_improvement_areas": [
+      "cross_reference.contradiction_resolution",
+      "counterfactual_reasoning.plausibility",
+      "healthcare.contradiction_detection.recall"
+    ]
+  }
+}

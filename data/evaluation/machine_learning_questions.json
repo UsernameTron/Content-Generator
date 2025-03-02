@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Explain the bias-variance tradeoff in machine learning and strategies to address it.",
+        "criteria": {
+            "bias_def": "underfitting",
+            "variance_def": "overfitting",
+            "tradeoff": "inverse relationship",
+            "techniques": "regularization/ensemble",
+            "evaluation": "cross-validation"
+        }
+    },
+    {
+        "question": "Describe the process of feature engineering and its importance in machine learning models.",
+        "criteria": {
+            "definition": "creating/transforming features",
+            "techniques": "normalization/encoding/extraction",
+            "importance": "model performance impact",
+            "domain_knowledge": "domain expertise role",
+            "automation": "automated feature engineering"
+        }
+    },
+    {
+        "question": "Compare and contrast tree-based ensemble methods: Random Forests, Gradient Boosting, and XGBoost.",
+        "criteria": {
+            "random_forest": "bagging approach",
+            "gradient_boosting": "sequential correction",
+            "xgboost": "regularization/optimization",
+            "use_cases": "appropriate applications",
+            "performance": "performance characteristics"
+        }
+    },
+    {
+        "question": "What techniques can be used to handle imbalanced datasets in classification problems?",
+        "criteria": {
+            "sampling": "oversampling/undersampling",
+            "synthetic": "SMOTE/ADASYN",
+            "algorithmic": "class weights/cost-sensitive",
+            "evaluation": "appropriate metrics",
+            "ensemble": "ensemble approaches"
+        }
+    },
+    {
+        "question": "Explain the concept of explainable AI (XAI) and methods for interpreting black-box models.",
+        "criteria": {
+            "importance": "transparency importance",
+            "local": "LIME/SHAP",
+            "global": "feature importance/PDPs",
+            "rule_extraction": "rule extraction",
+            "tradeoffs": "interpretability vs performance"
+        }
+    }
+]

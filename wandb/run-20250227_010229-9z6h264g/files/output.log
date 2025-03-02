@@ -1,0 +1,37 @@
+2025-02-27 01:02:29,994 - __main__ - INFO - Loading tokenizer: EleutherAI/pythia-1.4b
+2025-02-27 01:02:30,477 - __main__ - INFO - Loading base model: EleutherAI/pythia-1.4b
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+Traceback (most recent call last):
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/apple_silicon_training.py", line 257, in <module>
+    main()
+    ~~~~^^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/apple_silicon_training.py", line 135, in main
+    model = AutoModelForCausalLM.from_pretrained(
+        config['base_model'],
+    ...<4 lines>...
+        trust_remote_code=False,
+    )
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 262, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 3698, in from_pretrained
+    hf_quantizer.validate_environment(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        torch_dtype=torch_dtype,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        weights_only=weights_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/cpconnor/CascadeProjects/multi-platform-content-generator/venv/lib/python3.13/site-packages/transformers/quantizers/quantizer_bnb_8bit.py", line 73, in validate_environment
+    raise ImportError(
+        "Using `bitsandbytes` 8-bit quantization requires the latest version of bitsandbytes: `pip install -U bitsandbytes`"
+    )
+ImportError: Using `bitsandbytes` 8-bit quantization requires the latest version of bitsandbytes: `pip install -U bitsandbytes`

@@ -1,0 +1,71 @@
+{
+  "training": {
+    "base_model": "EleutherAI/pythia-1.4b",
+    "adapter_type": "lora",
+    "adapter_config": {
+      "r": 16,
+      "alpha": 32,
+      "target_modules": ["query_key_value"],
+      "dropout": 0.05
+    },
+    "batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "learning_rate": 2e-4,
+    "epochs": 3,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01,
+    "scheduler": "cosine",
+    "optimizer": "adamw_torch"
+  },
+  "apple_silicon": {
+    "device": "mps",
+    "enable_gradient_checkpointing": true,
+    "enable_mps_fallback": true,
+    "high_watermark_ratio": 0.0,
+    "tokenizers_parallelism": false
+  },
+  "healthcare_cross_reference": {
+    "contradiction_detection": {
+      "categories": ["supporting", "contradicting", "unrelated", "temporally_superseded"],
+      "training_examples_per_category": 50,
+      "evaluation_examples_per_category": 20
+    },
+    "evidence_strength": {
+      "types": ["rct", "meta_analysis", "cohort_study", "case_control", "case_series", "expert_opinion"],
+      "training_examples_per_type": 40,
+      "evaluation_examples_per_type": 15
+    },
+    "medical_domains": [
+      "cardiology", 
+      "oncology", 
+      "neurology", 
+      "infectious_disease", 
+      "pharmacology"
+    ]
+  },
+  "evaluation": {
+    "metrics": [
+      "contradiction_accuracy",
+      "evidence_ranking_accuracy",
+      "healthcare_knowledge_score",
+      "cross_domain_transfer"
+    ],
+    "baselines": {
+      "contradiction_detection": 0.58,
+      "evidence_strength": 0.61,
+      "healthcare_domain": 3.5,
+      "cross_referencing": 0.66
+    },
+    "targets": {
+      "contradiction_detection": 0.75,
+      "evidence_strength": 0.80,
+      "healthcare_domain": 3.8,
+      "cross_referencing": 0.75
+    }
+  },
+  "wandb": {
+    "project": "healthcare-cross-reference",
+    "name": "healthcare-cross-reference-training",
+    "tags": ["healthcare", "cross-reference", "contradiction", "evidence"]
+  }
+}

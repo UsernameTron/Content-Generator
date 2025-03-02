@@ -1,0 +1,179 @@
+wandb_version: 1
+
+base_model:
+  desc: null
+  value: EleutherAI/pythia-1.4b
+training_config:
+  desc: null
+  value:
+    lora_r: 8
+    lora_alpha: 16
+    lora_dropout: 0.05
+    target_modules:
+    - query_key_value
+    - dense
+    - dense_h_to_4h
+    - dense_4h_to_h
+    bias: none
+    task_type: CAUSAL_LM
+    training_args:
+      output_dir: ./outputs/finetune
+      evaluation_strategy: steps
+      eval_steps: 50
+      logging_steps: 10
+      save_steps: 100
+      learning_rate: 0.0005
+      weight_decay: 0.01
+      fp16: false
+      bf16: false
+      max_grad_norm: 0.3
+      max_steps: 500
+      warmup_ratio: 0.03
+      group_by_length: true
+      lr_scheduler_type: cosine
+      report_to: wandb
+      gradient_checkpointing: true
+      gradient_accumulation_steps: 4
+      per_device_train_batch_size: 2
+      per_device_eval_batch_size: 2
+      run_name: ./outputs/finetune
+data_config:
+  desc: null
+  value:
+    train_file: data/training/pete_connor_style.jsonl
+    validation_file: data/training/pete_connor_validation.jsonl
+    preprocessing_num_workers: 4
+    max_seq_length: 512
+    overwrite_cache: false
+    pad_to_max_length: true
+wandb_config:
+  desc: null
+  value:
+    project: pete-connor-cx-ai-expert
+    name: cx-ai-ml-expertise-run
+    tags:
+    - cx-ai-expert
+    - customer-experience
+    - machine-learning
+    - satirical-tech-expert
+    - lora-finetuning
+    notes: Fine-tuning run for C. Pete Connor's expertise in customer experience,
+      AI, and machine learning
+custom_loss_config:
+  desc: null
+  value:
+    penalized_phrases:
+    - game changer
+    - here's the kicker
+    - cutting-edge
+    - revolutionary
+    - disruptive
+    - innovative
+    - next-generation
+    - state-of-the-art
+    - seamless customer journey
+    - delightful experience
+    - customer-centric
+    - AI-powered experience
+    - frictionless
+    - hyper-personalization
+    - digital transformation
+    - customer obsession
+    rewarded_phrases:
+    - paradoxically
+    - absurdly
+    - statistically speaking
+    - data shows
+    - ironically
+    - contrary to popular belief
+    - in stark contrast to the marketing
+    - customer experience data indicates
+    - model bias reveals
+    - sentiment analysis demonstrates
+    - customer retention metrics show
+    - NPS fails to capture
+    - ML models often amplify
+    - AI implementation reality
+    - CX automation paradox
+    penalty_weight: 0.5
+    reward_weight: 0.5
+specializations:
+  desc: null
+  value:
+    customer_experience:
+      keywords:
+      - customer journey
+      - touchpoints
+      - engagement
+      - satisfaction metrics
+      - customer retention
+      - experience design
+      - CX metrics
+      - VoC
+      - service design
+      weight: 0.35
+    artificial_intelligence:
+      keywords:
+      - machine learning
+      - neural networks
+      - deep learning
+      - LLMs
+      - prompt engineering
+      - transformer models
+      - model training
+      - data bias
+      - AI ethics
+      weight: 0.35
+    machine_learning:
+      keywords:
+      - supervised learning
+      - unsupervised learning
+      - reinforcement learning
+      - model evaluation
+      - feature engineering
+      - overfitting
+      - hyperparameters
+      weight: 0.3
+    satirical_style:
+      keywords:
+      - satire
+      - irony
+      - sarcasm
+      - humor
+      - mockery
+      - parody
+      - critique
+      - exaggeration
+      - wit
+      weight: 0.5
+_wandb:
+  desc: null
+  value:
+    python_version: 3.13.2
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.49.0
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    start_time: 1740629577.0
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 51
+      - 55
+      - 71
+      - 98
+      3:
+      - 13
+      - 15
+      - 16
+      - 23
+      4: 3.13.2
+      5: 0.16.6
+      6: 4.49.0
+      8:
+      - 2
+      - 5
+      13: darwin-arm64

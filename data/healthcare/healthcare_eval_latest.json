@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "date": "2023-08-12",
+    "model": "healthcare-cross-reference-v1.0",
+    "dataset": "healthcare-contradiction-evaluation-v1",
+    "version": "1.0.0"
+  },
+  "healthcare": {
+    "contradiction_detection": {
+      "accuracy": 0.74,
+      "precision": 0.78,
+      "recall": 0.72,
+      "f1_score": 0.75,
+      "by_type": {
+        "direct_contradiction": {
+          "accuracy": 0.82,
+          "count": 15
+        },
+        "temporal_change": {
+          "accuracy": 0.68,
+          "count": 12
+        },
+        "methodological_difference": {
+          "accuracy": 0.65,
+          "count": 10
+        }
+      },
+      "by_domain": {
+        "cardiology": {
+          "accuracy": 0.76,
+          "count": 8
+        },
+        "oncology": {
+          "accuracy": 0.71,
+          "count": 7
+        },
+        "endocrinology": {
+          "accuracy": 0.67,
+          "count": 9
+        },
+        "gastroenterology": {
+          "accuracy": 0.74,
+          "count": 5
+        },
+        "psychiatry": {
+          "accuracy": 0.69,
+          "count": 6
+        },
+        "pain_management": {
+          "accuracy": 0.72,
+          "count": 4
+        },
+        "preventive_medicine": {
+          "accuracy": 0.70,
+          "count": 3
+        }
+      }
+    },
+    "evidence_ranking": {
+      "accuracy": 0.77,
+      "precision": 0.82,
+      "recall": 0.75,
+      "f1_score": 0.78,
+      "by_domain": {
+        "cardiology": 0.81,
+        "oncology": 0.76,
+        "endocrinology": 0.72,
+        "gastroenterology": 0.79,
+        "psychiatry": 0.74,
+        "pain_management": 0.75,
+        "preventive_medicine": 0.73
+      }
+    }
+  },
+  "summary": {
+    "overall_healthcare_score": 0.75,
+    "strengths": [
+      "Strong performance in cardiology contradiction detection",
+      "Good evidence ranking for critical domains",
+      "Effective at identifying direct contradictions"
+    ],
+    "weaknesses": [
+      "Struggles with methodological difference detection",
+      "Below target performance in endocrinology domain",
+      "Evidence ranking for preventive medicine needs improvement"
+    ],
+    "improvement_areas": [
+      "Enhance methodological difference detection",
+      "Improve evidence ranking for preventive medicine",
+      "Strengthen performance on temporal change detection"
+    ]
+  }
+}

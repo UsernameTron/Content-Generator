@@ -1,0 +1,14 @@
+{
+  "default_platform": "Twitter",
+  "default_tone": "Informative",
+  "max_keyword_extract": 10,
+  "default_hashtag_count": 3,
+  "emoji_usage": "moderate",
+  "ui_theme": "light",
+  "system": {
+    "log_level": "INFO",
+    "health_check_interval": 60,
+    "cache_processed_docs": true,
+    "max_doc_cache_size": 10
+  }
+}

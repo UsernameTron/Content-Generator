@@ -1,0 +1,3 @@
+2025-03-02 11:43:54,061 - src.utils.wandb_monitor - INFO - Logged generation example for Medium to W&B
+2025-03-02 11:43:54,061 - src.models.content_generator - INFO - Logged generation example to W&B
+2025-03-02 11:43:54,061 - src.models.content_generator - INFO - Successfully generated content for Medium

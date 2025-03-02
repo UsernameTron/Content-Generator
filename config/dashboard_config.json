@@ -1,0 +1,92 @@
+{
+  "dashboard": {
+    "mode": "regular",
+    "refresh_interval": 15,
+    "auto_save": true,
+    "debug_mode": false
+  },
+  "performance": {
+    "thresholds": {
+      "critical": 0.65,
+      "warning": 0.75,
+      "target": 0.85
+    },
+    "metrics": {
+      "accuracy": true,
+      "precision": true,
+      "recall": true,
+      "f1_score": true,
+      "specificity": true,
+      "auc": true,
+      "confusion_matrix": true
+    },
+    "reporting": {
+      "generate_html": true,
+      "generate_json": true,
+      "generate_csv": true,
+      "include_visualizations": true,
+      "include_recommendations": true,
+      "detailed_category_analysis": true,
+      "detailed_domain_analysis": true
+    },
+    "alerts": {
+      "enabled": true,
+      "regression_threshold": 0.05,
+      "stagnation_threshold": 0.02,
+      "consecutive_failures_threshold": 3
+    }
+  },
+  "testing": {
+    "batch_size": 64,
+    "test_split": 0.2,
+    "cross_validation": {
+      "enabled": true,
+      "folds": 5,
+      "stratified": true
+    },
+    "categories": [
+      "medication_conflicts",
+      "treatment_contradictions",
+      "diagnostic_inconsistencies",
+      "temporal_contradictions",
+      "procedural_conflicts"
+    ],
+    "domains": [
+      "cardiology",
+      "neurology",
+      "oncology",
+      "pediatrics",
+      "emergency_medicine",
+      "internal_medicine",
+      "surgery",
+      "psychiatry"
+    ],
+    "data_augmentation": {
+      "enabled": false,
+      "techniques": ["synonym_replacement", "random_insertion", "random_swap", "random_deletion"],
+      "augmentation_factor": 2
+    }
+  },
+  "visualization": {
+    "theme": "default",
+    "interactive": true,
+    "chart_types": ["line", "bar", "radar", "heatmap", "confusion_matrix"],
+    "color_palette": "viridis",
+    "show_trend_lines": true,
+    "show_confidence_intervals": true
+  },
+  "export": {
+    "formats": ["html", "json", "csv"],
+    "auto_export": false,
+    "export_directory": "reports",
+    "filename_template": "report_{date}_{time}_{mode}"
+  },
+  "logging": {
+    "level": "INFO",
+    "file_logging": true,
+    "console_logging": true,
+    "log_directory": "logs",
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "log_performance_metrics": true
+  }
+}

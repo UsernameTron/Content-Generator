@@ -1,0 +1,18 @@
+{
+  "traditional": {
+    "accuracy": 0.88,
+    "precision": 0.83,
+    "recall": 0.82,
+    "f1_score": 0.825
+  },
+  "customer_experience": {
+    "response_time": 0.85,
+    "satisfaction": 0.79,
+    "usability": 0.82
+  },
+  "artificial_intelligence": {
+    "reasoning": 0.74,
+    "knowledge_integration": 0.78,
+    "adaptability": 0.75
+  }
+}

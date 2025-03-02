@@ -1,0 +1,881 @@
+{
+  "timestamp": "2025-02-28T15:59:58.277170",
+  "accuracy": 0.78565625,
+  "by_category": {
+    "supporting": {
+      "correct": 62,
+      "total": 100,
+      "accuracy": 0.6226857653309635
+    },
+    "contradicting": {
+      "correct": 94,
+      "total": 100,
+      "accuracy": 0.9432460581377247
+    },
+    "unrelated": {
+      "correct": 67,
+      "total": 100,
+      "accuracy": 0.6739239322462126
+    },
+    "temporally_superseded": {
+      "correct": 91,
+      "total": 100,
+      "accuracy": 0.9103773179104575
+    }
+  },
+  "by_domain": {
+    "cardiology": {
+      "correct": 77,
+      "total": 100,
+      "accuracy": 0.7735613676537418
+    },
+    "oncology": {
+      "correct": 74,
+      "total": 100,
+      "accuracy": 0.7444433841149044
+    },
+    "neurology": {
+      "correct": 58,
+      "total": 100,
+      "accuracy": 0.5866394175245084
+    },
+    "infectious_disease": {
+      "correct": 67,
+      "total": 100,
+      "accuracy": 0.6701910036952304
+    },
+    "pharmacology": {
+      "correct": 74,
+      "total": 100,
+      "accuracy": 0.7401250435874037
+    }
+  },
+  "confusion_matrix": [
+    [
+      24,
+      1,
+      0,
+      3
+    ],
+    [
+      2,
+      21,
+      2,
+      3
+    ],
+    [
+      3,
+      2,
+      21,
+      0
+    ],
+    [
+      2,
+      0,
+      3,
+      13
+    ]
+  ],
+  "examples": [
+    {
+      "statement_1": "Recent studies suggest anticonvulsants may reduce symptoms of migraine.",
+      "statement_2": "Evidence shows dopamine agonists improves outcomes in patients with Parkinson's disease.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with cellulitis should be treated with antibiotics.",
+      "statement_2": "antibiotics is contraindicated for patients with cellulitis.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Evidence shows antibiotics improves outcomes in patients with COVID-19.",
+      "statement_2": "Multiple studies confirm antibiotics is effective for COVID-19.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Evidence shows NSAIDs improves outcomes in patients with inflammation.",
+      "statement_2": "NSAIDs remains a cornerstone of therapy for inflammation.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "antifungals has been shown effective for COVID-19 in clinical trials.",
+      "statement_2": "Evidence shows vaccines improves outcomes in patients with cellulitis.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest vaccines may reduce symptoms of cellulitis.",
+      "statement_2": "Clinical guidelines advise against using vaccines for cellulitis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend antibiotics as first-line therapy for pneumonia.",
+      "statement_2": "Clinical guidelines advise against using antibiotics for pneumonia.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "unrelated",
+      "correct": false,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "NSAIDs has been shown effective for insomnia in clinical trials.",
+      "statement_2": "Recent evidence suggests NSAIDs may worsen outcomes in insomnia.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows antivirals improves outcomes in patients with pneumonia.",
+      "statement_2": "antivirals remains a cornerstone of therapy for pneumonia.",
+      "true_category": "supporting",
+      "predicted_category": "contradicting",
+      "correct": false,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "triptans has been shown effective for migraine in clinical trials.",
+      "statement_2": "anticonvulsants has been shown effective for Parkinson's disease in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend benzodiazepines as first-line therapy for inflammation.",
+      "statement_2": "Multiple studies confirm benzodiazepines is effective for inflammation.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows antibiotics improves outcomes in patients with pneumonia.",
+      "statement_2": "Multiple studies confirm antibiotics is effective for pneumonia.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend aspirin as first-line therapy for hypertension.",
+      "statement_2": "Patients with atrial fibrillation should be treated with ACE inhibitors.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Recent studies suggest chemotherapy may reduce symptoms of lung cancer.",
+      "statement_2": "Recent evidence suggests chemotherapy may worsen outcomes in lung cancer.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Recent studies suggest antihistamines may reduce symptoms of insomnia.",
+      "statement_2": "Meta-analyses support the use of antihistamines in insomnia.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Patients with insomnia should be treated with opioids.",
+      "statement_2": "antihistamines has been shown effective for pain in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Patients with COVID-19 should be treated with antibiotics.",
+      "statement_2": "Multiple studies confirm antibiotics is effective for COVID-19.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Evidence shows aspirin improves outcomes in patients with hypertension.",
+      "statement_2": "aspirin is contraindicated for patients with hypertension.",
+      "true_category": "contradicting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Recent studies suggest NSAIDs may reduce symptoms of insomnia.",
+      "statement_2": "Clinical guidelines recommend benzodiazepines as first-line therapy for pain.",
+      "true_category": "unrelated",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest benzodiazepines may reduce symptoms of inflammation.",
+      "statement_2": "Meta-analyses support the use of benzodiazepines in inflammation.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend anticonvulsants as first-line therapy for multiple sclerosis.",
+      "statement_2": "anticonvulsants is contraindicated for patients with multiple sclerosis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "unrelated",
+      "correct": false,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "beta blockers has been shown effective for hypertension in clinical trials.",
+      "statement_2": "Clinical guidelines advise against using beta blockers for hypertension.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend vaccines as first-line therapy for pneumonia.",
+      "statement_2": "antibiotics has been shown effective for urinary tract infection in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest anticonvulsants may reduce symptoms of multiple sclerosis.",
+      "statement_2": "Research indicates anticonvulsants has no significant benefit for multiple sclerosis.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Evidence shows corticosteroids improves outcomes in patients with epilepsy.",
+      "statement_2": "Clinical experience has validated corticosteroids for epilepsy.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with pain should be treated with opioids.",
+      "statement_2": "Multiple studies confirm opioids is effective for pain.",
+      "true_category": "supporting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Patients with hypertension should be treated with beta blockers.",
+      "statement_2": "Multiple studies confirm beta blockers is effective for hypertension.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Evidence shows antibiotics improves outcomes in patients with pneumonia.",
+      "statement_2": "Evidence shows vaccines improves outcomes in patients with urinary tract infection.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "antivirals has been shown effective for cellulitis in clinical trials.",
+      "statement_2": "Recent evidence suggests antivirals may worsen outcomes in cellulitis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "unrelated",
+      "correct": false,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Patients with migraine should be treated with corticosteroids.",
+      "statement_2": "Clinical experience has validated corticosteroids for migraine.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with breast cancer should be treated with chemotherapy.",
+      "statement_2": "Meta-analyses support the use of chemotherapy in breast cancer.",
+      "true_category": "supporting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend immunotherapy as first-line therapy for lung cancer.",
+      "statement_2": "Studies have shown immunotherapy is ineffective for lung cancer.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend immunotherapy as first-line therapy for breast cancer.",
+      "statement_2": "Patients with lymphoma should be treated with radiation therapy.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Evidence shows NSAIDs improves outcomes in patients with inflammation.",
+      "statement_2": "Recent evidence suggests NSAIDs may worsen outcomes in inflammation.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows anticonvulsants improves outcomes in patients with migraine.",
+      "statement_2": "Research indicates anticonvulsants has no significant benefit for migraine.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with Parkinson's disease should be treated with corticosteroids.",
+      "statement_2": "Patients with migraine should be treated with anticonvulsants.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend statins as first-line therapy for hypertension.",
+      "statement_2": "aspirin has been shown effective for atrial fibrillation in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend anticonvulsants as first-line therapy for Parkinson's disease.",
+      "statement_2": "anticonvulsants is contraindicated for patients with Parkinson's disease.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Recent studies suggest corticosteroids may reduce symptoms of epilepsy.",
+      "statement_2": "anticonvulsants has been shown effective for Parkinson's disease in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "immunotherapy has been shown effective for lung cancer in clinical trials.",
+      "statement_2": "immunotherapy is contraindicated for patients with lung cancer.",
+      "true_category": "contradicting",
+      "predicted_category": "unrelated",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Evidence shows immunotherapy improves outcomes in patients with breast cancer.",
+      "statement_2": "Studies have shown immunotherapy is ineffective for breast cancer.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Recent studies suggest triptans may reduce symptoms of migraine.",
+      "statement_2": "Recent studies suggest corticosteroids may reduce symptoms of Parkinson's disease.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend antivirals as first-line therapy for COVID-19.",
+      "statement_2": "Clinical experience has validated antivirals for COVID-19.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest aspirin may reduce symptoms of heart failure.",
+      "statement_2": "Multiple studies confirm aspirin is effective for heart failure.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Evidence shows benzodiazepines improves outcomes in patients with nausea.",
+      "statement_2": "Studies have shown benzodiazepines is ineffective for nausea.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows ACE inhibitors improves outcomes in patients with heart failure.",
+      "statement_2": "Recent evidence suggests ACE inhibitors may worsen outcomes in heart failure.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Patients with cellulitis should be treated with antifungals.",
+      "statement_2": "antifungals remains a cornerstone of therapy for cellulitis.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Patients with epilepsy should be treated with dopamine agonists.",
+      "statement_2": "Research indicates dopamine agonists has no significant benefit for epilepsy.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Recent studies suggest targeted therapy may reduce symptoms of breast cancer.",
+      "statement_2": "Recent evidence suggests targeted therapy may worsen outcomes in breast cancer.",
+      "true_category": "contradicting",
+      "predicted_category": "unrelated",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "vaccines has been shown effective for cellulitis in clinical trials.",
+      "statement_2": "vaccines is contraindicated for patients with cellulitis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend antihistamines as first-line therapy for insomnia.",
+      "statement_2": "Patients with nausea should be treated with opioids.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest benzodiazepines may reduce symptoms of nausea.",
+      "statement_2": "Multiple studies confirm benzodiazepines is effective for nausea.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows statins improves outcomes in patients with atrial fibrillation.",
+      "statement_2": "Research indicates statins has no significant benefit for atrial fibrillation.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend radiation therapy as first-line therapy for lymphoma.",
+      "statement_2": "Studies have shown radiation therapy is ineffective for lymphoma.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Evidence shows vaccines improves outcomes in patients with urinary tract infection.",
+      "statement_2": "Clinical guidelines advise against using vaccines for urinary tract infection.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Evidence shows dopamine agonists improves outcomes in patients with migraine.",
+      "statement_2": "dopamine agonists is contraindicated for patients with migraine.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with breast cancer should be treated with radiation therapy.",
+      "statement_2": "Evidence shows chemotherapy improves outcomes in patients with lung cancer.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend targeted therapy as first-line therapy for colon cancer.",
+      "statement_2": "Clinical guidelines recommend immunotherapy as first-line therapy for lung cancer.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Evidence shows radiation therapy improves outcomes in patients with colon cancer.",
+      "statement_2": "Studies have shown radiation therapy is ineffective for colon cancer.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Evidence shows antifungals improves outcomes in patients with pneumonia.",
+      "statement_2": "Studies have shown antifungals is ineffective for pneumonia.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "triptans has been shown effective for migraine in clinical trials.",
+      "statement_2": "Clinical guidelines recommend anticonvulsants as first-line therapy for epilepsy.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with urinary tract infection should be treated with antifungals.",
+      "statement_2": "Recent evidence suggests antifungals may worsen outcomes in urinary tract infection.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend benzodiazepines as first-line therapy for nausea.",
+      "statement_2": "Studies have shown benzodiazepines is ineffective for nausea.",
+      "true_category": "contradicting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest antivirals may reduce symptoms of pneumonia.",
+      "statement_2": "antivirals is contraindicated for patients with pneumonia.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest ACE inhibitors may reduce symptoms of heart failure.",
+      "statement_2": "Recent evidence suggests ACE inhibitors may worsen outcomes in heart failure.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "benzodiazepines has been shown effective for insomnia in clinical trials.",
+      "statement_2": "Multiple studies confirm benzodiazepines is effective for insomnia.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows benzodiazepines improves outcomes in patients with nausea.",
+      "statement_2": "Studies have shown benzodiazepines is ineffective for nausea.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "antivirals has been shown effective for COVID-19 in clinical trials.",
+      "statement_2": "Recent studies suggest antibiotics may reduce symptoms of pneumonia.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "antifungals has been shown effective for pneumonia in clinical trials.",
+      "statement_2": "antifungals remains a cornerstone of therapy for pneumonia.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest anticonvulsants may reduce symptoms of epilepsy.",
+      "statement_2": "Clinical experience has validated anticonvulsants for epilepsy.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with pain should be treated with NSAIDs.",
+      "statement_2": "Meta-analyses support the use of NSAIDs in pain.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows opioids improves outcomes in patients with inflammation.",
+      "statement_2": "Recent studies suggest benzodiazepines may reduce symptoms of insomnia.",
+      "true_category": "unrelated",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest chemotherapy may reduce symptoms of breast cancer.",
+      "statement_2": "targeted therapy has been shown effective for colon cancer in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "contradicting",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Recent studies suggest opioids may reduce symptoms of inflammation.",
+      "statement_2": "Research consistently demonstrates the benefits of opioids for inflammation.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest triptans may reduce symptoms of migraine.",
+      "statement_2": "Meta-analyses support the use of triptans in migraine.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend vaccines as first-line therapy for urinary tract infection.",
+      "statement_2": "vaccines is contraindicated for patients with urinary tract infection.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Evidence shows triptans improves outcomes in patients with multiple sclerosis.",
+      "statement_2": "Research indicates triptans has no significant benefit for multiple sclerosis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Evidence shows corticosteroids improves outcomes in patients with migraine.",
+      "statement_2": "Research indicates corticosteroids has no significant benefit for migraine.",
+      "true_category": "contradicting",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Recent studies suggest dopamine agonists may reduce symptoms of Parkinson's disease.",
+      "statement_2": "dopamine agonists is contraindicated for patients with Parkinson's disease.",
+      "true_category": "contradicting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Evidence shows triptans improves outcomes in patients with migraine.",
+      "statement_2": "triptans is contraindicated for patients with migraine.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Recent studies suggest chemotherapy may reduce symptoms of breast cancer.",
+      "statement_2": "Patients with lymphoma should be treated with targeted therapy.",
+      "true_category": "unrelated",
+      "predicted_category": "contradicting",
+      "correct": false,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "aspirin has been shown effective for hypertension in clinical trials.",
+      "statement_2": "Multiple studies confirm aspirin is effective for hypertension.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Patients with multiple sclerosis should be treated with triptans.",
+      "statement_2": "Recent evidence suggests triptans may worsen outcomes in multiple sclerosis.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend vaccines as first-line therapy for pneumonia.",
+      "statement_2": "Studies have shown vaccines is ineffective for pneumonia.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "antihistamines has been shown effective for pain in clinical trials.",
+      "statement_2": "Multiple studies confirm antihistamines is effective for pain.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest benzodiazepines may reduce symptoms of pain.",
+      "statement_2": "Clinical guidelines recommend antihistamines as first-line therapy for nausea.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows ACE inhibitors improves outcomes in patients with heart failure.",
+      "statement_2": "ACE inhibitors is contraindicated for patients with heart failure.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "antivirals has been shown effective for cellulitis in clinical trials.",
+      "statement_2": "antifungals has been shown effective for urinary tract infection in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest beta blockers may reduce symptoms of heart failure.",
+      "statement_2": "Clinical guidelines advise against using beta blockers for heart failure.",
+      "true_category": "contradicting",
+      "predicted_category": "contradicting",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Patients with heart failure should be treated with statins.",
+      "statement_2": "Research indicates statins has no significant benefit for heart failure.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "cardiology"
+    },
+    {
+      "statement_1": "Evidence shows triptans improves outcomes in patients with migraine.",
+      "statement_2": "Clinical experience has validated triptans for migraine.",
+      "true_category": "supporting",
+      "predicted_category": "temporally_superseded",
+      "correct": false,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with multiple sclerosis should be treated with corticosteroids.",
+      "statement_2": "Clinical guidelines advise against using corticosteroids for multiple sclerosis.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Evidence shows antihistamines improves outcomes in patients with inflammation.",
+      "statement_2": "antihistamines is contraindicated for patients with inflammation.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Recent studies suggest dopamine agonists may reduce symptoms of multiple sclerosis.",
+      "statement_2": "corticosteroids has been shown effective for Parkinson's disease in clinical trials.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    },
+    {
+      "statement_1": "Patients with cellulitis should be treated with antifungals.",
+      "statement_2": "Clinical guidelines advise against using antifungals for cellulitis.",
+      "true_category": "contradicting",
+      "predicted_category": "supporting",
+      "correct": false,
+      "domain": "infectious_disease"
+    },
+    {
+      "statement_1": "Recent studies suggest opioids may reduce symptoms of insomnia.",
+      "statement_2": "Research indicates opioids has no significant benefit for insomnia.",
+      "true_category": "temporally_superseded",
+      "predicted_category": "temporally_superseded",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "benzodiazepines has been shown effective for insomnia in clinical trials.",
+      "statement_2": "Research consistently demonstrates the benefits of benzodiazepines for insomnia.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Evidence shows antihistamines improves outcomes in patients with nausea.",
+      "statement_2": "Patients with pain should be treated with NSAIDs.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "pharmacology"
+    },
+    {
+      "statement_1": "Clinical guidelines recommend targeted therapy as first-line therapy for colon cancer.",
+      "statement_2": "Multiple studies confirm targeted therapy is effective for colon cancer.",
+      "true_category": "supporting",
+      "predicted_category": "supporting",
+      "correct": true,
+      "domain": "oncology"
+    },
+    {
+      "statement_1": "Patients with epilepsy should be treated with anticonvulsants.",
+      "statement_2": "Patients with multiple sclerosis should be treated with corticosteroids.",
+      "true_category": "unrelated",
+      "predicted_category": "unrelated",
+      "correct": true,
+      "domain": "neurology"
+    }
+  ]
+}
