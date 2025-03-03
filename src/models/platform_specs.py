@@ -888,6 +888,9 @@ PLATFORM_SPECS_MAP = {
     # Add more platforms as they're defined
 }
 
+# Export PLATFORM_SPECS for compatibility with imports
+PLATFORM_SPECS = PLATFORM_SPECS_MAP
+
 # Default specifications if a platform is not found
 DEFAULT_SPECS = PlatformSpecs(
     name="Generic",

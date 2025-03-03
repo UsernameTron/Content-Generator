@@ -682,6 +682,14 @@ def adapt_for_substack(transformed_content, sentiment_data, content_metadata):
     jargon_awards = _generate_jargon_awards(topics, industry)
     newsletter_sections.append(("This Week's Jargon Awards 🏆", jargon_awards))
     
+    # Add "From the Archives" section to increase content length
+    archives_content = _generate_from_archives(industry)
+    newsletter_sections.append(("From the Archives", archives_content))
+    
+    # Add a "Reader Submissions" section
+    reader_submissions = _generate_reader_submissions(topics, industry)
+    newsletter_sections.append(("Reader Submissions", reader_submissions))
+    
     # Add subscriber exclusive if content is long enough
     if len(paragraphs) > 3:
         exclusive_heading = "For Paid Subscribers Only: The Director's Cut"
@@ -735,6 +743,114 @@ def _generate_plain_english_version(topics):
     ]
     
     return random.choice(templates)
+
+def _generate_from_archives(industry):
+    """Generate a 'from the archives' section with satirical content"""
+    # Industry-specific archive topics
+    industry_archives = {
+        'technology': [
+            "The 10 Most Useless Startup Features of 2024",
+            "A Comprehensive Guide to Pretending You Understand Blockchain",
+            "Why Every Solution Starts With AI (Even When It Shouldn't)"
+        ],
+        'business': [
+            "Corporate Meeting Bingo: The Survival Edition",
+            "The Art of Looking Busy While Doing Absolutely Nothing",
+            "How to Write Emails That Say Nothing in 500 Words or More"
+        ],
+        'marketing': [
+            "Content Strategies That Are Just 'Copying the Competition'",
+            "The Definitive Guide to Metrics That Sound Important But Aren't",
+            "How to Pretend Social Media Analytics Mean Something"
+        ],
+        'healthcare': [
+            "Medical Forms: Designed to Confuse Since Forever",
+            "The Hospital Administrator's Guide to Avoiding Straight Answers",
+            "Why Healthcare Apps All Look the Same But Cost Millions to Make"
+        ],
+        'finance': [
+            "Explaining Banking Fees: Making the Obvious Sound Complicated",
+            "Investment Predictions: Why Random Guessing Works Just as Well",
+            "The Financial Advisor's Secret Dictionary of Client Excuses"
+        ],
+        'education': [
+            "Educational Technology: New Ways to Distract Students",
+            "Academic Papers That Could Have Been One Paragraph",
+            "The Administrator's Guide to Creating Unnecessary Processes"
+        ]
+    }
+    
+    # Get industry archives or use general business archives
+    archive_options = industry_archives.get(industry, industry_archives['business'])
+    selected_archive = random.choice(archive_options)
+    
+    # Create excerpt from the archive article
+    archive_content = f"""In case you missed it, one of our most popular newsletters was "{selected_archive}." Here's a snippet:
+
+*In the wild world of {industry}, nothing is quite as amusing as watching professionals pretend that {random.choice(['jargon', 'complexity', 'acronyms', 'buzzwords'])} equals competence. As one reader commented, "I've been in meetings where I understood none of the words but everyone nodded enthusiastically anyway."*
+
+[Read the full archive post here](javascript:void(0))
+"""
+    
+    return archive_content
+
+def _generate_reader_submissions(topics, industry):
+    """Generate fake 'reader submissions' for satirical newsletter"""
+    
+    # Templates for reader submissions
+    submission_templates = [
+        """From {name} in {location}:
+        
+"In our last {meeting_type} meeting, our {job_title} actually said '{quote}' with a straight face. I had to mute myself to keep from laughing."
+""",
+        """Spotted by {name}:
+
+Job posting that required "{skill}" for an entry-level position that pays minimum wage. Because apparently learning to use the copy machine now requires {qualification}.
+""",
+        """Corporate email forwarded by {name}:
+
+"{quote}"
+
+Translation: "We made a bad decision but we're framing it as innovative."
+"""
+    ]
+    
+    # Names, locations and job titles
+    names = ["Alex", "Jordan", "Taylor", "Morgan", "Casey", "Riley", "Jamie", "Sam", "Quinn", "Avery"]
+    locations = ["Seattle", "Austin", "Chicago", "Boston", "Denver", "Portland", "Atlanta", "Minneapolis", "Toronto", "London"]
+    job_titles = ["VP of Innovation", "Chief Transformation Officer", "Digital Engagement Specialist", 
+                 "Strategic Vision Coordinator", "Experience Optimization Manager", "Solutions Architect"]
+    meeting_types = ["standup", "quarterly planning", "strategy", "all-hands", "brainstorming", "innovation"]
+    skills = ["synergy creation", "disruptive thinking", "paradigm shifting", "growth hacking", "thought leadership"]
+    qualifications = ["15 years of experience", "a PhD in Business Synergy", "telepathic abilities", "time travel"]
+    
+    # Corporate quotes
+    quotes = [
+        "We need to leverage our core competencies to create a synergistic ecosystem that drives stakeholder value",
+        "Let's circle back to ideate on a more holistic approach to our strategic alignment initiatives",
+        "We're not firing people, we're right-sizing our human capital to optimize operational efficiency",
+        "This isn't a problem, it's an opportunity to pivot our value proposition",
+        "Moving forward, we need to drill down into the low-hanging fruit of our digital transformation journey"
+    ]
+    
+    # Generate 2-3 unique reader submissions
+    num_submissions = random.randint(2, 3)
+    submissions = []
+    
+    for _ in range(num_submissions):
+        template = random.choice(submission_templates)
+        submission = template.format(
+            name=random.choice(names),
+            location=random.choice(locations),
+            meeting_type=random.choice(meeting_types),
+            job_title=random.choice(job_titles),
+            skill=random.choice(skills),
+            qualification=random.choice(qualifications),
+            quote=random.choice(quotes)
+        )
+        submissions.append(submission)
+        
+    return "\n\n".join(submissions)
 
 def _generate_jargon_awards(topics, industry):
     """Generate satirical 'jargon awards' with content-specific examples"""

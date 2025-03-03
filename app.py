@@ -32,6 +32,7 @@ logger = logging.getLogger("CANDOR")
 # Import local modules
 from src.utils.document_processor import extract_text_from_document, extract_text_from_url, analyze_sentiment, extract_key_topics
 from src.models.content_generator import ContentGenerator
+from src.models.model_content_generator import ModelContentGenerator  # Add the model-based generator
 from src.models.platform_specs import get_platform_specs, get_platform_names
 from src.utils.health_monitor import check_system_health
 from src.utils.wandb_monitor import is_wandb_available, setup_wandb_monitoring
@@ -44,7 +45,7 @@ class GenerationWorker(QThread):
     
     def __init__(self, input_text: str, input_type: str, platforms: List[str], 
                  tone: str = "Informative", keywords: List[str] = None, 
-                 writing_style: str = None):
+                 writing_style: str = "pete_connor", use_model: bool = True):
         super().__init__()
         self.input_text = input_text
         self.input_type = input_type
@@ -52,7 +53,23 @@ class GenerationWorker(QThread):
         self.tone = tone
         self.keywords = keywords if keywords else []
         self.writing_style = writing_style
-        self.content_generator = ContentGenerator(use_wandb=is_wandb_available())
+        self.use_model = use_model
+        
+        # Get style from environment variable (default to pete_connor if not set)
+        self.style = os.environ.get("DEFAULT_STYLE", "pete_connor")
+        
+        # Use either template-based or model-based generator based on use_model flag
+        if self.use_model:
+            logger.info(f"Using model-based generator with style: {self.style}")
+            self.content_generator = ModelContentGenerator(
+                style=self.style, 
+                use_wandb=is_wandb_available()
+            )
+            self.using_model = True
+        else:
+            logger.info("Using template-based generator")
+            self.content_generator = ContentGenerator(use_wandb=is_wandb_available())
+            self.using_model = False
         
     def run(self):
         try:
@@ -91,15 +108,25 @@ class GenerationWorker(QThread):
                 # Get platform specs
                 platform_specs = get_platform_specs(platform)
                 
-                # Generate content for the platform
-                generated_content = self.content_generator.generate_content(
-                    input_text=raw_content,
-                    platform=platform,
-                    platform_specs=platform_specs,
-                    tone=self.tone,
-                    keywords=self.keywords,
-                    writing_style=self.writing_style
-                )
+                # Generate content for the platform based on which generator we're using
+                if hasattr(self, 'using_model') and self.using_model:
+                    # Use the model-based generator
+                    generated_texts = self.content_generator.generate_content(
+                        content=raw_content,
+                        platform=platform.lower(),
+                        sentiment=self.tone.lower() if self.tone else None
+                    )
+                    generated_content = generated_texts[0] if generated_texts else ""
+                else:
+                    # Use the template-based generator
+                    generated_content = self.content_generator.generate_content(
+                        input_text=raw_content,
+                        platform=platform,
+                        platform_specs=platform_specs,
+                        tone=self.tone,
+                        keywords=self.keywords,
+                        writing_style=self.writing_style
+                    )
                 
                 results[platform] = generated_content
                 

@@ -179,17 +179,17 @@ class ContentGenerator:
                 max_length = 5000
                 min_length = 100
             
-            # Apply special handling for Substack and Medium to ensure longer content
+            # Apply special handling for Substack and Medium to ensure appropriate content length
             if platform.lower() == "substack":
-                # For Substack, ensure we generate at least 8000 characters
-                min_length = max(min_length, 8000)  # Force minimum 8000 characters
+                # For Substack, ensure we generate reasonably long content
+                min_length = max(min_length, 5000)  # Force reasonable minimum length
                 max_length = max(max_length, 25000)  # Ensure enough room
             elif platform.lower() == "medium":
-                # For Medium, ensure we generate at least 8000 characters
-                min_length = max(min_length, 8000)  # Force minimum 8000 characters
+                # For Medium, ensure we generate reasonably long content
+                min_length = max(min_length, 5000)  # Force reasonable minimum length
                 max_length = max(max_length, 25000)  # Ensure enough room
                 
-                # If content is shorter than 3000 characters after generation,
+                # If content is shorter than expected after generation,
                 # the templates might not be fully utilized. Log a warning.
                 if len(input_text) < 200:
                     logger.warning("Short input text for Medium. Content may not reach optimal length.")
@@ -339,39 +339,39 @@ class ContentGenerator:
                         
                         # Add more detailed analysis for each point
                         if platform == "Medium":
-                            # For Medium - more technical
-                            key_points_list.append(f"\nHoly cow, the data is almost comical! {kw} implementations have a staggering 76% failure rate, with most organizations abandoning their initiatives within 18 months. I'm not making this up - these are the actual reasons cited by real companies who flushed millions down the toilet:\n")
-                            key_points_list.append(f"• Misalignment between technical capabilities and business objectives (translation: the vendor lied about what the product could actually do)")
-                            key_points_list.append(f"• Insufficient expertise in the underlying systems architecture (translation: no one bothered to check if the shiny new toy would work with their existing infrastructure)")
-                            key_points_list.append(f"• Lack of proper data governance and quality control mechanisms (translation: garbage in, garbage out, but with a fancy dashboard on top)")
-                            key_points_list.append(f"• Failure to account for integration complexities with legacy systems (translation: turns out connecting to systems built in 1997 isn't as easy as the sales deck promised)\n")
-                            key_points_list.append(f"When I analyze the technical specifications behind most {kw} platforms, I find architectural flaws so obvious they'd make a first-year CompSci student blush. Vendors conveniently bury these limitations under layers of marketing jargon and cherry-picked case studies. Let me tear down the façade and show you the hilarious gap between marketing promises and technical reality:\n")
+                            # For Medium - more analytical
+                            key_points_list.append(f"\nLet's examine the data more closely. Research shows {kw} implementations face significant challenges, with many organizations struggling to achieve their intended outcomes. These are the common reasons cited in industry studies:\n")
+                            key_points_list.append(f"• Misalignment between capabilities and business objectives (in other words: what was promised versus what was delivered)")
+                            key_points_list.append(f"• Insufficient expertise in implementation requirements (failing to properly assess compatibility with existing systems)")
+                            key_points_list.append(f"• Inadequate data quality control mechanisms (the classic case of garbage in, garbage out)")
+                            key_points_list.append(f"• Integration challenges with existing systems (compatibility issues that weren't anticipated)\n")
+                            key_points_list.append(f"When examining most {kw} approaches in detail, I often find significant gaps between marketing promises and implementation reality. These limitations are rarely addressed in case studies or promotional materials. Let's look at what's actually happening:\n")
                         
                         elif platform == "Substack":
-                            # For Substack - more sarcastic and humorous
-                            key_points_list.append(f"\nOh, the absolute hilarity of watching executives throw millions at {kw} initiatives while the same basic problems remain unsolved. Let me describe the typical corporate {kw} implementation meeting:\n")
-                            key_points_list.append(f"• The vendor arrives with slides so glossy you could use them as mirrors")
-                            key_points_list.append(f"• The CTO nods sagely while understanding approximately 12% of what's being presented")
-                            key_points_list.append(f"• Someone mentions 'synergy' and 'digital transformation' in the same sentence (BINGO!)")
-                            key_points_list.append(f"• Meanwhile, the IT team in the back of the room is quietly updating their résumés\n")
-                            key_points_list.append(f"It's absolutely astonishing how we keep falling for the same nonsense, repackaged with slightly different buzzwords each fiscal year. The {kw} industry has mastered the art of selling digital snake oil with a straight face.\n")
+                            # For Substack - still humorous but less healthcare-specific
+                            key_points_list.append(f"\nThe cycle of {kw} implementations follows a predictable pattern that's both amusing and frustrating to observe. Here's what typically happens in organizations:\n")
+                            key_points_list.append(f"• Impressive presentations with polished visuals but limited substance")
+                            key_points_list.append(f"• Decision-makers nodding along despite limited understanding of implementation details")
+                            key_points_list.append(f"• Liberal use of buzzwords and jargon to mask practical challenges")
+                            key_points_list.append(f"• Technical teams quietly preparing for the inevitable complications\n")
+                            key_points_list.append(f"What's remarkable is how we continue to see this pattern repeat with each new trend or technology. The {kw} space is particularly prone to overpromising and underdelivering.\n")
                     else:
                         # Add generic points if we run out of sentences
                         if platform == "Medium":
                             key_points_list.append(f"## {kw.capitalize()}\n")
-                            key_points_list.append(f"The technical implementation challenges of {kw} are frequently underestimated - and by 'frequently' I mean 'always' and by 'underestimated' I mean 'completely ignored until the project is already on fire.' When examining the underlying infrastructure requirements, we see a comedy of errors: organizations throw millions at solutions without understanding basic scaling limitations, data consistency requirements, or integration complexity with existing systems.")
-                            key_points_list.append(f"\nLet me share a particularly hilarious example from a Fortune 500 company (who shall remain nameless to protect the embarrassed). They spent $12.8 million on a {kw} platform that promised to 'revolutionize' their operations. Two years later, they had succeeded in:\n")
-                            key_points_list.append(f"1. Creating three entirely new departments to manage the platform's limitations")
-                            key_points_list.append(f"2. Developing 16 custom workarounds for 'features' that didn't actually exist")
-                            key_points_list.append(f"3. Generating an impressive 240% increase in service desk tickets")
-                            key_points_list.append(f"4. Achieving precisely zero of their original objectives\n")
-                            key_points_list.append(f"The kicker? They renewed their contract because 'we've invested too much to back out now.' I couldn't make this stuff up if I tried.")
+                            key_points_list.append(f"Implementation challenges with {kw} are consistently underestimated by organizations. When examining actual deployments, we often find that preparation and planning fall short of what's required. Many organizations proceed without properly understanding resource requirements, integration complexities, or long-term maintenance needs.")
+                            key_points_list.append(f"\nA case study from a major enterprise illustrates this pattern. They invested substantially in a {kw} initiative that promised significant operational improvements. Two years into implementation, they experienced:\n")
+                            key_points_list.append(f"1. The need to create additional teams just to manage implementation issues")
+                            key_points_list.append(f"2. Development of numerous workarounds for functionality gaps")
+                            key_points_list.append(f"3. Significant increase in support requirements")
+                            key_points_list.append(f"4. Failure to achieve original business objectives\n")
+                            key_points_list.append(f"Despite these outcomes, they continued the initiative due to sunk cost fallacy rather than re-evaluating their approach.")
                         elif platform == "Substack":
                             key_points_list.append(f"## {kw.capitalize()}\n")
-                            key_points_list.append(f"If there were an Olympic event for corporate gullibility, the buying cycle for {kw} solutions would sweep the gold, silver, AND bronze medals. The absolute absurdity of watching intelligent professionals fall for flashy demos and cherry-picked case studies never ceases to amaze me.")
-                            key_points_list.append(f"\nConsider this scene, which I've witnessed so many times I could write a screenplay about it: A vendor demonstrates their {kw} solution in a perfectly controlled environment with carefully curated test data that bears no resemblance whatsoever to the client's actual business. The executives in the room are practically drooling. Not one person asks: 'But will this work with OUR systems? OUR data? OUR actual use cases?'\n")
-                            key_points_list.append(f"The meeting concludes with everyone congratulating themselves on being 'forward-thinking' and 'innovative,' while simultaneously committing to spend millions on a solution that will be collecting digital dust within 18 months. And the best part? When it all inevitably fails, they'll blame the implementation team rather than their own lack of due diligence.\n")
-                            key_points_list.append(f"I need to start selling tickets to these meetings. I'd make more than most {kw} consultants.")
+                            key_points_list.append(f"The decision-making process around {kw} initiatives often follows a troubling pattern where critical analysis takes a backseat to excitement about potential benefits. Organizations consistently underestimate implementation complexities.")
+                            key_points_list.append(f"\nThe typical scenario unfolds predictably: A solution provider demonstrates their offering in carefully controlled conditions using idealized data that looks nothing like the actual environment where it will be deployed. Decision-makers focus on possibilities rather than practicalities. Nobody asks the critical questions about compatibility, integration requirements, or realistic timelines.\n")
+                            key_points_list.append(f"These meetings often conclude with considerable enthusiasm but insufficient due diligence. When implementation challenges inevitably arise, responsibility tends to fall on implementation teams rather than the initial decision process that failed to properly assess feasibility.\n")
+                            key_points_list.append(f"This pattern repeats across industries and technologies with remarkable consistency.")
             else:
                 # Standard approach for other platforms
                 for i, kw in enumerate(keywords[:3]):
@@ -477,25 +477,25 @@ class ContentGenerator:
         """
         phrases = {
             "positive": [
-                "has been massively overhyped compared to actual results",
-                "looks great in vendor slides but falls short in implementation",
-                "sounds impressive until you look at the actual data",
-                "is being pushed by people who profit from the hype",
-                "is promising in theory but problematic in practice"
+                "has been significantly overhyped compared to actual results",
+                "looks promising in theory but falls short in implementation",
+                "sounds impressive until you examine the actual outcomes",
+                "is often promoted without adequate evidence of effectiveness",
+                "has potential but faces substantial practical challenges"
             ],
             "negative": [
-                "is a dumpster fire hidden behind corporate jargon",
-                "is even worse than the skeptics suggest, according to the data",
-                "represents everything wrong with tech implementation today",
-                "is the perfect example of marketing outpacing reality",
-                "has been a colossal waste of resources for most organizations"
+                "faces serious implementation challenges hidden by marketing",
+                "performs worse in practice than many acknowledge",
+                "represents a concerning trend in business decision-making",
+                "illustrates the gap between expectations and reality",
+                "often fails to deliver expected value for most organizations"
             ],
             "neutral": [
-                "reveals the disconnect between vendor promises and reality",
-                "exposes the gap between marketing and actual implementation",
-                "shows how we continue to fall for the same implementation myths",
-                "demonstrates why we need more skepticism in tech adoption",
-                "exemplifies why we need data, not anecdotes, to guide decisions"
+                "reveals disconnects between promises and implementation reality",
+                "exposes gaps between marketing claims and actual outcomes",
+                "shows patterns that deserve more critical examination",
+                "demonstrates why evidence-based approaches are essential",
+                "exemplifies why data-driven decision making matters"
             ]
         }
         
